@@ -1,0 +1,20 @@
+This is an example lifecycle ROS2 node.
+Ideally we will use one lifecycle node for each subsystem.
+Possible Workflow:
+1. Power robot on
+2. lifecycle manager initializes all nodes to unconfigured
+3. nodes transition to innactive during setup phase
+4. User starts robot
+    - nodes transition to active in a specific order:
+        1. LiDAR node starts SLAM
+        2. Motor drive node starts moving
+        3. Audio processing begins
+
+5. Case where WiFi drops:
+    - Nodes transition to inactive, preserving state and waiting for reconnection
+6. Reconnection occurs:
+    - Nodes resume Active state and continue tasks.
+
+--> this can cover more edge cases and errors such as the ones we laid out when doing our state machine.
+
+Each subsystems lifecycle nodes will be more advanced and will have transition logic and error handling. They can also call on other scripts and functions in each respective state.
