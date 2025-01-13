@@ -4287,6 +4287,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Value" "Conn_01x03_Pin"
@@ -4296,6 +4297,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
@@ -4421,7 +4423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90696eca-9ad3-4f93-bd3c-5c0bf085573c")
-		(property "Reference" "J2"
+		(property "Reference" "J??"
 			(at 252.73 113.03 0)
 			(effects
 				(font
@@ -4431,7 +4433,7 @@
 			)
 		)
 		(property "Value" "532610771"
-			(at 252.73 115.57 0)
+			(at 263.144 115.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4608,7 +4610,7 @@
 		(instances
 			(project "Mic_Board_Unidirectional"
 				(path "/1178ae07-c232-447f-a548-6d4f89d4abce"
-					(reference "J2")
+					(reference "J??")
 					(unit 1)
 				)
 			)
