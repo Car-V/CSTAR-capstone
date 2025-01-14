@@ -6486,7 +6486,7 @@
 		)
 		(uuid "b685fad5-4540-4815-8b9e-9846a0c8faca")
 	)
-	(text "Buck Converter 1: 12V to 5V, 3A\n"
+	(text "Buck Converter 2: 12V to 5V, 3A\n"
 		(exclude_from_sim no)
 		(at 43.18 191.77 0)
 		(effects
@@ -9626,7 +9626,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:SOT230P700X185-4N"
+		(property "Footprint" "Footprints:LDO"
 			(at 95.885 287.02 0)
 			(effects
 				(font
