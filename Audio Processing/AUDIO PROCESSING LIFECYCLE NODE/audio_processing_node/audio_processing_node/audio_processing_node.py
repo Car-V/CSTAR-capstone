@@ -14,10 +14,6 @@ class AudioProcessingLifecycleNode(Node):
         self.get_logger().info(f"Configuring Audio Processing for node '{self.get_name()}'")
         try:
             # Initialize mircophones
-            self.directional_microphone = None # Plceholder for the directional microphone object to be initialized
-            self.directional_microphone.initialize()
-            self.omnidirectional_microphone = None # Placeholder for the omnidirectional microphone object to be initialized
-            self.omnidirectional_microphone.initialize()
             #set up audio processing parameters or whatever is needed
             self.is_configured = True
             self.get_logger().info("Audio Processing successfully configured.")
