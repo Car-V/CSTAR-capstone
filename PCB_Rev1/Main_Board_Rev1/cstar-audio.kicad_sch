@@ -1237,7 +1237,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91bb1166-fb1e-4180-b0c9-c88d42eff107")
-		(property "Reference" "J?1"
+		(property "Reference" "J??"
 			(at 91.44 100.3299 0)
 			(effects
 				(font
@@ -1424,7 +1424,7 @@
 		(instances
 			(project "Main_Board_Rev1"
 				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/985328a3-4662-4f3a-8cff-b03fc4b452cf"
-					(reference "J?1")
+					(reference "J??")
 					(unit 1)
 				)
 			)
@@ -1440,7 +1440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9f50faa-7da5-48ec-b0b0-0d55599c64ec")
-		(property "Reference" "J?2"
+		(property "Reference" "J??"
 			(at 228.6 97.7899 0)
 			(effects
 				(font
@@ -1627,7 +1627,7 @@
 		(instances
 			(project "Main_Board_Rev1"
 				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/985328a3-4662-4f3a-8cff-b03fc4b452cf"
-					(reference "J?2")
+					(reference "J??")
 					(unit 1)
 				)
 			)
