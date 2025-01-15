@@ -6980,7 +6980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:AMASS_XT60PW-M"
+		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
 			(at 363.22 336.55 0)
 			(effects
 				(font
@@ -11253,7 +11253,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:SMCJSeries_LTF"
+		(property "Footprint" "Footprints:D1_Bi-dir"
 			(at 80.01 77.47 0)
 			(effects
 				(font

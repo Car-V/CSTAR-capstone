@@ -4031,7 +4031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:EncoderConn"
 			(at 130.81 53.975 0)
 			(effects
 				(font
