@@ -1119,44 +1119,6 @@
 		)
 	)
 	(sheet
-		(at 21.59 26.67)
-		(size 51.435 53.34)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "985328a3-4662-4f3a-8cff-b03fc4b452cf")
-		(property "Sheetname" "CSTAR-Audio"
-			(at 21.59 25.9584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "cstar-audio.kicad_sch"
-			(at 21.59 80.5946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Main_Board_Rev1"
-				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 215.9 123.19)
 		(size 34.925 27.305)
 		(fields_autoplaced yes)
