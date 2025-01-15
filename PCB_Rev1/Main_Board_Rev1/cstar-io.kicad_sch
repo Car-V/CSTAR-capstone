@@ -3544,7 +3544,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:691137710002-2CONN"
 			(at 203.2 84.455 0)
 			(effects
 				(font

@@ -4539,7 +4539,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:B2P-VH"
 			(at 41.91 149.86 0)
 			(effects
 				(font
@@ -4678,7 +4678,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:B2P-VH"
 			(at 113.03 149.86 0)
 			(effects
 				(font
@@ -6042,7 +6042,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:B4B_PH_K_S"
 			(at 195.58 74.93 0)
 			(effects
 				(font
@@ -6118,7 +6118,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:B4B_PH_K_S"
 			(at 199.39 120.65 0)
 			(effects
 				(font

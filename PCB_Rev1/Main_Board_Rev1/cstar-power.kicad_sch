@@ -7643,7 +7643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 170.18 316.23 0)
 			(effects
 				(font
@@ -7713,7 +7713,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:L1_2.2uH"
+		(property "Footprint" ""
 			(at 201.93 92.71 0)
 			(effects
 				(font
@@ -8050,7 +8050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:L2_6.8uH"
+		(property "Footprint" ""
 			(at 156.21 217.17 0)
 			(effects
 				(font
@@ -9013,7 +9013,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 58.42 316.865 0)
 			(effects
 				(font
@@ -10443,7 +10443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 91.44 80.01 0)
 			(effects
 				(font
@@ -11770,7 +11770,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 59.69 225.425 0)
 			(effects
 				(font
