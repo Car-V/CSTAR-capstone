@@ -10632,7 +10632,7 @@
 		(dnp no)
 		(uuid "be94f812-0b7e-45a8-ba01-bb94ca278c8a")
 		(property "Reference" "J6"
-			(at 64.135 311.15 90)
+			(at 72.39 299.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10641,7 +10641,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 64.135 313.69 90)
+			(at 69.596 309.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
