@@ -8452,7 +8452,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:IC9_AP63356QZV-7_DIO"
+		(property "Footprint" "Footprints:Buck_2"
 			(at 127 222.25 0)
 			(effects
 				(font
@@ -11840,7 +11840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:Buck-05-08-1604_ADI"
+		(property "Footprint" "Footprints:Buck_1"
 			(at 186.69 164.77 0)
 			(effects
 				(font
