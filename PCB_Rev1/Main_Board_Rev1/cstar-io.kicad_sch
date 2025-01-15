@@ -2781,7 +2781,7 @@
 	)
 	(text "Zener Diode"
 		(exclude_from_sim no)
-		(at 185.42 64.77 0)
+		(at 193.802 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2812,7 +2812,7 @@
 		)
 		(uuid "b949923e-04b8-457b-9697-8deb7467f6bd")
 	)
-	(text "Power Drive\n"
+	(text "Power FET"
 		(exclude_from_sim no)
 		(at 228.6 52.07 0)
 		(effects
@@ -2823,9 +2823,9 @@
 		)
 		(uuid "c387a0a7-9b63-472e-93d5-79f501cf2647")
 	)
-	(text "To Button\n"
+	(text "Connector to On/off Switch"
 		(exclude_from_sim no)
-		(at 189.23 71.755 0)
+		(at 178.308 89.408 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3104,7 +3104,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Footprints:RGB-FETS"
 			(at 69.85 62.865 0)
 			(effects
 				(font
@@ -3380,7 +3380,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:IRFHM9331TRPBF"
+		(property "Footprint" "Footprints:Power_FET"
 			(at 219.075 63.5 0)
 			(effects
 				(font
@@ -3470,7 +3470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Footprints:RGB-FETS"
 			(at 119.38 100.33 0)
 			(effects
 				(font
@@ -3616,7 +3616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Footprints:RGB-FETS"
 			(at 95.25 83.82 0)
 			(effects
 				(font
