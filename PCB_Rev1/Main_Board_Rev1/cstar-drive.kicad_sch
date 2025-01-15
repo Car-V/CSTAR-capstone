@@ -4211,7 +4211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 129.54 68.58 0)
 			(effects
 				(font
@@ -4299,7 +4299,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 110.49 100.33 0)
 			(effects
 				(font
@@ -4387,7 +4387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 110.49 68.58 0)
 			(effects
 				(font
@@ -4819,7 +4819,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 129.54 100.33 0)
 			(effects
 				(font
@@ -5042,7 +5042,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 100.33 68.58 0)
 			(effects
 				(font
@@ -5130,7 +5130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 100.33 100.33 0)
 			(effects
 				(font
@@ -5218,7 +5218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 120.65 68.58 0)
 			(effects
 				(font
@@ -5619,7 +5619,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:Diode_1N4007"
 			(at 120.65 100.33 0)
 			(effects
 				(font
