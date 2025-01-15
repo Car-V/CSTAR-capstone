@@ -1477,7 +1477,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:MOLEX_532610771"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0771_1x07-1MP_P1.25mm_Horizontal"
 			(at 172.72 95.25 0)
 			(effects
 				(font
