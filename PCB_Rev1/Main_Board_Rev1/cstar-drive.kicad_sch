@@ -5306,7 +5306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:ZDO_SP4022_LTF"
+		(property "Footprint" "Footprints:TVSDiode"
 			(at 63.5 139.7 0)
 			(effects
 				(font
@@ -5973,7 +5973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:ZDO_SP4022_LTF"
+		(property "Footprint" "Footprints:TVSDiode"
 			(at 134.62 139.7 0)
 			(effects
 				(font
