@@ -3544,7 +3544,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:691137710002-2CONN"
+		(property "Footprint" ""
 			(at 203.2 84.455 0)
 			(effects
 				(font
@@ -4031,7 +4031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:B4B_PH_K_S"
+		(property "Footprint" ""
 			(at 130.81 53.975 0)
 			(effects
 				(font

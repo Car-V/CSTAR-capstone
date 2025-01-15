@@ -848,7 +848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:RPiConnector"
 			(at 140.97 64.77 0)
 			(effects
 				(font
