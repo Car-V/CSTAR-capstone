@@ -4423,7 +4423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90696eca-9ad3-4f93-bd3c-5c0bf085573c")
-		(property "Reference" "J??"
+		(property "Reference" "J1"
 			(at 252.73 113.03 0)
 			(effects
 				(font
@@ -4610,7 +4610,7 @@
 		(instances
 			(project "Mic_Board_Unidirectional"
 				(path "/1178ae07-c232-447f-a548-6d4f89d4abce"
-					(reference "J??")
+					(reference "J1")
 					(unit 1)
 				)
 			)
