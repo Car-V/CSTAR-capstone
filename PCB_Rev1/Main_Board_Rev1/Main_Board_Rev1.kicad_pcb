@@ -3828,7 +3828,7 @@
 	(footprint "Connector_Molex:Molex_PicoBlade_53261-0771_1x07-1MP_P1.25mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "2766d66c-f55c-4653-bfe8-70bb897c16c8")
-		(at 259 62.5)
+		(at 449.5 59)
 		(descr "Molex PicoBlade series connector, 53261-0771 (http://www.molex.com/pdm_docs/sd/532610271_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex PicoBlade top entry")
 		(property "Reference" "J11"
@@ -16879,7 +16879,7 @@
 	(footprint "Footprints:Power_FET"
 		(layer "F.Cu")
 		(uuid "97841b3b-e8a6-4132-833d-3a83eb964f48")
-		(at 226.77 118.66726)
+		(at 230.73 124.00178)
 		(tags "IRFHM9331TRPBF ")
 		(property "Reference" "Q4"
 			(at 0 0 0)
@@ -18858,7 +18858,7 @@
 	(footprint "Footprints:691137710002-2CONN"
 		(layer "F.Cu")
 		(uuid "abee5c42-2bf3-4d65-908d-4e0fb8477aba")
-		(at 220.1049 82.202701)
+		(at 201.5 69)
 		(tags "691137710002 ")
 		(property "Reference" "J3"
 			(at 2.5 0 0)
@@ -26518,7 +26518,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "f909b3cb-e87f-425d-8ccb-c21f0065591c")
-		(at 226.3614 122.49346)
+		(at 224.5 130.5)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
@@ -26944,7 +26944,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "fec681d8-cd01-4315-91ef-2f0db6c9a311")
-		(at 221.9314 120.76346)
+		(at 205.5 123)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
