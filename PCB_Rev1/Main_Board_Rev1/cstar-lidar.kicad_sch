@@ -1047,7 +1047,8 @@
 		(at 160.02 77.47 0)
 		(effects
 			(font
-				(size 2 2)
+				(size 2.54 2.54)
+				(thickness 0.25)
 			)
 			(justify left bottom)
 		)
@@ -1088,7 +1089,7 @@
 			)
 		)
 	)
-	(global_label "GPIO15"
+	(global_label "RXD_LIDAR"
 		(shape input)
 		(at 118.11 109.22 180)
 		(fields_autoplaced yes)
@@ -1100,7 +1101,7 @@
 		)
 		(uuid "7e49152d-2094-44d4-84f3-d3a4d315ade6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.2305 109.22 0)
+			(at 105.1462 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1132,7 +1133,7 @@
 			)
 		)
 	)
-	(global_label "GPIO14"
+	(global_label "TXD_LIDAR"
 		(shape input)
 		(at 118.11 102.87 180)
 		(fields_autoplaced yes)
@@ -1144,7 +1145,7 @@
 		)
 		(uuid "8cb64d50-8a5e-4d79-ae44-e560f32ba89f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.2305 102.87 0)
+			(at 105.4486 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1154,7 +1155,7 @@
 			)
 		)
 	)
-	(global_label "GPIO17"
+	(global_label "LIDAR_IO"
 		(shape input)
 		(at 154.94 87.63 180)
 		(fields_autoplaced yes)
@@ -1166,7 +1167,7 @@
 		)
 		(uuid "a173caf6-ab38-4f4b-a4bb-8ab374e9b4ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.0605 87.63 0)
+			(at 143.7904 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1602,7 +1603,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0771_1x07-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Footprints:MOLEX_connector"
 			(at 172.72 95.25 0)
 			(effects
 				(font

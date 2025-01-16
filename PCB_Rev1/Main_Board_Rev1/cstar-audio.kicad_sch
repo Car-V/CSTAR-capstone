@@ -972,7 +972,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 163.83) (xy 54.61 166.37)
+			(xy 54.61 170.18) (xy 54.61 172.72)
 		)
 		(stroke
 			(width 0)
@@ -1122,7 +1122,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 163.83) (xy 46.99 166.37)
+			(xy 46.99 170.18) (xy 46.99 172.72)
 		)
 		(stroke
 			(width 0)
@@ -1214,7 +1214,7 @@
 		(start 50.8 44.45)
 		(end 132.08 139.7)
 		(stroke
-			(width 0)
+			(width 1.016)
 			(type default)
 		)
 		(fill
@@ -1223,8 +1223,8 @@
 		(uuid 847868b2-5249-468b-9200-6cfd236c3d60)
 	)
 	(rectangle
-		(start 39.37 151.13)
-		(end 64.77 181.61)
+		(start 39.37 157.48)
+		(end 64.77 187.96)
 		(stroke
 			(width 1)
 			(type default)
@@ -1235,10 +1235,10 @@
 		(uuid 8a15a478-8b51-47fb-9f66-f018c43bd55c)
 	)
 	(rectangle
-		(start 161.29 43.18)
-		(end 242.57 138.43)
+		(start 161.29 44.45)
+		(end 242.57 139.7)
 		(stroke
-			(width 0)
+			(width 1.016)
 			(type default)
 		)
 		(fill
@@ -1248,10 +1248,11 @@
 	)
 	(text "MIC 2 (Omnidirectional - Environment)"
 		(exclude_from_sim no)
-		(at 173.736 52.07 0)
+		(at 172.466 50.546 0)
 		(effects
 			(font
 				(size 2 2)
+				(thickness 0.25)
 			)
 			(justify left bottom)
 		)
@@ -1259,12 +1260,11 @@
 	)
 	(text "Power Nets"
 		(exclude_from_sim no)
-		(at 39.37 147.066 0)
+		(at 39.37 153.416 0)
 		(effects
 			(font
 				(size 3 3)
-				(thickness 0.6)
-				(bold yes)
+				(thickness 0.375)
 			)
 			(justify left bottom)
 		)
@@ -1272,23 +1272,24 @@
 	)
 	(text "MIC 1 (Unidirectional - Delamination)"
 		(exclude_from_sim no)
-		(at 65.786 51.054 0)
+		(at 61.976 50.292 0)
 		(effects
 			(font
 				(size 2 2)
+				(thickness 0.25)
 			)
 			(justify left bottom)
 		)
 		(uuid "80e0f8af-2988-453f-92a9-5012a40f2e02")
 	)
-	(global_label "GPIO22"
+	(global_label "GPIO13"
 		(shape input)
 		(at 78.74 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
@@ -1306,7 +1307,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 54.61 166.37 270)
+		(at 54.61 172.72 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1316,7 +1317,7 @@
 		)
 		(uuid "604393ec-8511-435d-b48a-ced2939e6c08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.61 173.2257 90)
+			(at 54.61 179.5757 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1328,7 +1329,7 @@
 	)
 	(global_label "3V3EXT"
 		(shape input)
-		(at 46.99 166.37 270)
+		(at 46.99 172.72 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1338,7 +1339,7 @@
 		)
 		(uuid "61e0783d-e1bb-4110-b8da-2b017dc3b56d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 176.1889 90)
+			(at 46.99 182.5389 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1348,20 +1349,20 @@
 			)
 		)
 	)
-	(global_label "GPIO??"
+	(global_label "GPIO7"
 		(shape input)
 		(at 198.12 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "6b1f40c4-7e48-4cb9-b790-1e41977028a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 188.0063 109.22 0)
+			(at 188.974 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1371,20 +1372,20 @@
 			)
 		)
 	)
-	(global_label "GPIO??"
+	(global_label "GPIO3"
 		(shape input)
 		(at 78.74 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "9a708bc8-7d23-43e9-a241-3c226abf003e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.6263 105.41 0)
+			(at 69.594 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1394,20 +1395,20 @@
 			)
 		)
 	)
-	(global_label "GPIO22"
+	(global_label "GPIO0"
 		(shape input)
 		(at 198.12 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "b9ad70da-80fa-415e-8bff-d169029b324f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.7645 113.03 0)
+			(at 188.974 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1417,20 +1418,20 @@
 			)
 		)
 	)
-	(global_label "GPIO??"
+	(global_label "GPIO2"
 		(shape input)
 		(at 78.74 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "c374408d-6e61-4120-80a1-bbc3f3acc4b3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.6263 101.6 0)
+			(at 69.594 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,20 +1441,20 @@
 			)
 		)
 	)
-	(global_label "GPIO??"
+	(global_label "GPIO9"
 		(shape input)
 		(at 198.12 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "c580abe7-7cbb-49d4-b809-a2f039ae5960")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 188.0063 105.41 0)
+			(at 188.974 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,20 +1464,20 @@
 			)
 		)
 	)
-	(global_label "GPIO??"
+	(global_label "GPIO12"
 		(shape input)
 		(at 78.74 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "dcb43cee-9c31-4951-81e3-4e64cb218417")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.6263 109.22 0)
+			(at 68.3845 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1486,20 +1487,20 @@
 			)
 		)
 	)
-	(global_label "GPIO??"
+	(global_label "GPIO8"
 		(shape input)
 		(at 198.12 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "f83c7a0f-f2e1-403c-b32e-c77ee31dbd88")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 188.0063 101.6 0)
+			(at 188.974 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1537,7 +1538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0771_1x07-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Footprints:MOLEX_connector"
 			(at 210.82 105.41 0)
 			(effects
 				(font
@@ -1714,7 +1715,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 163.83 180)
+		(at 54.61 170.18 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1723,7 +1724,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e450779-97df-4f24-bb24-e4a96a5f7810")
 		(property "Reference" "#PWR063"
-			(at 54.61 157.48 0)
+			(at 54.61 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,7 +1733,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 158.75 0)
+			(at 54.61 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,7 +1741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 163.83 0)
+			(at 54.61 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1749,7 +1750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 163.83 0)
+			(at 54.61 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,7 +1759,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 163.83 0)
+			(at 54.61 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1806,7 +1807,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0771_1x07-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Footprints:MOLEX_connector"
 			(at 91.44 105.41 0)
 			(effects
 				(font
@@ -2179,7 +2180,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 46.99 163.83 0)
+		(at 46.99 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2188,7 +2189,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f643b75-a085-4ed3-8c90-51a230ef3926")
 		(property "Reference" "#PWR062"
-			(at 46.99 167.64 0)
+			(at 46.99 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2197,7 +2198,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 46.99 158.75 0)
+			(at 46.99 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2205,7 +2206,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 163.83 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2215,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 163.83 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2223,7 +2224,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 46.99 163.83 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -2884,8 +2884,7 @@
 		(effects
 			(font
 				(size 3 3)
-				(thickness 0.6)
-				(bold yes)
+				(thickness 0.375)
 			)
 			(justify left bottom)
 		)
