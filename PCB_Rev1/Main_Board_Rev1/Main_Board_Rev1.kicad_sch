@@ -945,6 +945,17 @@
 			)
 		)
 	)
+	(text "Mounting hole\n- This is a M5 mounting hole not a cap lol\n"
+		(exclude_from_sim no)
+		(at 17.272 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e43e5040-4876-4df0-b063-77b40a3a6b86")
+	)
 	(text "Our MCU: RPi\n- Make sure the footprint for this component is designed for our exact model of RPi\n- RPi model 4B"
 		(exclude_from_sim no)
 		(at 110.49 105.664 0)
@@ -1142,7 +1153,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 44.45 62.23 0)
+		(at 25.4 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1151,7 +1162,7 @@
 		(fields_autoplaced yes)
 		(uuid "f05219c0-23ed-45bb-8f57-4edb24151f92")
 		(property "Reference" "DNP1"
-			(at 48.26 60.9599 0)
+			(at 29.21 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1160,7 +1171,7 @@
 			)
 		)
 		(property "Value" "M5"
-			(at 48.26 63.4999 0)
+			(at 29.21 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1169,7 +1180,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5"
-			(at 45.4152 66.04 0)
+			(at 26.3652 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1189,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 62.23 0)
+			(at 25.4 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1198,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 44.45 62.23 0)
+			(at 25.4 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
