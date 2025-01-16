@@ -1394,7 +1394,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "cstar-audio.kicad_sch"
+		(property "Sheetfile" "cstar-drive.kicad_sch"
 			(at 27.94 81.2296 0)
 			(effects
 				(font
