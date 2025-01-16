@@ -1373,44 +1373,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 27.94 35.56)
-		(size 44.45 45.085)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b82e2994-3828-4951-9572-d8060e0d0a41")
-		(property "Sheetname" "CSTAR-Audio"
-			(at 27.94 34.8484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "cstar-drive.kicad_sch"
-			(at 27.94 81.2296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Main_Board_Rev1"
-				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c"
-					(page "4")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
