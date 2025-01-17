@@ -2550,7 +2550,7 @@
 	(footprint "MountingHole:MountingHole_5.3mm_M5"
 		(layer "F.Cu")
 		(uuid "20d54447-84ec-4c1c-80da-ba10a6de38af")
-		(at 122.5 46.15)
+		(at 24 165.5)
 		(descr "Mounting Hole 5.3mm, no annular, M5")
 		(tags "mounting hole 5.3mm no annular m5")
 		(property "Reference" "H3"
@@ -5749,7 +5749,7 @@
 	(footprint "MountingHole:MountingHole_5.3mm_M5"
 		(layer "F.Cu")
 		(uuid "3d6e3627-ab60-43bb-a00b-aaa2aea1bc56")
-		(at 122.5 34)
+		(at 24 25)
 		(descr "Mounting Hole 5.3mm, no annular, M5")
 		(tags "mounting hole 5.3mm no annular m5")
 		(property "Reference" "H2"
@@ -13397,7 +13397,7 @@
 	(footprint "MountingHole:MountingHole_5.3mm_M5"
 		(layer "F.Cu")
 		(uuid "595515c2-b19a-47cd-98fe-f027ec72056f")
-		(at 164.15 25.35)
+		(at 164.5 25)
 		(descr "Mounting Hole 5.3mm, no annular, M5")
 		(tags "mounting hole 5.3mm no annular m5")
 		(property "Reference" "H1"
@@ -16348,7 +16348,7 @@
 	(footprint "MountingHole:MountingHole_5.3mm_M5"
 		(layer "F.Cu")
 		(uuid "7a727e45-03be-4f11-9842-25460e6a28ea")
-		(at 122.5 58.3)
+		(at 164.5 165.5)
 		(descr "Mounting Hole 5.3mm, no annular, M5")
 		(tags "mounting hole 5.3mm no annular m5")
 		(property "Reference" "H4"
