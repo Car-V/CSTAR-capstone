@@ -249,7 +249,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b19e7bd4-e20d-4d1f-8152-02a7450b59b0")
@@ -261,7 +261,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a943837e-0bf9-4ece-b50d-0e59eedc16b6")
@@ -273,7 +273,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2c53da8d-5aa5-4c62-89a0-5b5bb134e9d4")
@@ -3018,7 +3018,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ec951f51-747d-4392-878a-12af23fdfaab")
@@ -3030,7 +3030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "30cf7c88-edc8-4d91-b978-6f590062f484")
@@ -3042,7 +3042,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0bc505ad-e5c1-4db0-9aca-a738d11253ba")
@@ -3817,7 +3817,7 @@
 		(uuid "2766d66c-f55c-4653-bfe8-70bb897c16c8")
 		(at 76 23 180)
 		(property "Reference" "J11"
-			(at -4.575 -5.543 360)
+			(at -4.575 -5.543 0)
 			(layer "F.SilkS")
 			(uuid "5b5fe621-f947-425b-b9d3-2caaf853e428")
 			(effects
@@ -3828,7 +3828,7 @@
 			)
 		)
 		(property "Value" "532610771"
-			(at 1.775 4.965 360)
+			(at 1.775 4.965 0)
 			(layer "F.Fab")
 			(uuid "775b412f-dd84-413d-8ad7-8b020585fc91")
 			(effects
@@ -3839,7 +3839,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:MOLEX_connector"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c646e19c-895e-4f18-845d-c008a8ff26d2")
@@ -3851,7 +3851,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9016e76e-dd44-4b1d-bba1-f1eb9e2c11ee")
@@ -3863,7 +3863,7 @@
 			)
 		)
 		(property "Description" "\nPicoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB\n"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "59f43d6d-0861-429e-9a4f-3e9e09194980")
@@ -4451,7 +4451,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2267b80b-6f1e-4cb7-9a27-3618fa3cf18d")
@@ -4463,7 +4463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fdf3acec-2bb1-4571-ae87-d646d8e9c108")
@@ -4475,7 +4475,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4ad7197b-47ef-4ff2-840f-0649baf32581")
@@ -5062,7 +5062,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:D1_Bi-dir"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0a6693c-bff6-4ae7-9d3c-3435eda1bc56")
@@ -5074,7 +5074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "96881ba6-e976-4587-823c-86f36b74c9d9")
@@ -5086,7 +5086,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c5daf05d-1d82-41de-bf60-9bb600de1220")
@@ -5889,7 +5889,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:LED_0VS75000_WRE"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fef52ad3-f29c-4c9a-a783-6955f60aed48")
@@ -5901,7 +5901,7 @@
 			)
 		)
 		(property "Datasheet" "150080VS75000"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "58628d18-3502-4e88-b6fb-2118ef997f1b")
@@ -5913,7 +5913,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0daf63b3-86c1-4a2c-ae6c-fce0a2bc4406")
@@ -8340,7 +8340,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C8"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "4aaca87c-66d7-4607-b1a8-49201e9b2d13")
 			(effects
@@ -8351,7 +8351,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "9ef07875-d84a-40ac-af17-1b0487383f12")
 			(effects
@@ -8506,7 +8506,7 @@
 			(uuid "34f8fb1c-020a-44a6-8c75-ac37a55e43d0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "6eccf29b-fe8d-4b8c-9ee8-b02508de637c")
 			(effects
@@ -9246,7 +9246,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "733ec710-5538-4ef9-93c7-fae9d514a3a0")
@@ -9258,7 +9258,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f55eb85d-dcca-4d93-a6e8-b9c0be128ac0")
@@ -9270,7 +9270,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "65fdfd9d-4fd4-408b-84c1-d8db25ca1a52")
@@ -10804,7 +10804,7 @@
 			(uuid "5a12d708-a344-47b0-95e0-68c5f840d327")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.27 360)
+			(at 0 1.27 0)
 			(layer "F.Fab")
 			(uuid "eba2cc8d-cf32-4b52-9243-2136f0f9355e")
 			(effects
@@ -17827,7 +17827,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bcab3726-acc4-4b33-b103-e7f153301da6")
@@ -17839,7 +17839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "223d0f81-49b5-427c-924f-0c2e737c858d")
@@ -17851,7 +17851,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "761aa9c8-d82f-41c0-bcab-3350dd14a15b")
@@ -21216,7 +21216,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:LED_0VS75000_WRE"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bb3b0d8f-6b79-402d-b593-4b543a28b339")
@@ -21228,7 +21228,7 @@
 			)
 		)
 		(property "Datasheet" "150080VS75000"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e93465c7-c8bf-4634-b108-a8fcd5abcbb6")
@@ -21240,7 +21240,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f022985e-be5d-41d6-bad4-9c354f48a03e")
@@ -22489,7 +22489,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8dbd4091-4e34-41b1-b8d4-5f9edf158313")
@@ -22501,7 +22501,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ce4789e8-8964-4eef-a9f5-9304139e23ab")
@@ -22513,7 +22513,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7f2a1a80-11a0-4af3-8488-832c961ca67a")
@@ -25291,7 +25291,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "05ae10ba-f686-4be7-ab10-89e89e3fe5ca")
@@ -25303,7 +25303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ca2993c3-408d-4559-a853-b1589b0eb9e9")
@@ -25315,7 +25315,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0e92d16b-a830-42a9-b514-f0e1cc5aca8b")
@@ -26117,7 +26117,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:Diode_1N4007"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "daa2e82a-bb9d-4bc7-8020-f251132dca9d")
@@ -26129,7 +26129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5cc913e8-d64b-4a58-a610-03f13dde8dcf")
@@ -26141,7 +26141,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5ac3c2fb-897b-41b1-bbd1-806d8820bf79")
@@ -26921,7 +26921,7 @@
 			(uuid "602f4944-d6cd-4e95-9a5c-dbecefae63cb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.27 360)
+			(at 0 1.27 0)
 			(layer "F.Fab")
 			(uuid "d7bd30be-c5c7-46a4-b737-2ac3856326a3")
 			(effects
@@ -28681,6 +28681,182 @@
 		(layer "B.Cu")
 		(net 60)
 		(uuid "c49006a4-6ac0-4563-b175-a64be38eaf76")
+	)
+	(segment
+		(start 93.7 25.4)
+		(end 93.7 84.7)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 61)
+		(uuid "22800556-6a50-49b9-b131-d7a0d4fe25a5")
+	)
+	(segment
+		(start 149.4 72.6)
+		(end 149.4 84.885421)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 61)
+		(uuid "2ad9b8bb-78a7-4424-8e5b-112868a73e2e")
+	)
+	(via
+		(at 149.4 84.885421)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 61)
+		(uuid "0ed24136-a2ba-436c-ada8-2d1dfbb756a7")
+	)
+	(via
+		(at 93.7 84.7)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 61)
+		(uuid "30a1bcde-b007-4071-8748-6f04706a34c6")
+	)
+	(via
+		(at 149.5 72.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 61)
+		(uuid "746857bf-88b1-466a-9dd4-313937958cc5")
+	)
+	(via
+		(at 93.7 84.7)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 61)
+		(uuid "78564c1a-0da2-48c4-9370-6c38a3cb695d")
+	)
+	(via
+		(at 149.4 84.885421)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 61)
+		(uuid "f5c46827-f865-4a4f-90a4-64bf7ae20472")
+	)
+	(segment
+		(start 149.214579 84.7)
+		(end 93.7 84.7)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 61)
+		(uuid "a460618f-a01f-4ad2-9115-1def21ff2e3b")
+	)
+	(segment
+		(start 149.4 84.885421)
+		(end 149.214579 84.7)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 61)
+		(uuid "b3c5a5c0-71bf-4b31-9da5-37f038bf9529")
+	)
+	(segment
+		(start 149.5 72.5)
+		(end 149.4 72.6)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 61)
+		(uuid "c6a99b99-e662-4b92-8da0-ca9a11a3c388")
+	)
+	(segment
+		(start 150 75)
+		(end 150 85.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 75)
+		(uuid "0458071f-6b32-4142-95b3-8a6bbeadf78f")
+	)
+	(segment
+		(start 92.45 25.4)
+		(end 92.45 85.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 75)
+		(uuid "7705fabf-c970-46d5-90ed-7bca0db2bad4")
+	)
+	(segment
+		(start 92.45 85.45)
+		(end 92.5 85.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 75)
+		(uuid "77fc2f57-25b9-4c88-a501-750ca28992f1")
+	)
+	(via
+		(at 150 85.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 75)
+		(uuid "0fd4f019-cb09-4558-8930-bbb30f9874a1")
+	)
+	(via
+		(at 150 75)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 75)
+		(uuid "4a9deee2-f462-447c-9dac-5d0ff1e9a847")
+	)
+	(via
+		(at 92.5 85.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 75)
+		(uuid "7233e17f-b5c5-4d63-bc96-10ce49d5c6dd")
+	)
+	(via
+		(at 163 75)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 75)
+		(uuid "acdde25e-025e-4e6a-a25d-5394406d82ee")
+	)
+	(segment
+		(start 150 75)
+		(end 163 75)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 75)
+		(uuid "06db10f7-13ae-4dad-abc1-d98735d7d684")
+	)
+	(segment
+		(start 164 75)
+		(end 165.72 75)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 75)
+		(uuid "2c0b52b3-e9da-4727-b658-0d7b9296c0c7")
+	)
+	(segment
+		(start 150 85.5)
+		(end 92.5 85.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 75)
+		(uuid "521e6538-6ce3-4025-bf75-af4b4303e094")
+	)
+	(segment
+		(start 165.72 75)
+		(end 165.96 75.24)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 75)
+		(uuid "c458cdca-d5e8-4e71-82ce-6ca7a73c1933")
+	)
+	(segment
+		(start 163 75)
+		(end 164 75)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 75)
+		(uuid "edeba5f3-3924-493e-b161-969095d99d01")
 	)
 	(zone
 		(net 2)
