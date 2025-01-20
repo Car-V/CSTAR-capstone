@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RPiConnector")(type "KiCad")(uri "${KIPRJMOD}/Components/Symbols/RPiConnector.kicad_sym")(options "")(descr ""))
+)
