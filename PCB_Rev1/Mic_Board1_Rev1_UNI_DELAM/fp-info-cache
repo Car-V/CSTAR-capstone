@@ -1,4 +1,4 @@
-24163639036467096
+24167113865225733
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -56987,9 +56987,23 @@ AK5720VT
 16
 16
 Footprints
+CONN_532610001-SD_02_MOL
+
+532610271 
+0
+4
+4
+Footprints
 HeaderConnection
 
 532610771 
+0
+9
+9
+Footprints
+MOLEX_connector
+
+
 0
 9
 9
