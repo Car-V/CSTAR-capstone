@@ -895,45 +895,46 @@
 				)
 			)
 		)
-		(symbol "IRFHM9331TRPBF:IRFHM9331TRPBF"
+		(symbol "PowerFET:IRFHM9331TRPBF"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q8"
-				(at 15.24 7.62 0)
+			(property "Reference" "Q"
+				(at -8.89 3.81 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
 			(property "Value" "IRFHM9331TRPBF"
-				(at 15.24 5.08 0)
+				(at -8.89 -6.35 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "CSTAR-MainBoard-Footprints:IRFHM9331TRPBF"
+			(property "Footprint" "IRFHM9331TRPBF:TRANS_IRFHM9331TRPBF"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "IRFHM9331TRPBF"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
@@ -947,39 +948,143 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "MF" "Infineon Technologies"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "ki_keywords" "IRFHM9331TRPBF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "PG-TSDSON-8-902_INF"
+			(property "SNAPEDA_PACKAGE_ID" "61476"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "IRFHM9331TRPBF_1_1"
+			(property "Package" "PowerTDFN-8 Infineon"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "December 16, 2013"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "IRFHM9331TRPBF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\n                        \n                            IRFHM9331TRPBF P-channel MOSFET Transistor, 11 A, 30 V, 8-Pin PQFN | Infineon IRFHM9331TRPBF\n                        \n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Infineon Technologies"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "IRFHM9331TRPBF_0_0"
 				(polyline
 					(pts
-						(xy 7.62 -10.16) (xy 22.86 -10.16)
+						(xy 0 -2.54) (xy 0 2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -988,10 +1093,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -7.62) (xy 8.382 -7.62)
+						(xy 0.762 -3.175) (xy 0.762 -2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1000,10 +1105,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -5.08) (xy 8.89 -5.08)
+						(xy 0.762 -2.54) (xy 0.762 -1.905)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1012,10 +1117,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -2.54) (xy 8.89 -2.54)
+						(xy 0.762 -2.54) (xy 3.81 -2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1024,10 +1129,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 0) (xy 8.89 0)
+						(xy 0.762 -0.762) (xy 0.762 0)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1036,10 +1141,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 7.62 -10.16)
+						(xy 0.762 0) (xy 0.762 0.762)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1048,10 +1153,10 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -8.89) (xy 16.51 -8.89)
+						(xy 0.762 0) (xy 2.54 0)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1060,10 +1165,10 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 0) (xy 8.89 -8.89)
+						(xy 0.762 1.905) (xy 0.762 2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1072,10 +1177,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -7.62) (xy 9.398 -7.62)
+						(xy 0.762 2.54) (xy 0.762 3.175)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1084,10 +1189,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -3.81) (xy 10.16 -7.62)
+						(xy 2.54 0) (xy 2.54 2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1096,10 +1201,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -3.81) (xy 13.335 -3.81)
+						(xy 2.54 2.54) (xy 0.762 2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1108,10 +1213,10 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -6.35) (xy 13.335 -1.27)
+						(xy 2.54 2.54) (xy 3.81 2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1120,10 +1225,10 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -6.35) (xy 13.97 -5.08)
+						(xy 3.302 0.508) (xy 3.81 0.508)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1132,10 +1237,10 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -5.715) (xy 15.875 -5.715)
+						(xy 3.81 -2.54) (xy 3.81 0.508)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1144,10 +1249,10 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -4.445) (xy 13.97 -3.175)
+						(xy 3.81 0.508) (xy 3.81 2.54)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1156,10 +1261,10 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -2.54) (xy 13.97 -1.27)
+						(xy 3.81 0.508) (xy 4.318 0.508)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1168,250 +1273,10 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -1.905) (xy 15.875 -1.905)
+						(xy 2.54 0) (xy 1.524 0.762) (xy 1.524 -0.762) (xy 2.54 0)
 					)
 					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 -3.81) (xy 15.875 -3.81)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.875 -6.35) (xy 15.875 -3.81)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.875 -6.35) (xy 17.145 -6.35)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.875 -3.81) (xy 13.97 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.875 -1.905) (xy 15.875 -1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.875 -1.27) (xy 17.145 -1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 16.51 -8.89) (xy 16.51 -6.35)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 16.51 1.27) (xy 16.51 -1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 17.145 -6.35) (xy 17.145 -4.445)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 17.145 -3.175) (xy 17.145 -1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 17.78 -4.445) (xy 16.51 -4.445)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 21.59 -7.62) (xy 21.59 1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 21.59 1.27) (xy 16.51 1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 22.86 -10.16) (xy 22.86 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 22.86 -7.62) (xy 21.59 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 22.86 -5.08) (xy 21.59 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 22.86 -2.54) (xy 21.59 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 22.86 0) (xy 21.59 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 22.86 2.54) (xy 7.62 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 14.605 -4.445) (xy 15.875 -3.81) (xy 14.605 -3.175)
-					)
-					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1420,10 +1285,10 @@
 				)
 				(polyline
 					(pts
-						(xy 17.78 -3.175) (xy 16.51 -3.175) (xy 17.145 -4.445)
+						(xy 3.81 0.508) (xy 4.318 -0.254) (xy 3.302 -0.254) (xy 3.81 0.508)
 					)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1431,10 +1296,10 @@
 					)
 				)
 				(circle
-					(center 8.89 -5.08)
-					(radius 0.127)
+					(center 2.54 -2.54)
+					(radius 0.3592)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1442,245 +1307,66 @@
 					)
 				)
 				(circle
-					(center 8.89 -2.54)
-					(radius 0.127)
+					(center 2.54 2.54)
+					(radius 0.3592)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start 9.398 -7.62)
-					(mid 8.89 -7.1142)
-					(end 8.382 -7.62)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 15.24 -3.81)
-					(radius 3.81)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 15.875 -5.715)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 16.51 -6.35)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 16.51 -1.27)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 21.59 -5.08)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 21.59 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 21.59 0)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1"
+					(number "1_2_3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "2"
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 30.48 -7.62 180)
-					(length 7.62)
-					(name "5"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "5"
+					(number "5_6_7_8"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 30.48 -5.08 180)
-					(length 7.62)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 30.48 -2.54 180)
-					(length 7.62)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 30.48 0 180)
-					(length 7.62)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1984,9 +1670,9 @@
 		)
 		(symbol "power:+24V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2084,8 +1770,8 @@
 			(symbol "+24V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+24V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2332,22 +2018,10 @@
 		(uuid "2358564f-ffac-4ebd-8f79-c14bad12ca04")
 	)
 	(junction
-		(at 249.555 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2bddc07d-4925-4757-8480-0fbbde5cca0d")
-	)
-	(junction
 		(at 209.55 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "471d96cc-409d-4960-b246-31df01853502")
-	)
-	(junction
-		(at 249.555 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a682128b-66f3-4a38-8e13-d64ec7bd9442")
 	)
 	(junction
 		(at 204.47 52.07)
@@ -2361,27 +2035,9 @@
 		(color 0 0 0 0)
 		(uuid "aa0980ac-91af-4c16-8b9c-ab979e37aa55")
 	)
-	(junction
-		(at 219.075 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab85b109-3997-48f4-9823-5dba3b9f403e")
-	)
-	(junction
-		(at 219.075 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bdfb9fbf-3101-4fdb-bd0f-1544bfdbd42f")
-	)
-	(junction
-		(at 249.555 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb8efdff-6bbc-4418-99b9-bdddd0e7c740")
-	)
 	(wire
 		(pts
-			(xy 219.075 63.5) (xy 219.075 52.07)
+			(xy 219.71 59.69) (xy 219.71 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2401,7 +2057,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 52.07) (xy 219.075 52.07)
+			(xy 209.55 52.07) (xy 219.71 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2481,13 +2137,13 @@
 	)
 	(wire
 		(pts
-			(xy 249.555 66.04) (xy 249.555 68.58)
+			(xy 219.075 71.12) (xy 228.6 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4143b232-c010-4541-aa75-cb47d9582e7e")
+		(uuid "49143993-f6f8-48dd-a54f-9cf61e33c373")
 	)
 	(wire
 		(pts
@@ -2579,16 +2235,6 @@
 		)
 		(uuid "728d52f3-c24c-416d-a0b2-51dfc9556806")
 	)
-	(wire
-		(pts
-			(xy 219.075 68.58) (xy 219.075 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75ecdb77-1312-4d51-8636-61cea89fadcf")
-	)
 	(polyline
 		(pts
 			(xy 265.43 121.92) (xy 265.43 26.035)
@@ -2608,16 +2254,6 @@
 			(type default)
 		)
 		(uuid "7a92dad5-a187-4f8c-9d96-56467de20939")
-	)
-	(wire
-		(pts
-			(xy 219.075 66.04) (xy 219.075 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cca63ff-5f2b-4c0a-b9dc-a1b7dd097604")
 	)
 	(wire
 		(pts
@@ -2641,6 +2277,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 52.07) (xy 250.19 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92691d0b-ddc1-4fbd-92df-28320c363b10")
+	)
+	(wire
+		(pts
 			(xy 226.06 146.05) (xy 226.06 148.59)
 		)
 		(stroke
@@ -2658,16 +2304,6 @@
 			(type default)
 		)
 		(uuid "997090a3-c945-4042-94ef-45ef0222be93")
-	)
-	(wire
-		(pts
-			(xy 249.555 68.58) (xy 249.555 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d4501c5-89d6-40c1-aaa9-471e0ddde132")
 	)
 	(wire
 		(pts
@@ -2691,6 +2327,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 71.12) (xy 228.6 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac28c07e-648d-4920-842a-d089e9602074")
+	)
+	(wire
+		(pts
 			(xy 204.47 49.53) (xy 204.47 52.07)
 		)
 		(stroke
@@ -2698,6 +2344,16 @@
 			(type default)
 		)
 		(uuid "b889bc56-7e94-47a5-958e-7ce496356bd2")
+	)
+	(wire
+		(pts
+			(xy 228.6 62.23) (xy 231.14 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9b7f03e-8da4-4bf8-9bfb-a5c8b625593c")
 	)
 	(polyline
 		(pts
@@ -2741,6 +2397,26 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 73.66) (xy 250.19 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf2ec83a-eb9f-4b92-b0bc-559e4fea7f01")
+	)
+	(wire
+		(pts
+			(xy 219.71 69.85) (xy 219.075 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d961e1e7-9d90-436a-a8d4-9de91747e3cd")
+	)
+	(wire
+		(pts
 			(xy 214.63 71.12) (xy 214.63 78.74)
 		)
 		(stroke
@@ -2771,23 +2447,23 @@
 	)
 	(wire
 		(pts
-			(xy 249.555 63.5) (xy 249.555 66.04)
+			(xy 219.71 59.69) (xy 236.22 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ee8705ec-9fb7-40ff-95f9-02caa2640185")
+		(uuid "f335b5e9-efcf-40e7-8d9a-593228fc9c0a")
 	)
 	(wire
 		(pts
-			(xy 249.555 53.975) (xy 249.555 63.5)
+			(xy 236.22 69.85) (xy 236.22 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f31e54c2-7f18-4153-b9d4-66f175889165")
+		(uuid "fe914ef8-30a2-4d0d-80db-625ded41024d")
 	)
 	(rectangle
 		(start 212.09 135.89)
@@ -3231,6 +2907,210 @@
 		)
 	)
 	(symbol
+		(lib_id "PowerFET:IRFHM9331TRPBF")
+		(at 233.68 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fe419d7-8b00-4acd-8d65-c2d03ca027c4")
+		(property "Reference" "Q5"
+			(at 238.76 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRFHM9331TRPBF"
+			(at 238.76 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:TRANS_IRFHM9331TRPBF"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Infineon Technologies"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" "61476"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "PowerTDFN-8 Infineon"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=eda"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "December 16, 2013"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=snap"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "IRFHM9331TRPBF"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            IRFHM9331TRPBF P-channel MOSFET Transistor, 11 A, 30 V, 8-Pin PQFN | Infineon IRFHM9331TRPBF\n                        \n"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Infineon Technologies"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1mm"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1_2_3"
+			(uuid "74809e03-8f84-43ce-bcef-bb1607ff06dc")
+		)
+		(pin "4"
+			(uuid "4488b407-e706-4ea2-846a-49abe35120e6")
+		)
+		(pin "5_6_7_8"
+			(uuid "1a057d44-34d7-4b69-b82e-87b10ac2aa3e")
+		)
+		(instances
+			(project ""
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/9a9c2aab-15db-457a-a1a3-5bc6a825b752"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 208.915 95.25 0)
 		(unit 1)
@@ -3427,94 +3307,6 @@
 			(project "Main_Board_Rev1"
 				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/9a9c2aab-15db-457a-a1a3-5bc6a825b752"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "IRFHM9331TRPBF:IRFHM9331TRPBF")
-		(at 219.075 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ba73c01-36a7-42e2-a5b0-0c9688e3dc1e")
-		(property "Reference" "Q4"
-			(at 234.315 55.88 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "IRFHM9331TRPBF"
-			(at 234.315 58.42 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Footprints:NEW_power_FET"
-			(at 219.075 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "IRFHM9331TRPBF"
-			(at 219.075 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.075 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ee1cc5a0-f893-42c9-a5a7-ea209c4e864b")
-		)
-		(pin "2"
-			(uuid "65eaf937-b891-4eba-b8f1-640846e1e1a0")
-		)
-		(pin "3"
-			(uuid "4a55bf4f-0811-469e-86ce-a4668fecd6a7")
-		)
-		(pin "4"
-			(uuid "f43038f2-3bf8-49e1-8cd5-edda812a076c")
-		)
-		(pin "5"
-			(uuid "c3a09cf9-7599-4d93-a43c-78fde3db1f1b")
-		)
-		(pin "6"
-			(uuid "31ada39d-687c-47a8-904c-3283d086ca51")
-		)
-		(pin "7"
-			(uuid "2b87de6e-b7f1-4c90-ae40-6af22a5ded5b")
-		)
-		(pin "8"
-			(uuid "e8fa96f6-e6b9-48a2-bac8-1efddc94d846")
-		)
-		(instances
-			(project "Main_Board_Rev1"
-				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/9a9c2aab-15db-457a-a1a3-5bc6a825b752"
-					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -3743,6 +3535,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+24V")
+		(at 250.19 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "638b0b36-df61-4a7c-9b1e-564963690883")
+		(property "Reference" "#PWR07"
+			(at 250.19 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 250.19 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 250.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6b4d49a-54a8-45b1-8831-114ab74e98b8")
+		)
+		(instances
+			(project ""
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/9a9c2aab-15db-457a-a1a3-5bc6a825b752"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 92.71 90.805 0)
 		(unit 1)
@@ -3873,72 +3731,6 @@
 			(project "Main_Board_Rev1"
 				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/9a9c2aab-15db-457a-a1a3-5bc6a825b752"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 249.555 53.975 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e604136-861a-4850-8539-49e6ce14955a")
-		(property "Reference" "#PWR07"
-			(at 249.555 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 249.555 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 249.555 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 249.555 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 249.555 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82c14a2c-777c-49c9-9eb3-f1bfcd78d45b")
-		)
-		(instances
-			(project "Main_Board_Rev1"
-				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/9a9c2aab-15db-457a-a1a3-5bc6a825b752"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
