@@ -2779,6 +2779,7 @@
 			(drill 5.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 2 "GND")
 			(uuid "c64fab5b-f431-49dd-a9a7-7f1c458d253d")
 		)
 	)
@@ -5990,6 +5991,7 @@
 			(drill 5.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 2 "GND")
 			(uuid "48cf349a-45e7-45c9-be03-ec49050b6427")
 		)
 	)
@@ -13640,6 +13642,7 @@
 			(drill 5.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 2 "GND")
 			(uuid "2ad0e5c3-d21f-4e8b-a64c-998b2f32f1b2")
 		)
 	)
@@ -16592,6 +16595,7 @@
 			(drill 5.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net 2 "GND")
 			(uuid "53772a6a-ea87-4a0a-a518-fd76cf983af3")
 		)
 	)
@@ -22956,7 +22960,7 @@
 		(uuid "c3887a6e-67b6-4677-90ec-c9add543e960")
 		(at 57 136)
 		(property "Reference" "Q5"
-			(at 0.257 -2.30431 360)
+			(at 0.257 -2.30431 0)
 			(layer "F.SilkS")
 			(uuid "20944d58-50db-482a-bbef-33cb198bd1cd")
 			(effects
@@ -22967,7 +22971,7 @@
 			)
 		)
 		(property "Value" "IRFHM9331TRPBF"
-			(at 6.353 2.28849 360)
+			(at 6.353 2.28849 0)
 			(layer "F.Fab")
 			(uuid "594f85e0-66cb-4993-b595-27fdbae6171f")
 			(effects
@@ -22978,7 +22982,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:TRANS_IRFHM9331TRPBF"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3b9d4acd-9404-47f7-95c4-3a4852bb57bc")
@@ -22990,7 +22994,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c0d1f7a5-cfa1-4bbb-a230-bf95a2b1be0e")
@@ -23002,7 +23006,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f2d01e22-1489-4b4b-8633-bd2a591e9073")
