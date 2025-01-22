@@ -68,7 +68,7 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 2"
-				(type "core")
+				(type "prepreg")
 				(thickness 1.24)
 				(material "FR4")
 				(epsilon_r 4.5)
@@ -19540,7 +19540,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C13"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "3075a001-81f7-46cb-a8ef-6e3d499bfa14")
 			(effects
@@ -19551,7 +19551,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "c98bdf3b-a503-48a8-b109-40cf0f7203b6")
 			(effects
@@ -19706,7 +19706,7 @@
 			(uuid "ea61160a-d407-43cb-bc9b-81498194afa8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "72217c9d-3054-4345-ada7-9d3ab30d4dbb")
 			(effects
@@ -20980,7 +20980,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C14"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "e16ee043-c5fe-4dac-8b0f-6330703f831b")
 			(effects
@@ -20991,7 +20991,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "91b4545f-6882-4e47-8a5f-4a0593cd005b")
 			(effects
@@ -21146,7 +21146,7 @@
 			(uuid "bf87243a-4803-49c5-ae18-1cea4998fdc5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4a737a5e-0424-45e8-9bff-4b295fe358dd")
 			(effects
