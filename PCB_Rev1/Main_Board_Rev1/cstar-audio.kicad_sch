@@ -1557,7 +1557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nPicoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB\n"
+		(property "Description" "Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB"
 			(at 210.82 105.41 0)
 			(effects
 				(font
@@ -1826,7 +1826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nPicoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB\n"
+		(property "Description" "Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB"
 			(at 91.44 105.41 0)
 			(effects
 				(font

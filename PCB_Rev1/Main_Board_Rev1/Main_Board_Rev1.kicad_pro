@@ -479,8 +479,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "./",
-      "plot": "",
-      "pos_files": "",
+      "plot": "../../../MainBoard_gerber/",
+      "pos_files": "../../../MainBoard_pickandplace/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -490,7 +490,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "..\\..\\..\\Main_Board_Rev1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -521,7 +521,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -533,7 +533,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,

@@ -8005,7 +8005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nSocket, DC supply, male, PIN: 2\n"
+		(property "Description" "Socket, DC supply, male, PIN: 2"
 			(at 364.49 332.74 0)
 			(effects
 				(font
@@ -9678,7 +9678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nConverter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7\n"
+		(property "Description" "Converter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7"
 			(at 127 222.25 0)
 			(effects
 				(font

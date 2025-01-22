@@ -1,4 +1,4 @@
-24229266189702862
+24231003769374514
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57049,6 +57049,13 @@ FET_4.0
 0
 3
 3
+Footprints
+GCT_USB4125-GF-A_REVA2
+
+
+0
+10
+10
 Footprints
 HeaderConnection
 
