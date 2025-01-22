@@ -1,4 +1,4 @@
-24227528612672727
+24229266189702862
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57133,6 +57133,13 @@ PRT-14017
 0
 40
 40
+Footprints
+TRANS_IRFHM9331TRPBF
+
+
+0
+3
+3
 Footprints
 TVSDiode
 
