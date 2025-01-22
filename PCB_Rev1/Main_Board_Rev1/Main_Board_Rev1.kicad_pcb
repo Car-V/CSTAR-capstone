@@ -28775,6 +28775,14 @@
 		(uuid "08e24efc-037f-45aa-926b-0f9b0b911eba")
 	)
 	(segment
+		(start 42.5 140.81375)
+		(end 42.5 139.18625)
+		(width 0.508)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "0c9f3201-4ac3-4e01-905e-20ad84672b8d")
+	)
+	(segment
 		(start 35.8055 136.17122)
 		(end 37.77 138.13572)
 		(width 0.2)
@@ -29743,7 +29751,7 @@
 		(uuid "968913bc-9d4d-4318-9af3-54eb6d6ce294")
 	)
 	(via
-		(at 43 138.5)
+		(at 42.5 139.18625)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -36221,6 +36229,36 @@
 		(layer "B.Cu")
 		(net 76)
 		(uuid "b1f3697e-ad19-4967-b076-0972c55b2fd6")
+	)
+	(zone
+		(net 2)
+		(net_name "GND")
+		(layer "F.Cu")
+		(uuid "43521586-4688-4e4a-9832-2d78b1c9b424")
+		(hatch full 0.5)
+		(priority 1)
+		(connect_pads yes
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 42 140) (xy 42.5 140) (xy 43 141) (xy 41.5 141)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 42.910273 140.820546) (xy 42.922648 140.889311) (xy 42.89588 140.95385) (xy 42.83847 140.993672)
+				(xy 42.799364 141) (xy 41.700636 141) (xy 41.633597 140.980315) (xy 41.587842 140.927511) (xy 41.577898 140.858353)
+				(xy 41.589726 140.820547) (xy 42 140) (xy 42 140.5) (xy 42.5 140)
+			)
+		)
 	)
 	(zone
 		(net 2)
