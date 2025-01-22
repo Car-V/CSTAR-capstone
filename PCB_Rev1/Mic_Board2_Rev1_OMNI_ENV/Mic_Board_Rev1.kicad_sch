@@ -2474,6 +2474,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 96.52) (xy 236.22 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f90d5d0-3d81-43bd-9327-5f6765706954")
+	)
+	(wire
+		(pts
 			(xy 151.13 92.71) (xy 162.56 92.71)
 		)
 		(stroke
@@ -2611,6 +2621,16 @@
 			(type default)
 		)
 		(uuid "2f55ba2f-b11d-4d42-a000-bed06bd28051")
+	)
+	(wire
+		(pts
+			(xy 236.22 91.44) (xy 236.22 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fdc5fc0-bcdd-4a46-8ffb-307fd91b8865")
 	)
 	(wire
 		(pts
@@ -2861,6 +2881,16 @@
 			(type default)
 		)
 		(uuid "70c5a493-d1c5-4848-a601-e6b777f89a95")
+	)
+	(wire
+		(pts
+			(xy 236.22 93.98) (xy 236.22 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7344ace2-5af4-4fb9-a364-0afa8b339f3b")
 	)
 	(wire
 		(pts
@@ -3432,7 +3462,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cstar_mic_footprints:MIC_CMA-4544PF-W"
+		(property "Footprint" "Footprints:Omnidirectional"
 			(at 34.29 92.71 0)
 			(effects
 				(font
@@ -3824,7 +3854,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b41a1d3-19dc-4974-9d54-70dccb3a1b3c")
-		(property "Reference" "J??"
+		(property "Reference" "J2"
 			(at 270.51 110.49 0)
 			(effects
 				(font
@@ -3842,7 +3872,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cstar_mic_footprints:MOLEX_532610771"
+		(property "Footprint" "Footprints:HeaderConnection"
 			(at 261.62 110.49 0)
 			(effects
 				(font
@@ -4011,7 +4041,7 @@
 		(instances
 			(project "Mic_Board_Rev1"
 				(path "/7002bcc8-d574-4d7e-a21f-bd05f0fc5ee4"
-					(reference "J??")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4918,7 +4948,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cstar_mic_footprints:SOT23-DBV5_TEX-L"
+		(property "Footprint" "Footprints:Op-Amp"
 			(at 143.51 95.25 0)
 			(effects
 				(font
@@ -5738,7 +5768,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cstar_mic_footprints:SOIC_AK5720_AKM-L"
+		(property "Footprint" "Footprints:ADC"
 			(at 185.42 90.17 0)
 			(effects
 				(font
@@ -5826,7 +5856,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 241.3 95.25 180)
+		(at 241.3 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5834,27 +5864,25 @@
 		(dnp no)
 		(uuid "cd043622-d68e-4eae-adda-6b437645d850")
 		(property "Reference" "J1"
-			(at 254 93.98 0)
+			(at 254 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "Conn_01x03_Pin"
-			(at 254 96.52 0)
+			(at 254 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 241.3 95.25 0)
+			(at 241.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5863,7 +5891,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 95.25 0)
+			(at 241.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,7 +5900,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 241.3 95.25 0)
+			(at 241.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)

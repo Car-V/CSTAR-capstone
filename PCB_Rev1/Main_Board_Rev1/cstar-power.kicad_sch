@@ -3638,6 +3638,126 @@
 				)
 			)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_names
@@ -4783,6 +4903,16 @@
 	)
 	(wire
 		(pts
+			(xy 412.75 157.48) (xy 412.75 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "377a512a-7588-44ba-bd0e-4fd6aca7201f")
+	)
+	(wire
+		(pts
 			(xy 157.48 135.89) (xy 160.02 135.89)
 		)
 		(stroke
@@ -5020,6 +5150,16 @@
 			(type default)
 		)
 		(uuid "57ae2c3d-a99b-48e6-a3fe-b7922eb8aef0")
+	)
+	(wire
+		(pts
+			(xy 419.1 157.48) (xy 419.1 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5813edf2-709e-4138-ad07-fb4b29b75774")
 	)
 	(wire
 		(pts
@@ -5393,6 +5533,16 @@
 	)
 	(wire
 		(pts
+			(xy 425.45 157.48) (xy 425.45 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "885be3bc-3a7f-48c1-8684-baa37fe6d49c")
+	)
+	(wire
+		(pts
 			(xy 229.87 106.68) (xy 229.87 102.87)
 		)
 		(stroke
@@ -5613,6 +5763,16 @@
 	)
 	(wire
 		(pts
+			(xy 439.42 157.48) (xy 439.42 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8310384-1fc8-4a81-9510-38e5859e3585")
+	)
+	(wire
+		(pts
 			(xy 76.835 307.34) (xy 80.645 307.34)
 		)
 		(stroke
@@ -5750,6 +5910,16 @@
 			(type default)
 		)
 		(uuid "b524907e-b4b3-4a26-b836-42c8c84d035f")
+	)
+	(wire
+		(pts
+			(xy 431.8 157.48) (xy 431.8 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b79188ce-a9b5-4f74-836a-08b8d5056f77")
 	)
 	(wire
 		(pts
@@ -6344,7 +6514,7 @@
 		(uuid 861d51af-5cc4-438f-9213-55757160839c)
 	)
 	(rectangle
-		(start 45.72 292.1)
+		(start 45.72 290.83)
 		(end 196.85 341.63)
 		(stroke
 			(width 1)
@@ -6366,6 +6536,18 @@
 			(type none)
 		)
 		(uuid b2d0e2ee-4cb7-43ac-b8b7-90abfe3d4374)
+	)
+	(rectangle
+		(start 405.13 138.43)
+		(end 450.85 179.07)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid bec8b511-4fca-439a-896b-4e70281e435b)
 	)
 	(rectangle
 		(start 43.18 57.15)
@@ -6391,6 +6573,19 @@
 		)
 		(uuid fd18f4d8-1597-44b9-9ecf-d541d5727f5a)
 	)
+	(text "Power Nets"
+		(exclude_from_sim no)
+		(at 405.13 134.366 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2fe8570d-763f-42a7-81f0-e549a53900e5")
+	)
 	(text "Green LED\n"
 		(exclude_from_sim no)
 		(at 46.355 235.585 0)
@@ -6404,7 +6599,7 @@
 	)
 	(text "LDO: 5V to 3.3V, 1A\n\n"
 		(exclude_from_sim no)
-		(at 45.085 294.64 0)
+		(at 45.466 293.116 0)
 		(effects
 			(font
 				(size 3 3)
@@ -6523,6 +6718,28 @@
 		)
 		(uuid "e9597c32-798a-4462-af87-78f0279f43d4")
 	)
+	(global_label "3V3EXT"
+		(shape input)
+		(at 431.8 160.02 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "47f99942-aa23-43e5-b672-15adc4830dd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 431.8 169.8389 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BATT_IN"
 		(shape input)
 		(at 353.06 322.58 180)
@@ -6536,6 +6753,94 @@
 		(uuid "5d07c74f-7051-4bb3-99d0-276574c3de4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 342.8781 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "24VEXT"
+		(shape input)
+		(at 412.75 160.02 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c43d531f-0797-4a4f-8267-63c7c8ccc6b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 412.75 169.8389 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 439.42 160.02 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d9d86312-a1f8-4ccd-babc-6616c8e9b6eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 439.42 166.8757 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5VEXT"
+		(shape input)
+		(at 425.45 160.02 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e2615ad8-2b4b-4e54-b96a-b9b6774c93ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 425.45 168.6294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12VEXT"
+		(shape input)
+		(at 419.1 160.02 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fc7a7cbc-b357-4dc0-83a1-0b84a9de90d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 419.1 169.8389 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6629,7 +6934,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "47uF"
 			(at 233.68 113.665 0)
 			(effects
 				(font
@@ -6691,7 +6996,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a2d8e54-1e23-4a47-9ef7-39534c634151")
 		(property "Reference" "C3"
-			(at 111.76 106.68 0)
+			(at 111.76 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6699,8 +7004,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1n"
-			(at 111.76 109.22 0)
+		(property "Value" "1nF"
+			(at 111.76 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6980,7 +7285,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:AMASS_XT60PW-M"
+		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
 			(at 363.22 336.55 0)
 			(effects
 				(font
@@ -7145,7 +7450,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f1c9d58-a799-47df-a8aa-e79bcb442c0d")
 		(property "Reference" "C8"
-			(at 100.965 312.42 0)
+			(at 100.33 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7153,8 +7458,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 100.965 314.96 0)
+		(property "Value" "10uF"
+			(at 100.33 314.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7268,6 +7573,72 @@
 			(project "Main_Board_Rev1"
 				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/87cbe485-412b-450f-a6d2-0d74a6238e69"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 431.8 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13ddeb48-d1f3-41c4-9b55-4141fd1fcd0c")
+		(property "Reference" "#PWR042"
+			(at 431.8 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 431.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 431.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 431.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 431.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51f31c06-752f-4b6f-b609-85db5ceb5d2a")
+		)
+		(instances
+			(project "Main_Board_Rev1"
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/87cbe485-412b-450f-a6d2-0d74a6238e69"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7643,7 +8014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:LED_0VS75000_WRE"
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 170.18 316.23 0)
 			(effects
 				(font
@@ -7713,7 +8084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:L1_2.2uH"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 201.93 92.71 0)
 			(effects
 				(font
@@ -8050,7 +8421,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:L2_6.8uH"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 156.21 217.17 0)
 			(effects
 				(font
@@ -8308,7 +8679,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47p"
+		(property "Value" "47pF"
 			(at 157.48 223.52 0)
 			(effects
 				(font
@@ -8452,7 +8823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:IC9_AP63356QZV-7_DIO"
+		(property "Footprint" "Footprints:Buck_2"
 			(at 127 222.25 0)
 			(effects
 				(font
@@ -8861,7 +9232,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ced3cb3-b19a-44c9-8751-30451d98c230")
 		(property "Reference" "C9"
-			(at 159.385 312.42 0)
+			(at 158.75 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8869,8 +9240,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
-			(at 159.385 314.96 0)
+		(property "Value" "22uF"
+			(at 158.75 314.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9013,7 +9384,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:LED_0VS75000_WRE"
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 58.42 316.865 0)
 			(effects
 				(font
@@ -9058,6 +9429,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 425.45 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f1cc87f-63bd-4d0c-9ee2-507b778300ef")
+		(property "Reference" "#PWR040"
+			(at 425.45 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 425.45 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 425.45 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 425.45 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 425.45 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c79a5b7e-0010-406d-a193-564fa036eda3")
+		)
+		(instances
+			(project "Main_Board_Rev1"
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/87cbe485-412b-450f-a6d2-0d74a6238e69"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 98.425 219.71 0)
 		(unit 1)
@@ -9068,7 +9505,7 @@
 		(fields_autoplaced yes)
 		(uuid "61dedced-f454-47ae-9eb6-c179be804215")
 		(property "Reference" "C10"
-			(at 102.235 218.44 0)
+			(at 101.6 218.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9076,8 +9513,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 102.235 220.98 0)
+		(property "Value" "10uF"
+			(at 101.6 220.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9413,7 +9850,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "22uF"
 			(at 186.69 228.6 0)
 			(effects
 				(font
@@ -9744,6 +10181,138 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 412.75 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98cfc71d-cbab-49f9-ab69-43ef29881171")
+		(property "Reference" "#PWR044"
+			(at 412.75 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 412.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 412.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 412.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 412.75 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a51088d4-55c0-4667-93c3-7b6920f9cbbb")
+		)
+		(instances
+			(project "Main_Board_Rev1"
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/87cbe485-412b-450f-a6d2-0d74a6238e69"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 439.42 157.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99249e4a-9b87-4c8d-b9b5-f759c1951570")
+		(property "Reference" "#PWR041"
+			(at 439.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 439.42 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 439.42 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 439.42 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 439.42 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95543b7f-def7-4151-a08f-7c4db882fb3b")
+		)
+		(instances
+			(project "Main_Board_Rev1"
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/87cbe485-412b-450f-a6d2-0d74a6238e69"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 57.15 307.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9962,7 +10531,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "22uF"
 			(at 198.12 228.6 0)
 			(effects
 				(font
@@ -10443,7 +11012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:LED_0VS75000_WRE"
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 91.44 80.01 0)
 			(effects
 				(font
@@ -10632,7 +11201,7 @@
 		(dnp no)
 		(uuid "be94f812-0b7e-45a8-ba01-bb94ca278c8a")
 		(property "Reference" "J6"
-			(at 64.135 311.15 90)
+			(at 72.39 299.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10641,7 +11210,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 64.135 313.69 90)
+			(at 69.596 309.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11158,6 +11727,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 419.1 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6bfe6c9-fae9-4440-8468-95191683fbb3")
+		(property "Reference" "#PWR043"
+			(at 419.1 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 419.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 419.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 419.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 419.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1767564a-111c-44d0-a5b2-bf4be20d5e78")
+		)
+		(instances
+			(project "Main_Board_Rev1"
+				(path "/8f5a23de-a1fa-4202-92fb-c2ac3de0338c/87cbe485-412b-450f-a6d2-0d74a6238e69"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 101.6 97.79 0)
 		(unit 1)
@@ -11175,7 +11810,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 105.41 99.06 0)
 			(effects
 				(font
@@ -11253,7 +11888,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:SMCJSeries_LTF"
+		(property "Footprint" "Footprints:D1_Bi-dir"
 			(at 80.01 77.47 0)
 			(effects
 				(font
@@ -11614,7 +12249,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecd71977-4eb7-4c00-9e8f-34d474b7290c")
 		(property "Reference" "C5"
-			(at 203.2 105.41 0)
+			(at 203.2 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11622,8 +12257,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7p"
-			(at 203.2 107.95 0)
+		(property "Value" "4.7pF"
+			(at 203.2 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11684,7 +12319,7 @@
 		(fields_autoplaced yes)
 		(uuid "edf4a4db-4b2f-4c21-a218-0cf20a3bcb9a")
 		(property "Reference" "C6"
-			(at 223.52 109.22 0)
+			(at 223.52 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11692,8 +12327,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
-			(at 223.52 111.76 0)
+		(property "Value" "47uF"
+			(at 223.52 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11770,7 +12405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:LED_0VS75000_WRE"
+		(property "Footprint" "Footprints:LED_0VS75000_WRE"
 			(at 59.69 225.425 0)
 			(effects
 				(font
@@ -11840,7 +12475,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CSTAR-MainBoard-Footprints:Buck-05-08-1604_ADI"
+		(property "Footprint" "Footprints:Buck_1"
 			(at 186.69 164.77 0)
 			(effects
 				(font
