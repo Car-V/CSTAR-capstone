@@ -3458,7 +3458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:NEW_power_FET"
+		(property "Footprint" "Footprints:POWER_FET_3.0"
 			(at 219.075 63.5 0)
 			(effects
 				(font
