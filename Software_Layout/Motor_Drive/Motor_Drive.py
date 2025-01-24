@@ -3,25 +3,25 @@ class Motor_Drive:
     def __init__(self):
         self.motorL = Motor(24, 23, 25)
         self.motorR = Motor(5, 6, 4)
-        self.idle()
+        self.bot_idle()
 
-    def idle(self):
+    def bot_idle(self):
         self.motorL.idle()
         self.motorR.idle()
     
-    def forward(self):
+    def bot_forward(self):
         self.motorL.forward()
         self.motorR.forward()
 
-    def backward(self):
+    def bot_backward(self):
         self.motorL.backward()
         self.motorR.backward()
 
-    def clockwise(self):
+    def bot_clockwise(self):
         self.motorL.forward()
         self.motorR.backward()
 
-    def counter_clockwise(self):
+    def bot_counter_clockwise(self):
         self.motorL.backward()
         self.motorR.forward()
 

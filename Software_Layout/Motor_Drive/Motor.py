@@ -5,7 +5,7 @@ class Motor:
     def __init__(self, pin1_num: int, pin2_num: int, en_num: int, pin_a: int, pin_b: int):
         self.pin1 = pin1_num
         self.pin2 = pin2_num
-        self.enable =  en_num
+        self.enable = en_num
         self.PWMhz = 1000
         self.duty_cycle = 25
         self.encoder = Encoder(pin_a, pin_b)
