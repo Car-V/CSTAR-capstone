@@ -1,8 +1,8 @@
 from Motor import Motor
 class Motor_Drive:
     def __init__(self):
-        self.motorL = Motor(24, 23, 25)
-        self.motorR = Motor(5, 6, 4)
+        self.motorL = Motor(25, 11, 13, 6, 7) # motor 2, in1 in2 enb ch1 ch2
+        self.motorR = Motor(10, 9, 12, 5, 8) # motor 1, in1 in2 enb ch1 ch2
         self.bot_idle()
 
     def bot_idle(self):
