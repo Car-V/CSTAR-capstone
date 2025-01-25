@@ -1251,6 +1251,166 @@
 				)
 			)
 		)
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
 			(pin_names
@@ -2229,7 +2389,11 @@
 		(uuid "fc28b17d-14f3-41c5-a156-2d82a8561eb3")
 	)
 	(no_connect
-		(at 247.65 101.6)
+		(at 260.35 82.55)
+		(uuid "8f4e37ca-9561-41de-a923-0ee813f10bb3")
+	)
+	(no_connect
+		(at 252.73 101.6)
 		(uuid "b60291bd-c64c-468d-80db-bbfca3083bd1")
 	)
 	(wire
@@ -2311,6 +2475,16 @@
 			(type default)
 		)
 		(uuid "1743cb43-7a0f-4072-863e-1d54c8d5a091")
+	)
+	(wire
+		(pts
+			(xy 247.65 85.09) (xy 260.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d1d8b0e-92d5-48b3-b538-542650e00646")
 	)
 	(wire
 		(pts
@@ -2564,7 +2738,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 106.68) (xy 247.65 106.68)
+			(xy 236.22 106.68) (xy 252.73 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2694,6 +2868,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 101.6) (xy 247.65 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c68cec-7f53-44cd-81e6-fc080234f30b")
+	)
+	(wire
+		(pts
 			(xy 40.64 86.36) (xy 44.45 86.36)
 		)
 		(stroke
@@ -2774,7 +2958,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 93.98) (xy 234.95 93.98)
+			(xy 252.73 93.98) (xy 234.95 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2894,7 +3078,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 109.22) (xy 247.65 109.22)
+			(xy 236.22 109.22) (xy 252.73 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2904,7 +3088,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 104.14) (xy 247.65 104.14)
+			(xy 242.57 104.14) (xy 252.73 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2944,7 +3128,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 114.3) (xy 242.57 114.3)
+			(xy 252.73 114.3) (xy 242.57 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2984,7 +3168,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 116.84) (xy 247.65 116.84)
+			(xy 242.57 116.84) (xy 252.73 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3104,7 +3288,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 99.06) (xy 234.95 99.06)
+			(xy 252.73 99.06) (xy 234.95 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3184,6 +3368,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 101.6) (xy 247.65 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe05755b-753d-4338-8826-14ea7e74b67a")
+	)
+	(wire
+		(pts
 			(xy 40.64 83.82) (xy 67.31 83.82)
 		)
 		(stroke
@@ -3194,7 +3388,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 96.52) (xy 234.95 96.52)
+			(xy 252.73 96.52) (xy 234.95 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3356,8 +3550,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 265.43 85.09 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ec5934c-1579-4ebe-a27a-1fda7a84fd84")
+		(property "Reference" "J1"
+			(at 266.7 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 266.7 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 265.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 265.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e1901b4d-e03a-4688-a44e-d27552288f30")
+		)
+		(pin "1"
+			(uuid "108866e5-3620-4eac-a406-8ac4f3337086")
+		)
+		(instances
+			(project ""
+				(path "/1178ae07-c232-447f-a548-6d4f89d4abce"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "532610771:532610771")
-		(at 260.35 104.14 0)
+		(at 265.43 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3365,7 +3629,7 @@
 		(dnp no)
 		(uuid "0f1a77f1-8207-4a39-8bec-66852a780970")
 		(property "Reference" "J2"
-			(at 269.24 104.14 0)
+			(at 274.32 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3374,7 +3638,7 @@
 			)
 		)
 		(property "Value" "532610771"
-			(at 269.24 106.68 0)
+			(at 274.32 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3383,7 +3647,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:MOLEX_connector"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3393,7 +3657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3402,7 +3666,7 @@
 			)
 		)
 		(property "Description" "\nPicoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB\n"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3412,7 +3676,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "WM7625TR-ND"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3422,7 +3686,7 @@
 			)
 		)
 		(property "MF" "Molex"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3432,7 +3696,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "3.4 mm"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3442,7 +3706,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3452,7 +3716,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3462,7 +3726,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3736,7 @@
 			)
 		)
 		(property "PARTREV" "J"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3482,7 +3746,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3492,7 +3756,7 @@
 			)
 		)
 		(property "MP" "0532610771"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,7 +3766,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&manufacturer=Molex&part_name=0532610771&search_term=None"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3512,7 +3776,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Molex"
-			(at 260.35 104.14 0)
+			(at 265.43 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
