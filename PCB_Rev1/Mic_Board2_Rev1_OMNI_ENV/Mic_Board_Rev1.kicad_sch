@@ -1251,6 +1251,203 @@
 				)
 			)
 		)
+		(symbol "B2P-VH:B2P-VH"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X"
+				(at -1.27 3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "B2P-VH"
+				(at -1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "\n2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)\n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MF" "JST Sales America Inc."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "B2P-VH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "B2P-VH_0_0"
+				(rectangle
+					(start -1.27 -5.08)
+					(end 3.81 2.54)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.6096)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.6096)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "CMA-4544PF-W:CMA-4544PF-W"
 			(pin_names
 				(offset 1.016)
@@ -1493,207 +1690,6 @@
 						(effects
 							(font
 								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Connector:Conn_01x03_Pin"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x03_Pin"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x03, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x03_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2071,6 +2067,102 @@
 				)
 			)
 		)
+		(symbol "GND_1"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_names
@@ -2409,8 +2501,8 @@
 		(uuid "fcc5a4a2-10b8-42a6-a268-b75a9305b4c6")
 	)
 	(no_connect
-		(at 248.92 115.57)
-		(uuid "14ac5087-9230-4220-b7c1-7a353b6c00d5")
+		(at 255.27 71.12)
+		(uuid "1a80db5d-b434-4cab-9700-1561cc5651fa")
 	)
 	(wire
 		(pts
@@ -2474,16 +2566,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 96.52) (xy 236.22 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f90d5d0-3d81-43bd-9327-5f6765706954")
-	)
-	(wire
-		(pts
 			(xy 151.13 92.71) (xy 162.56 92.71)
 		)
 		(stroke
@@ -2501,6 +2583,16 @@
 			(type default)
 		)
 		(uuid "14b580be-8864-4a5e-a82d-ecadb15392d2")
+	)
+	(wire
+		(pts
+			(xy 251.46 97.79) (xy 251.46 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1564f9b3-e9c8-4400-93e6-dcebbc41e311")
 	)
 	(wire
 		(pts
@@ -2524,16 +2616,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 113.03) (xy 248.92 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19ac266b-ebd8-4623-a32a-83db26dfebe7")
-	)
-	(wire
-		(pts
 			(xy 82.55 90.17) (xy 82.55 93.98)
 		)
 		(stroke
@@ -2541,6 +2623,16 @@
 			(type default)
 		)
 		(uuid "1dcb5b57-7413-4a42-8c7a-017e1f74f20a")
+	)
+	(wire
+		(pts
+			(xy 236.22 97.79) (xy 251.46 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e926f89-97db-4251-841c-c1c1f2c33b9c")
 	)
 	(wire
 		(pts
@@ -2571,6 +2663,16 @@
 			(type default)
 		)
 		(uuid "21deed75-3bbc-4d01-bd61-eda57ce74e37")
+	)
+	(wire
+		(pts
+			(xy 248.92 95.25) (xy 248.92 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22be924e-6070-4611-a221-1ececa02ada9")
 	)
 	(wire
 		(pts
@@ -2624,16 +2726,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 91.44) (xy 236.22 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fdc5fc0-bcdd-4a46-8ffb-307fd91b8865")
-	)
-	(wire
-		(pts
 			(xy 248.92 120.65) (xy 243.84 120.65)
 		)
 		(stroke
@@ -2664,7 +2756,17 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 113.03) (xy 240.03 113.03)
+			(xy 236.22 95.25) (xy 248.92 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eff8997-13be-44be-8282-ba04fbb71b84")
+	)
+	(wire
+		(pts
+			(xy 237.49 113.03) (xy 248.92 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2681,6 +2783,16 @@
 			(type default)
 		)
 		(uuid "42f8ff78-06af-4a58-9c6e-e39668ea4bf3")
+	)
+	(wire
+		(pts
+			(xy 251.46 82.55) (xy 262.89 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44355792-610c-4270-b7dc-9cc1a005c5ef")
 	)
 	(wire
 		(pts
@@ -2701,16 +2813,6 @@
 			(type default)
 		)
 		(uuid "47bc03d7-0b00-4763-9561-44d96ea9c590")
-	)
-	(wire
-		(pts
-			(xy 240.03 110.49) (xy 248.92 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49bd27be-fd51-4375-9f08-0fefb3bee16a")
 	)
 	(wire
 		(pts
@@ -2741,6 +2843,16 @@
 			(type default)
 		)
 		(uuid "52ae5564-9734-4fe8-930e-f0444178bb6b")
+	)
+	(wire
+		(pts
+			(xy 248.92 73.66) (xy 255.27 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "543b89be-b9d1-4f20-8660-0627f628ab67")
 	)
 	(wire
 		(pts
@@ -2884,16 +2996,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 93.98) (xy 236.22 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7344ace2-5af4-4fb9-a364-0afa8b339f3b")
-	)
-	(wire
-		(pts
 			(xy 78.74 128.27) (xy 87.63 128.27)
 		)
 		(stroke
@@ -2914,13 +3016,13 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 115.57) (xy 241.3 115.57)
+			(xy 242.57 92.71) (xy 242.57 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8660b441-aabd-42a6-a1bc-3a2b78177fe2")
+		(uuid "7e04c91b-e4e3-4eb0-a4e7-d75287562a7b")
 	)
 	(wire
 		(pts
@@ -3014,6 +3116,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 82.55) (xy 262.89 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4dddf53-f6d3-4159-93c5-cef9b8e89b99")
+	)
+	(wire
+		(pts
 			(xy 68.58 66.04) (xy 54.61 66.04)
 		)
 		(stroke
@@ -3031,16 +3143,6 @@
 			(type default)
 		)
 		(uuid "a9a4232c-0abe-4017-add8-642bfaa7c0ef")
-	)
-	(wire
-		(pts
-			(xy 241.3 115.57) (xy 241.3 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab8f7200-d7d3-49d5-ba37-5be8064d21e6")
 	)
 	(wire
 		(pts
@@ -3071,6 +3173,16 @@
 			(type default)
 		)
 		(uuid "b93d0731-428c-44e2-8e90-54205fc5dbe2")
+	)
+	(wire
+		(pts
+			(xy 237.49 115.57) (xy 248.92 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc63b3c0-888c-4498-bab4-02681bf3322a")
 	)
 	(wire
 		(pts
@@ -3134,6 +3246,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 110.49) (xy 248.92 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c92afacc-df23-433c-9dbb-9b9000a93f67")
+	)
+	(wire
+		(pts
 			(xy 106.68 102.87) (xy 102.87 102.87)
 		)
 		(stroke
@@ -3171,6 +3293,16 @@
 			(type default)
 		)
 		(uuid "d9f573db-d813-4167-b495-80e80a8b7a28")
+	)
+	(wire
+		(pts
+			(xy 236.22 92.71) (xy 242.57 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da55dd7c-a4a5-469d-a548-a9bcc5ac8a12")
 	)
 	(wire
 		(pts
@@ -3274,16 +3406,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 113.03) (xy 240.03 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5dc2ca0-3ed9-4f0a-87b2-60994351b6d0")
-	)
-	(wire
-		(pts
 			(xy 153.67 97.79) (xy 153.67 99.06)
 		)
 		(stroke
@@ -3301,6 +3423,147 @@
 			(type default)
 		)
 		(uuid "fa62ad76-4aa3-4b82-9e60-2fb8e3a14126")
+	)
+	(symbol
+		(lib_id "B2P-VH:B2P-VH")
+		(at 262.89 73.66 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00f32348-c72c-49a4-9c30-07544583c200")
+		(property "Reference" "X1"
+			(at 265.43 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "B2P-VH"
+			(at 265.43 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Footprints:B2P-VH"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "JST Sales America Inc."
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "B2P-VH"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda"
+			(at 262.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c7ff97a-4758-4c2d-b57d-2af183e96cdc")
+		)
+		(pin "2"
+			(uuid "1d19a2e8-259b-443e-95c7-fadc9d1a29db")
+		)
+		(instances
+			(project "Mic_Board_Rev1"
+				(path "/7002bcc8-d574-4d7e-a21f-bd05f0fc5ee4"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3431,6 +3694,73 @@
 			(project "Mic_Board_Rev1"
 				(path "/7002bcc8-d574-4d7e-a21f-bd05f0fc5ee4"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 262.89 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "119fa48f-768f-46a2-80a6-36f8045a6c73")
+		(property "Reference" "#PWR016"
+			(at 262.89 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 262.89 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b5b4ae2-783d-4fe7-b83a-c98408453365")
+		)
+		(instances
+			(project ""
+				(path "/7002bcc8-d574-4d7e-a21f-bd05f0fc5ee4"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -5849,78 +6179,6 @@
 			(project "Mic_Board_Rev1"
 				(path "/7002bcc8-d574-4d7e-a21f-bd05f0fc5ee4"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 241.3 93.98 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cd043622-d68e-4eae-adda-6b437645d850")
-		(property "Reference" "J1"
-			(at 254 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 254 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 241.3 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c8ee8fa-86ea-4bfc-9ee8-4302a0d8335d")
-		)
-		(pin "2"
-			(uuid "e6a24291-0fc3-485e-907a-496bb9a4a5ec")
-		)
-		(pin "3"
-			(uuid "d7fca8b9-0c5e-4a84-ae79-95246fa397d8")
-		)
-		(instances
-			(project "Mic_Board_Rev1"
-				(path "/7002bcc8-d574-4d7e-a21f-bd05f0fc5ee4"
-					(reference "J1")
 					(unit 1)
 				)
 			)
