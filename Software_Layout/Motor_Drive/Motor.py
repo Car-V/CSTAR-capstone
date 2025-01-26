@@ -15,8 +15,8 @@ class Motor:
         GPIO.setup(self.pin2, GPIO.OUT)
         GPIO.setup(self.enable, GPIO.OUT)
 
-        p = GPIO.PWM(self.enable, self.PWMhz)
-        p.start(self.duty_cycle)
+        self.p = GPIO.PWM(self.enable, self.PWMhz)
+        self.p.start(self.duty_cycle)
 
 
     def forward(self):
@@ -32,6 +32,20 @@ class Motor:
     def idle(self):
         GPIO.output(self.pin1, GPIO.LOW)
         GPIO.output(self.pin2, GPIO.LOW)
+
+    def set_speed(self, duty_cycle: int):
+        self.duty_cycle = duty_cycle
+        self.p.ChangeDutyCycle(self.duty_cycle)
+
+
+    def get_encoder_position(self):
+        return self.encoder.get_position()
+
+    def get_encoder_direction(self):
+        return self.encoder.get_direction()
+
+    def reset_encoder(self):
+        self.encoder.reset_position()
 
     def delete(self):
         GPIO.cleanup()

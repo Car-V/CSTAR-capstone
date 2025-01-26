@@ -1,4 +1,5 @@
 from Motor import Motor
+from time import sleep
 class Motor_Drive:
     def __init__(self):
         self.motorL = Motor(25, 11, 13, 6, 7) # motor 2, in1 in2 enb ch1 ch2
