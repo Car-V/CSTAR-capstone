@@ -4496,7 +4496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\n2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)\n"
+		(property "Description" "2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)"
 			(at 53.34 143.51 0)
 			(effects
 				(font
@@ -4635,7 +4635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\n2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)\n"
+		(property "Description" "2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)"
 			(at 124.46 142.24 0)
 			(effects
 				(font
