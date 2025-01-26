@@ -6,11 +6,12 @@ class Encoder:
         self.pin_b = pin_b
         self.position = 0
         self.direction = 0  # 1 for clockwise, -1 for counterclockwise
-        self.last_a_state = GPIO.input(self.pin_a)
-
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.pin_a, GPIO.IN)
         GPIO.setup(self.pin_b, GPIO.IN)
+        
+        self.last_a_state = GPIO.input(self.pin_a)
+
 
     def update_position(self):
         # Read the state of the encoder channel A

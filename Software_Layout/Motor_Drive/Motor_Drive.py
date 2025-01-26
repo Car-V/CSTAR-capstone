@@ -9,25 +9,30 @@ class Motor_Drive:
     def bot_idle(self):
         self.motorL.idle()
         self.motorR.idle()
+        print("we are idle")
     
     def bot_forward(self):
         self.motorL.forward()
         self.motorR.forward()
+        print("we are going forward")
 
     def bot_backward(self):
         self.motorL.backward()
         self.motorR.backward()
+        print("we are going backward")
 
     def bot_clockwise(self):
         self.motorL.forward()
         self.motorR.backward()
+        print("we are turning clockwise")
 
     def bot_counter_clockwise(self):
         self.motorL.backward()
         self.motorR.forward()
+        print("we are turning counter-clockwise")
 
     def delete(self):
         self.motorL.delete()
-        self.motorR.delete()
+        print("deleted!")
     
     

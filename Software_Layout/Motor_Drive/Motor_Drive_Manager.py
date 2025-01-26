@@ -22,6 +22,7 @@ class Motor_Drive_Manager:
         self.Motor_Drive.bot_counter_clockwise()
         sleep(2)
         self.Motor_Drive.bot_idle()
+        self.Motor_Drive.delete()
 
 def main():
     MDM = Motor_Drive_Manager()

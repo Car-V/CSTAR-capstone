@@ -9,6 +9,7 @@ class Motor:
         self.PWMhz = 1000
         self.duty_cycle = 25
         self.encoder = Encoder(pin_a, pin_b)
+        
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.pin1, GPIO.OUT)
@@ -49,4 +50,5 @@ class Motor:
 
     def delete(self):
         GPIO.cleanup()
+        print("motor deleted")
 
