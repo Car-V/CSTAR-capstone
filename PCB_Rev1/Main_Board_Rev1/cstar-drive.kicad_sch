@@ -4129,6 +4129,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C516593"
+			(at 129.54 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "79df715f-7858-423b-80b1-06ff296705bd")
 		)
@@ -4217,6 +4226,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C516593"
+			(at 110.49 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1a1bf64a-0e29-4a35-b662-9d4d41c9be26")
 		)
@@ -4298,6 +4316,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C516593"
+			(at 110.49 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,6 +4603,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C160315"
+			(at 53.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16d0ceb9-21bb-4c1c-bc1b-6c82af66ca22")
 		)
@@ -4712,6 +4748,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160315"
+			(at 124.46 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -4869,6 +4914,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C516593"
+			(at 129.54 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ad841848-8545-4a14-b644-80ad20f868ce")
 		)
@@ -4997,6 +5051,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 59.69 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C520083"
 			(at 59.69 58.42 0)
 			(effects
 				(font
@@ -5158,6 +5221,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C516593"
+			(at 100.33 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "83c7f70b-08bf-451b-8255-bd07c79de093")
 		)
@@ -5239,6 +5311,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 100.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C516593"
+			(at 100.33 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5334,6 +5415,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C516593"
+			(at 120.65 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "40a5e863-6b1e-4960-91ee-56adfb874144")
 		)
@@ -5397,6 +5487,15 @@
 			)
 		)
 		(property "Description" "Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"
+			(at 72.39 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19922"
 			(at 72.39 83.82 0)
 			(effects
 				(font
@@ -5656,6 +5755,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C516593"
+			(at 120.65 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5995,6 +6103,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C88729"
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a8710ec3-a7ee-4610-bf50-9c15d206984a")
 		)
@@ -6056,6 +6173,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 195.58 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C305985"
 			(at 195.58 74.93 0)
 			(effects
 				(font
@@ -6132,6 +6258,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 199.39 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C305985"
 			(at 199.39 120.65 0)
 			(effects
 				(font

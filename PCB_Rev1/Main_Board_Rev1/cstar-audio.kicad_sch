@@ -1719,6 +1719,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C505276"
+			(at 210.82 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "27426801-7ced-4974-a6cd-e7bc60de9566")
 		)
@@ -1985,6 +1994,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C505276"
+			(at 91.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)

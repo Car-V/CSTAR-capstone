@@ -2986,6 +2986,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 64.77 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12132c93-421d-40fb-aef0-487550d2a782")
 		)
@@ -3190,6 +3199,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C148156"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1_2_3"
 			(uuid "74809e03-8f84-43ce-bcef-bb1607ff06dc")
 		)
@@ -3255,6 +3273,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 208.915 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114532"
 			(at 208.915 95.25 0)
 			(effects
 				(font
@@ -3468,6 +3495,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 114.3 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ee7e724d-fb8b-4a7b-ac10-7c12f1c50c22")
 		)
@@ -3541,6 +3577,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C3819953"
+			(at 203.2 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f18304aa-d484-4fea-aec9-5f3291458ea2")
 		)
@@ -3606,6 +3651,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 90.17 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20917"
 			(at 90.17 85.725 0)
 			(effects
 				(font
@@ -3819,6 +3873,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2190942"
+			(at 214.63 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f731479-6f49-465d-b15e-6a5e9af0cf3d")
 		)
@@ -3881,6 +3944,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 209.55 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114532"
 			(at 209.55 62.23 0)
 			(effects
 				(font
@@ -4018,6 +4090,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 130.81 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C566011"
 			(at 130.81 53.975 0)
 			(effects
 				(font
