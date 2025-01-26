@@ -467,7 +467,7 @@
       "idf": "",
       "netlist": "../../../../../../../Applications/KiCad/KiCad.app/Contents/Applications/",
       "plot": "",
-      "pos_files": "",
+      "pos_files": "./",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
