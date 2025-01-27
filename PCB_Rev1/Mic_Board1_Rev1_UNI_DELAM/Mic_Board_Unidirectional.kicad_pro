@@ -466,7 +466,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "../../../../../../../Applications/KiCad/KiCad.app/Contents/Applications/",
-      "plot": "",
+      "plot": "../../JLC_ordering_Rev1_1-26/MIC_BOARD_UNI/MicBoard_UNI_Rev1_gerber/",
       "pos_files": "./",
       "specctra_dsn": "",
       "step": "",

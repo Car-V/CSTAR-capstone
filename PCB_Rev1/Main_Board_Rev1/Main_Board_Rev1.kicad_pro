@@ -479,7 +479,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "./",
-      "plot": "../../../MainBoard_gerber/",
+      "plot": "../../JLC_ordering_Rev1_1-26/MainBoard_Rev1_gerber/",
       "pos_files": "../../../MainBoard_pickandplace/",
       "specctra_dsn": "",
       "step": "",
