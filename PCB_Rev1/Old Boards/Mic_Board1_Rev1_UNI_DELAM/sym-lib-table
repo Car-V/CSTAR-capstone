@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Mic Connectors")(type "KiCad")(uri "${KIPRJMOD}/Components/Symbols/S2B-ZR-SM4A-TF_LF__SN_.kicad_sym")(options "")(descr ""))
+)

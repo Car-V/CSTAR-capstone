@@ -1,0 +1,3083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\kayla\Desktop\Capstone\CSTAR-capstone\PCB_Rev1\Main_Board_Rev1\Main_Board_Rev1.kicad_sch</source>
+    <date>2025-01-26T16:49:02-0500</date>
+    <tool>Eeschema 8.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Main_Board_Rev1.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cstar-power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/CSTAR-Lidar/" tstamps="/4da50182-4bfb-4740-9f93-3f86bef2b2e8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cstar-lidar.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/CSTAR-Audio/" tstamps="/ddfb4fd8-d336-4db3-9d74-da06ae92f0f2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cstar-audio.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cstar-io.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cstar-drive.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>PRT-14017</value>
+      <footprint>Footprints:RPiConnector</footprint>
+      <datasheet>PRT-14017</datasheet>
+      <fields>
+        <field name="LCSC">C2859067</field>
+        <field name="Footprint">Footprints:RPiConnector</field>
+        <field name="Datasheet">PRT-14017</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RPiConnector" part="PRT-14017" description=""/>
+      <property name="LCSC" value="C2859067"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Main_Board_Rev1.kicad_sch"/>
+      <property name="ki_keywords" value="PRT-14017"/>
+      <property name="ki_fp_filters" value="CONN_PRT-14017_SPK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>914fe8f5-32c3-4cab-982e-1ebd8c34c739</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C116352</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C116352"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>d83d1c70-00cb-4c82-8b71-0a8d104a4139</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C2167084</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C2167084"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>0a2d8e54-1e23-4a47-9ef7-39534c634151</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C2190942</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C2190942"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>286fad6a-1b17-435b-aeca-9bf8ffce16f2</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>4.7pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C527074</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C527074"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>ecd71977-4eb7-4c00-9e8f-34d474b7290c</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>47uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C2167787</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C2167787"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>edf4a4db-4b2f-4c21-a218-0cf20a3bcb9a</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>47uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C2167787</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C2167787"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>061f0145-6c54-4b67-beb4-c10c86523932</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C2190942</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C2190942"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>0f1c9d58-a799-47df-a8aa-e79bcb442c0d</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C602037</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C602037"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>5ced3cb3-b19a-44c9-8751-30451d98c230</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C2190942</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C2190942"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>61dedced-f454-47ae-9eb6-c179be804215</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C49678</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C49678"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>3258d849-6a45-428b-8470-728642589a1a</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>47pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C107118</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C107118"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>476d3fd1-1cd2-43fd-a10c-5fd900c436d1</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C602037</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C602037"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>7a4479d5-bfec-4c2e-a70f-18fe381654f4</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C602037</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C602037"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>a23c9eaa-5970-45db-90ac-312b638ffd0a</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>0.1 uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC">C49678</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C49678"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>40e22a0e-1fca-43e5-a640-f2b2ff5b916c</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>SMCJ26CA</value>
+      <footprint>Footprints:D1_Bi-dir</footprint>
+      <fields>
+        <field name="PARTREV">11/20/15</field>
+        <field name="STANDARD">IPC-7351B</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">2.62mm</field>
+        <field name="MANUFACTURER">Diodes Incorporated</field>
+        <field name="LCSC">C151280</field>
+        <field name="Footprint">Footprints:D1_Bi-dir</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SMCJ26CA" part="SMCJ26CA" description=""/>
+      <property name="PARTREV" value="11/20/15"/>
+      <property name="STANDARD" value="IPC-7351B"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="2.62mm"/>
+      <property name="MANUFACTURER" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C151280"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>d9c4ec73-33e9-45df-8b1c-2f044df82acc</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>8A</value>
+      <footprint>Fuse:Fuse_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C3158319</field>
+        <field name="Footprint">Fuse:Fuse_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="LCSC" value="C3158319"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>5584a3f8-7e91-4c19-82cd-b2add30c6b95</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>5A</value>
+      <footprint>Fuse:Fuse_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C3159342</field>
+        <field name="Footprint">Fuse:Fuse_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="LCSC" value="C3159342"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>88c5c008-91bd-4db9-bf46-1bd66e8cc070</tstamps>
+    </comp>
+    <comp ref="F3">
+      <value>5A</value>
+      <footprint>Fuse:Fuse_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C3159342</field>
+        <field name="Footprint">Fuse:Fuse_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="LCSC" value="C3159342"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>e20432fb-efaa-436a-8b44-fcd7207eef62</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>LT8648SEV#PBF</value>
+      <footprint>Footprints:Buck_1</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/LT8648S.pdf</datasheet>
+      <fields>
+        <field name="Height">1.03</field>
+        <field name="Mouser Part Number">584-LT8648SEV#PBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8648SEVPBF?qs=wnTfsH77Xs7yBL0bxPErUg%3D%3D</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT8648SEV#PBF</field>
+        <field name="LCSC">C2840907</field>
+        <field name="Footprint">Footprints:Buck_1</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/LT8648S.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LT8648SEV#PBF" part="LT8648SEV#PBF" description="42V, 15A Synchronous Step-Down Silent Switcher 2"/>
+      <property name="Height" value="1.03"/>
+      <property name="Mouser Part Number" value="584-LT8648SEV#PBF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8648SEVPBF?qs=wnTfsH77Xs7yBL0bxPErUg%3D%3D"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LT8648SEV#PBF"/>
+      <property name="LCSC" value="C2840907"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>f4052563-36b0-4284-b83f-de77ee620db5</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC">C5828287</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="LCSC" value="C5828287"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>25400747-4353-4a1e-87e8-268e4bf43085</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>XT60PW-M</value>
+      <footprint>Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal</footprint>
+      <description>Socket, DC supply, male, PIN: 2</description>
+      <fields>
+        <field name="MF"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">8.4 mm</field>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="Check_prices"/>
+        <field name="STANDARD"/>
+        <field name="PARTREV"/>
+        <field name="SnapEDA_Link"/>
+        <field name="MP"/>
+        <field name="Availability"/>
+        <field name="MANUFACTURER"/>
+        <field name="LCSC">C98732</field>
+        <field name="Footprint">Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Socket, DC supply, male, PIN: 2</field>
+      </fields>
+      <libsource lib="XT60PW-M" part="XT60PW-M" description="&#xA;Socket, DC supply, male, PIN: 2&#xA;"/>
+      <property name="MF" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="8.4 mm"/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="MP" value=""/>
+      <property name="Availability" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="LCSC" value="C98732"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>0eeb2ace-2830-47d2-95c1-b6f40a71cf3f</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC">C5828287</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="LCSC" value="C5828287"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>be94f812-0b7e-45a8-ba01-bb94ca278c8a</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC">C5828287</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="LCSC" value="C5828287"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>d595de97-dbf5-41ab-a792-46da42ed355c</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x02_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC">C5828287</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="LCSC" value="C5828287"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>11bd553e-688a-44a2-871a-a5056ced9f2f</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>USB4125-GF-A_REVA2</value>
+      <footprint>Footprints:GCT_USB4125-GF-A_REVA2</footprint>
+      <fields>
+        <field name="MF">Global Connector Technology</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.16 mm</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/USB4125-GF-A/Global+Connector+Technology/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">Rev A2</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/USB4125-GF-A/Global+Connector+Technology/view-part/?ref=snap</field>
+        <field name="MP">USB4125-GF-A</field>
+        <field name="Description_1">
+                        
+                            USB Charge Only Connector Type C Horizontal Receptacle, 3.16mm profile, 6 Pins, Surface mount, Top mount, low cost
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">GCT</field>
+        <field name="LCSC">C5246813</field>
+        <field name="Footprint">Footprints:GCT_USB4125-GF-A_REVA2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="USB" part="USB4125-GF-A_REVA2" description=""/>
+      <property name="MF" value="Global Connector Technology"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="3.16 mm"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/USB4125-GF-A/Global+Connector+Technology/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="Rev A2"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/USB4125-GF-A/Global+Connector+Technology/view-part/?ref=snap"/>
+      <property name="MP" value="USB4125-GF-A"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            USB Charge Only Connector Type C Horizontal Receptacle, 3.16mm profile, 6 Pins, Surface mount, Top mount, low cost&#xA;                        &#xA;"/>
+      <property name="Availability" value="Not in stock"/>
+      <property name="MANUFACTURER" value="GCT"/>
+      <property name="LCSC" value="C5246813"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>8c7aff47-adaa-41f3-a4ac-654e5ee0498b</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>2.2u</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C540967</field>
+        <field name="Footprint">Inductor_SMD:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="LCSC" value="C540967"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>26e80b2f-0715-4957-a2af-658e37a845e4</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>6.8u</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C844992</field>
+        <field name="Footprint">Inductor_SMD:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="LCSC" value="C844992"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>4060fbaf-9b27-452e-8a4f-c38261ac38e3</tstamps>
+    </comp>
+    <comp ref="LED1">
+      <value>150080VS75000</value>
+      <footprint>Footprints:LED_0VS75000_WRE</footprint>
+      <datasheet>150080VS75000</datasheet>
+      <fields>
+        <field name="Footprint">Footprints:LED_0VS75000_WRE</field>
+        <field name="Datasheet">150080VS75000</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2024-02-25_19-51-49" part="150080VS75000" description=""/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="150080VS75000"/>
+      <property name="ki_fp_filters" value="LED_0VS75000_WRE"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>b647f02e-851c-4942-97dc-688f03662e37</tstamps>
+    </comp>
+    <comp ref="LED2">
+      <value>150080VS75000</value>
+      <footprint>Footprints:LED_0VS75000_WRE</footprint>
+      <datasheet>150080VS75000</datasheet>
+      <fields>
+        <field name="Footprint">Footprints:LED_0VS75000_WRE</field>
+        <field name="Datasheet">150080VS75000</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2024-02-25_19-51-49" part="150080VS75000" description=""/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="150080VS75000"/>
+      <property name="ki_fp_filters" value="LED_0VS75000_WRE"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>5e3777f7-233f-4068-bd31-a8c41e776e91</tstamps>
+    </comp>
+    <comp ref="LED3">
+      <value>150080VS75000</value>
+      <footprint>Footprints:LED_0VS75000_WRE</footprint>
+      <datasheet>150080VS75000</datasheet>
+      <fields>
+        <field name="Footprint">Footprints:LED_0VS75000_WRE</field>
+        <field name="Datasheet">150080VS75000</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2024-02-25_19-51-49" part="150080VS75000" description=""/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="150080VS75000"/>
+      <property name="ki_fp_filters" value="LED_0VS75000_WRE"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>261a4baf-a4dc-488e-9eb6-87bcfd01e68e</tstamps>
+    </comp>
+    <comp ref="LED4">
+      <value>150080VS75000</value>
+      <footprint>Footprints:LED_0VS75000_WRE</footprint>
+      <datasheet>150080VS75000</datasheet>
+      <fields>
+        <field name="Footprint">Footprints:LED_0VS75000_WRE</field>
+        <field name="Datasheet">150080VS75000</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2024-02-25_19-51-49" part="150080VS75000" description=""/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="150080VS75000"/>
+      <property name="ki_fp_filters" value="LED_0VS75000_WRE"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>f18c1c1a-4473-4e03-931b-e35005e91564</tstamps>
+    </comp>
+    <comp ref="PS1">
+      <value>AP63356QZV-7</value>
+      <footprint>Footprints:Buck_2</footprint>
+      <description>Converter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7</description>
+      <fields>
+        <field name="MF">Diodes Incorporated</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">0.9 mm</field>
+        <field name="Package">PowerVFDFN-13 Diodes Inc.</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/AP63356QZV-7/Diodes+Inc./view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">1-2</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/AP63356QZV-7/Diodes+Inc./view-part/?ref=snap</field>
+        <field name="MP">AP63356QZV-7</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5823050&amp;manufacturer=Diodes Incorporated&amp;part_name=AP63356QZV-7&amp;search_term=ap63356qzv-7</field>
+        <field name="MANUFACTURER">DIODES</field>
+        <field name="Availability">In Stock</field>
+        <field name="SNAPEDA_PN">AP63356QZV-7</field>
+        <field name="LCSC">C3194571</field>
+        <field name="Footprint">Footprints:Buck_2</field>
+        <field name="Datasheet"/>
+        <field name="Description">Converter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7</field>
+      </fields>
+      <libsource lib="AP63356QZV-7" part="AP63356QZV-7" description="&#xA;Converter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7&#xA;"/>
+      <property name="MF" value="Diodes Incorporated"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="0.9 mm"/>
+      <property name="Package" value="PowerVFDFN-13 Diodes Inc."/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/AP63356QZV-7/Diodes+Inc./view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="1-2"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/AP63356QZV-7/Diodes+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="AP63356QZV-7"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5823050&amp;manufacturer=Diodes Incorporated&amp;part_name=AP63356QZV-7&amp;search_term=ap63356qzv-7"/>
+      <property name="MANUFACTURER" value="DIODES"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="SNAPEDA_PN" value="AP63356QZV-7"/>
+      <property name="LCSC" value="C3194571"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>53cd1943-90b7-4f5b-8869-d67b3c7c86cc</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>4.4k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C273997</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C273997"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>9b086967-3073-4448-af3a-4a3940d75ae5</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>7.87k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C273910</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C273910"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>aa5eb047-84af-4d0d-ac60-f8d7f2c35b40</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>38.3k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C273970</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C273970"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>68c0a73c-bf17-4c3a-af04-fcf886cbe190</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>7b68884d-8371-4269-bd9b-2d829609f710</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C96346</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C96346"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>1777a901-1b22-458a-9bd8-ade18afd0f4a</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>5.23k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C274009</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C274009"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>a57ffe9a-9a84-48c4-a034-0ed4d4fc5c49</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>600</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C137416</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C137416"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>bc2f1a58-14cf-404e-9742-8da3bc2405b8</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>260</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C483083</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C483083"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>0cfdbca0-9b3e-44c6-924e-a3ea4f54db41</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>2k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>C273808</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">C273808</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>1e6ce26c-7ef7-4848-bb4e-03b8ef2488d2</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>157k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C273954</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C273954"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>1eddad5e-5257-4203-87b1-ba0ba2a6474d</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>30k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C126352</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C126352"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>5954f9d6-0b1d-4d7f-bcff-18751dc2b40c</tstamps>
+    </comp>
+    <comp ref="R84">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C105874</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C105874"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>a3497247-6ed4-4fe8-a92b-5f3e2fb14de2</tstamps>
+    </comp>
+    <comp ref="R85">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C105874</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C105874"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>4338211d-4d6e-4e79-b4fb-d873cee91e57</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>P24V</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>c644011f-e43f-4723-b5c6-0cd7e35b9161</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>P12V</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>d0ef1a1e-9455-464b-b49e-c981b90954f4</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>P5V</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>17bd4856-5c1e-4a42-9a52-82adf6e3957b</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>P3V3</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>ffb3f1ce-05c4-4d46-8e35-e28c01a03ea5</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>P12V</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>73ee2f25-dc25-413e-9e1d-2f2f5f884b8c</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>ad8ecf9a-bac4-42b0-a02d-7fab128d4f04</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>P5V</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>00c6dcea-e5dd-4dcd-9d3d-a267c9e1a23c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>AZ1117IH-3.3TRG1</value>
+      <footprint>Footprints:LDO</footprint>
+      <datasheet>AZ1117IH-3.3TRG1</datasheet>
+      <fields>
+        <field name="LCSC">C108495</field>
+        <field name="Footprint">Footprints:LDO</field>
+        <field name="Datasheet">AZ1117IH-3.3TRG1</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2024-02-15_17-38-45" part="AZ1117IH-3.3TRG1" description=""/>
+      <property name="LCSC" value="C108495"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <property name="ki_keywords" value="AZ1117IH-3.3TRG1"/>
+      <property name="ki_fp_filters" value="SOT223_AZ1117I_6P5X3P5_DIO SOT223_AZ1117I_6P5X3P5_DIO-M SOT223_AZ1117I_6P5X3P5_DIO-L"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>8f958c6b-516d-4cc8-ab84-b1e7b6f3bf5c</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>TPD3E001DRLR</value>
+      <footprint>Footprints:USBC_ESD_Protection</footprint>
+      <fields>
+        <field name="LCSC">C470828</field>
+        <field name="Footprint">Footprints:USBC_ESD_Protection</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="USB-Diode" part="TPD3E001DRLR" description=""/>
+      <property name="LCSC" value="C470828"/>
+      <property name="Sheetname" value="CSTAR-Power"/>
+      <property name="Sheetfile" value="cstar-power.kicad_sch"/>
+      <sheetpath names="/CSTAR-Power/" tstamps="/87cbe485-412b-450f-a6d2-0d74a6238e69/"/>
+      <tstamps>5ba44250-4d73-4227-a9ae-90fa2df9979a</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>532610771</value>
+      <footprint>Footprints:MOLEX_connector</footprint>
+      <description>Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB</description>
+      <fields>
+        <field name="DigiKey_Part_Number">WM7625TR-ND</field>
+        <field name="MF">Molex</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.4 mm</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">J</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap</field>
+        <field name="MP">0532610771</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None</field>
+        <field name="MANUFACTURER">Molex</field>
+        <field name="LCSC">C505276</field>
+        <field name="Footprint">Footprints:MOLEX_connector</field>
+        <field name="Datasheet"/>
+        <field name="Description">Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB</field>
+      </fields>
+      <libsource lib="532610771" part="532610771" description="&#xA;Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB&#xA;"/>
+      <property name="DigiKey_Part_Number" value="WM7625TR-ND"/>
+      <property name="MF" value="Molex"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="3.4 mm"/>
+      <property name="Package" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="J"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap"/>
+      <property name="MP" value="0532610771"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None"/>
+      <property name="MANUFACTURER" value="Molex"/>
+      <property name="LCSC" value="C505276"/>
+      <property name="Sheetname" value="CSTAR-Lidar"/>
+      <property name="Sheetfile" value="cstar-lidar.kicad_sch"/>
+      <sheetpath names="/CSTAR-Lidar/" tstamps="/4da50182-4bfb-4740-9f93-3f86bef2b2e8/"/>
+      <tstamps>ba296640-1e85-4c08-9117-991964f8c279</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>532610771</value>
+      <footprint>Footprints:MOLEX_connector</footprint>
+      <description>Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB</description>
+      <fields>
+        <field name="DigiKey_Part_Number">WM7625TR-ND</field>
+        <field name="MF">Molex</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.4 mm</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">J</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap</field>
+        <field name="MP">0532610771</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None</field>
+        <field name="MANUFACTURER">Molex</field>
+        <field name="LCSC">C505276</field>
+        <field name="Footprint">Footprints:MOLEX_connector</field>
+        <field name="Datasheet"/>
+        <field name="Description">Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB</field>
+      </fields>
+      <libsource lib="532610771" part="532610771" description="&#xA;Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB&#xA;"/>
+      <property name="DigiKey_Part_Number" value="WM7625TR-ND"/>
+      <property name="MF" value="Molex"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="3.4 mm"/>
+      <property name="Package" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="J"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap"/>
+      <property name="MP" value="0532610771"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None"/>
+      <property name="MANUFACTURER" value="Molex"/>
+      <property name="LCSC" value="C505276"/>
+      <property name="Sheetname" value="CSTAR-Audio"/>
+      <property name="Sheetfile" value="cstar-audio.kicad_sch"/>
+      <sheetpath names="/CSTAR-Audio/" tstamps="/ddfb4fd8-d336-4db3-9d74-da06ae92f0f2/"/>
+      <tstamps>39a74998-6c76-4ef3-861c-7bf13d1a1492</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>532610771</value>
+      <footprint>Footprints:MOLEX_connector</footprint>
+      <description>Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB</description>
+      <fields>
+        <field name="DigiKey_Part_Number">WM7625TR-ND</field>
+        <field name="MF">Molex</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.4 mm</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">J</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap</field>
+        <field name="MP">0532610771</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None</field>
+        <field name="MANUFACTURER">Molex</field>
+        <field name="LCSC">C505276</field>
+        <field name="Footprint">Footprints:MOLEX_connector</field>
+        <field name="Datasheet"/>
+        <field name="Description">Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB</field>
+      </fields>
+      <libsource lib="532610771" part="532610771" description="&#xA;Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB&#xA;"/>
+      <property name="DigiKey_Part_Number" value="WM7625TR-ND"/>
+      <property name="MF" value="Molex"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="3.4 mm"/>
+      <property name="Package" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="J"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap"/>
+      <property name="MP" value="0532610771"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None"/>
+      <property name="MANUFACTURER" value="Molex"/>
+      <property name="LCSC" value="C505276"/>
+      <property name="Sheetname" value="CSTAR-Audio"/>
+      <property name="Sheetfile" value="cstar-audio.kicad_sch"/>
+      <sheetpath names="/CSTAR-Audio/" tstamps="/ddfb4fd8-d336-4db3-9d74-da06ae92f0f2/"/>
+      <tstamps>1af16750-f97c-4c91-bc25-1497bf4f5638</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C2190942</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C2190942"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>72500f37-d024-4426-b391-b2422d58a280</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04_Socket</value>
+      <footprint>Footprints:EncoderConn</footprint>
+      <fields>
+        <field name="LCSC">C566011</field>
+        <field name="Footprint">Footprints:EncoderConn</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x04_Socket" description="Generic connector, single row, 01x04, script generated"/>
+      <property name="LCSC" value="C566011"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>97715847-d3e1-45d9-b6b3-ab2555dc5292</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>691137710002</value>
+      <footprint>Footprints:691137710002-2CONN</footprint>
+      <datasheet>691137710002</datasheet>
+      <fields>
+        <field name="LCSC">C3819953</field>
+        <field name="Footprint">Footprints:691137710002-2CONN</field>
+        <field name="Datasheet">691137710002</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="691137710002-2CONN" part="691137710002" description=""/>
+      <property name="LCSC" value="C3819953"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="691137710002"/>
+      <property name="ki_fp_filters" value="CONN2_710002_WRE"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>51e9e1bb-e7e2-4aaa-bb76-175b5e145b96</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3400A</value>
+      <footprint>Footprints:RGB-FETS</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C20917</field>
+        <field name="Footprint">Footprints:RGB-FETS</field>
+        <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="LCSC" value="C20917"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>0d1f1954-550b-4f33-ac1d-4f27954f5316</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>AO3400A</value>
+      <footprint>Footprints:RGB-FETS</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C20917</field>
+        <field name="Footprint">Footprints:RGB-FETS</field>
+        <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="LCSC" value="C20917"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>5352cdb4-cd8c-4675-a05e-c6e8a8dabd70</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>AO3400A</value>
+      <footprint>Footprints:RGB-FETS</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C20917</field>
+        <field name="Footprint">Footprints:RGB-FETS</field>
+        <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3400A" description="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="LCSC" value="C20917"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>44ddb43f-bdc8-4f5f-a5ca-757c05eb815d</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>IRFHM9331TRPBF</value>
+      <footprint>Footprints:TRANS_IRFHM9331TRPBF</footprint>
+      <fields>
+        <field name="MF">Infineon Technologies</field>
+        <field name="SNAPEDA_PACKAGE_ID">61476</field>
+        <field name="Package">PowerTDFN-8 Infineon</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">December 16, 2013</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=snap</field>
+        <field name="MP">IRFHM9331TRPBF</field>
+        <field name="Description_1">
+                        
+                            IRFHM9331TRPBF P-channel MOSFET Transistor, 11 A, 30 V, 8-Pin PQFN | Infineon IRFHM9331TRPBF
+                        
+</field>
+        <field name="MANUFACTURER">Infineon Technologies</field>
+        <field name="Availability">In Stock</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">1mm</field>
+        <field name="LCSC">C148156</field>
+        <field name="Footprint">Footprints:TRANS_IRFHM9331TRPBF</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PowerFET" part="IRFHM9331TRPBF" description=""/>
+      <property name="MF" value="Infineon Technologies"/>
+      <property name="SNAPEDA_PACKAGE_ID" value="61476"/>
+      <property name="Package" value="PowerTDFN-8 Infineon"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="December 16, 2013"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=snap"/>
+      <property name="MP" value="IRFHM9331TRPBF"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            IRFHM9331TRPBF P-channel MOSFET Transistor, 11 A, 30 V, 8-Pin PQFN | Infineon IRFHM9331TRPBF&#xA;                        &#xA;"/>
+      <property name="MANUFACTURER" value="Infineon Technologies"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="1mm"/>
+      <property name="LCSC" value="C148156"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>0fe419d7-8b00-4acd-8d65-c2d03ca027c4</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>2M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C114532</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC" value="C114532"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>139fc088-7c62-4186-a4ed-f665d5a80ade</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>2M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C114532</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC" value="C114532"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>8e5bd2c3-d191-49fb-be04-f3bc260983e2</tstamps>
+    </comp>
+    <comp ref="TP-VGSW1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>a483a88d-5ac5-4281-a3b9-6a5da3a98d11</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>BATT_IN</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-IO"/>
+      <property name="Sheetfile" value="cstar-io.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-IO/" tstamps="/9a9c2aab-15db-457a-a1a3-5bc6a825b752/"/>
+      <tstamps>96f73e81-bc1a-4d0c-a230-e10eac109618</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC">C520083</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C520083"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>7b5c48f7-d72f-43cf-b69e-d6ddae9eaeda</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>220uF</value>
+      <footprint>Footprints:Cap_Polarized_220uF</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="LCSC">C88729</field>
+        <field name="Footprint">Footprints:Cap_Polarized_220uF</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="LCSC" value="C88729"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>ef45492e-e8a3-422e-b831-2ba311dee6ca</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>8c35031b-c916-4fcc-81af-76777b9cd883</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>93fd2714-e424-4121-8444-0836ee73dc4a</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>34db2ce8-573b-4366-8db1-7833a9aa2ba4</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>2a79e50f-478e-4472-890d-ad0fa6aded4f</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>9e4f9514-c3ab-4e8f-8b3d-3a449c9246bf</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>d5cfae48-91ce-4bb5-9891-f1a91316dc3b</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>14c52e0f-8b8d-4af2-8534-ff4a81898afb</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>D</value>
+      <footprint>Footprints:Diode_1N4007</footprint>
+      <description>Diode</description>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="LCSC">C516593</field>
+        <field name="Footprint">Footprints:Diode_1N4007</field>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="LCSC" value="C516593"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>6c9abe6f-4765-4058-9b3c-de9b63587c7d</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>B4B-PH-K-S</value>
+      <footprint>Footprints:B4B_PH_K_S</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C305985</field>
+        <field name="Footprint">Footprints:B4B_PH_K_S</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="B4B_PH_K_S" part="B4B-PH-K-S" description=""/>
+      <property name="LCSC" value="C305985"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="B4B-PH-K-S"/>
+      <property name="ki_fp_filters" value="CONN4_B4B-PH_JST"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>f9270362-ee5c-449a-9a71-17d8c645c409</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>B4B-PH-K-S</value>
+      <footprint>Footprints:B4B_PH_K_S</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C305985</field>
+        <field name="Footprint">Footprints:B4B_PH_K_S</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="B4B_PH_K_S" part="B4B-PH-K-S" description=""/>
+      <property name="LCSC" value="C305985"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="B4B-PH-K-S"/>
+      <property name="ki_fp_filters" value="CONN4_B4B-PH_JST"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>fc92287e-abc3-42ee-84b3-6703fed802df</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>Motor_Out</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>6120875d-25f4-458f-a2ef-5deceec7d8f5</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>L298N</value>
+      <footprint>Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical</footprint>
+      <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf</datasheet>
+      <description>Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V</description>
+      <fields>
+        <field name="LCSC">C19922</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical</field>
+        <field name="Datasheet">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf</field>
+        <field name="Description">Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V</field>
+      </fields>
+      <libsource lib="Driver_Motor" part="L298N" description="Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"/>
+      <property name="LCSC" value="C19922"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <property name="ki_keywords" value="H-bridge motor driver"/>
+      <property name="ki_fp_filters" value="TO?220*StaggerOdd*Vertical*"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>a96adf75-c8ef-4cee-9f24-7a3d6cce0bc8</tstamps>
+    </comp>
+    <comp ref="X1">
+      <value>B2P-VH</value>
+      <footprint>Footprints:B2P-VH</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eVH.pdf</datasheet>
+      <description>2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)</description>
+      <fields>
+        <field name="MF">JST Sales America Inc.</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap</field>
+        <field name="MP">B2P-VH</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda</field>
+        <field name="LCSC">C160315</field>
+        <field name="Footprint">Footprints:B2P-VH</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eVH.pdf</field>
+        <field name="Description">2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)</field>
+      </fields>
+      <libsource lib="B2P-VH" part="B2P-VH" description="&#xA;2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)&#xA;"/>
+      <property name="MF" value="JST Sales America Inc."/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="B2P-VH"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda"/>
+      <property name="LCSC" value="C160315"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>538ba8cf-32d4-4c51-9f34-1aaa5646e1f9</tstamps>
+    </comp>
+    <comp ref="X2">
+      <value>B2P-VH</value>
+      <footprint>Footprints:B2P-VH</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eVH.pdf</datasheet>
+      <description>2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)</description>
+      <fields>
+        <field name="MF">JST Sales America Inc.</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap</field>
+        <field name="MP">B2P-VH</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda</field>
+        <field name="LCSC">C160315</field>
+        <field name="Footprint">Footprints:B2P-VH</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eVH.pdf</field>
+        <field name="Description">2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)</field>
+      </fields>
+      <libsource lib="B2P-VH" part="B2P-VH" description="&#xA;2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)&#xA;"/>
+      <property name="MF" value="JST Sales America Inc."/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="B2P-VH"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda"/>
+      <property name="LCSC" value="C160315"/>
+      <property name="Sheetname" value="CSTAR-Drive"/>
+      <property name="Sheetfile" value="cstar-drive.kicad_sch"/>
+      <sheetpath names="/CSTAR-Drive/" tstamps="/0ea4e72d-54a3-4446-a173-a8fc45c421fe/"/>
+      <tstamps>55be1d8e-8ecc-4af3-bfa9-9649fc906528</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="2024-02-15_17-38-45" part="AZ1117IH-3.3TRG1">
+      <docs>AZ1117IH-3.3TRG1</docs>
+      <footprints>
+        <fp>SOT223_AZ1117I_6P5X3P5_DIO</fp>
+        <fp>SOT223_AZ1117I_6P5X3P5_DIO-M</fp>
+        <fp>SOT223_AZ1117I_6P5X3P5_DIO-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">AZ1117IH-3.3TRG1</field>
+        <field name="Footprint">CSTAR-MainBoard-Footprints:TO252-2_AZ1117ID-3.3TRG1_DIO</field>
+        <field name="Datasheet">AZ1117IH-3.3TRG1</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_out"/>
+        <pin num="2" name="OUTPUT" type="output"/>
+        <pin num="3" name="INPUT" type="input"/>
+        <pin num="4" name="Vout" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="2024-02-25_19-51-49" part="150080VS75000">
+      <docs>150080VS75000</docs>
+      <footprints>
+        <fp>LED_0VS75000_WRE</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">150080VS75000</field>
+        <field name="Footprint">LED_0VS75000_WRE</field>
+        <field name="Datasheet">150080VS75000</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="unspecified"/>
+        <pin num="2" name="" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="532610771" part="532610771">
+      <description>
+Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB
+</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">532610771</field>
+        <field name="Footprint">532610771:MOLEX_532610771</field>
+        <field name="Datasheet"/>
+        <field name="Description">
+Picoblade Connector, 7 Circuit Single Row, Right Angle Surface Mount SMT PCB
+</field>
+        <field name="DigiKey_Part_Number">WM7625TR-ND</field>
+        <field name="MF">Molex</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.4 mm</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">J</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/0532610771/Molex/view-part/?ref=snap</field>
+        <field name="MP">0532610771</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=577144&amp;manufacturer=Molex&amp;part_name=0532610771&amp;search_term=None</field>
+        <field name="MANUFACTURER">Molex</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="S1" name="SHIELD1" type="passive"/>
+        <pin num="S2" name="SHIELD2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="691137710002-2CONN" part="691137710002">
+      <docs>691137710002</docs>
+      <footprints>
+        <fp>CONN2_710002_WRE</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">691137710002</field>
+        <field name="Footprint">CONN2_710002_WRE</field>
+        <field name="Datasheet">691137710002</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspecified"/>
+        <pin num="2" name="2" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="AP63356QZV-7" part="AP63356QZV-7">
+      <description>
+Converter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7
+</description>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">AP63356QZV-7</field>
+        <field name="Footprint">AP63356QZV-7:CONV_AP63356QZV-7</field>
+        <field name="Datasheet"/>
+        <field name="Description">
+Converter, DC to DC, 32V, 3.5A, low IQ, synchronous buck HE converter | Diodes Inc AP63356QZV-7
+</field>
+        <field name="MF">Diodes Incorporated</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">0.9 mm</field>
+        <field name="Package">PowerVFDFN-13 Diodes Inc.</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/AP63356QZV-7/Diodes+Inc./view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">1-2</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/AP63356QZV-7/Diodes+Inc./view-part/?ref=snap</field>
+        <field name="MP">AP63356QZV-7</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5823050&amp;manufacturer=Diodes Incorporated&amp;part_name=AP63356QZV-7&amp;search_term=ap63356qzv-7</field>
+        <field name="MANUFACTURER">DIODES</field>
+        <field name="Availability">In Stock</field>
+        <field name="SNAPEDA_PN">AP63356QZV-7</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="input"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="COMP" type="passive"/>
+        <pin num="5" name="PG" type="output"/>
+        <pin num="6" name="BST" type="input"/>
+        <pin num="7" name="NC" type="no_connect"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="SW" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="B2P-VH" part="B2P-VH">
+      <description>
+2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)
+</description>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">B2P-VH</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">
+2 Position Adapter Connector Receptacle, Female Sockets To Receptacle, Female Sockets 0.156 (3.96mm)
+</field>
+        <field name="MF">JST Sales America Inc.</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=snap</field>
+        <field name="MP">B2P-VH</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/B2P-VH/JST+Sales+America+Inc./view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="B4B_PH_K_S" part="B4B-PH-K-S">
+      <docs>B4B-PH-K-S</docs>
+      <footprints>
+        <fp>CONN4_B4B-PH_JST</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">B4B-PH-K-S</field>
+        <field name="Footprint">CONN4_B4B-PH_JST</field>
+        <field name="Datasheet">B4B-PH-K-S</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspecified"/>
+        <pin num="2" name="2" type="unspecified"/>
+        <pin num="3" name="3" type="unspecified"/>
+        <pin num="4" name="4" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Pin">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Socket">
+      <description>Generic connector, single row, 01x04, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Socket</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x04, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor, small symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Diode</field>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor, small symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor, US symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver_Motor" part="L298N">
+      <description>Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf</docs>
+      <footprints>
+        <fp>TO?220*StaggerOdd*Vertical*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L298N</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical</field>
+        <field name="Datasheet">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf</field>
+        <field name="Description">Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SENSE_A" type="power_in"/>
+        <pin num="2" name="OUT1" type="output"/>
+        <pin num="3" name="OUT2" type="output"/>
+        <pin num="4" name="Vs" type="power_in"/>
+        <pin num="5" name="IN1" type="input"/>
+        <pin num="6" name="EnA" type="input"/>
+        <pin num="7" name="IN2" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="Vss" type="power_in"/>
+        <pin num="10" name="IN3" type="input"/>
+        <pin num="11" name="EnB" type="input"/>
+        <pin num="12" name="IN4" type="input"/>
+        <pin num="13" name="OUT3" type="output"/>
+        <pin num="14" name="OUT4" type="output"/>
+        <pin num="15" name="SENSE_B" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="LT8648SEV#PBF" part="LT8648SEV#PBF">
+      <description>42V, 15A Synchronous Step-Down Silent Switcher 2</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/LT8648S.pdf</docs>
+      <fields>
+        <field name="Reference">IC1</field>
+        <field name="Value">LT8648SEV#PBF</field>
+        <field name="Footprint">LT8648SEVPBF</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/LT8648S.pdf</field>
+        <field name="Description">42V, 15A Synchronous Step-Down Silent Switcher 2</field>
+        <field name="Height">1.03</field>
+        <field name="Mouser Part Number">584-LT8648SEV#PBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8648SEVPBF?qs=wnTfsH77Xs7yBL0bxPErUg%3D%3D</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT8648SEV#PBF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BIAS" type="passive"/>
+        <pin num="2" name="INTVCC" type="passive"/>
+        <pin num="3" name="BST" type="passive"/>
+        <pin num="4" name="SW_1" type="passive"/>
+        <pin num="5" name="SW_2" type="passive"/>
+        <pin num="6" name="SW_3" type="passive"/>
+        <pin num="7" name="SW_4" type="passive"/>
+        <pin num="8" name="SW_5" type="passive"/>
+        <pin num="9" name="SW_6" type="passive"/>
+        <pin num="10" name="SW_7" type="passive"/>
+        <pin num="11" name="SW_8" type="passive"/>
+        <pin num="12" name="SW_9" type="passive"/>
+        <pin num="13" name="GND_1" type="passive"/>
+        <pin num="14" name="GND_2" type="passive"/>
+        <pin num="15" name="GND_3" type="passive"/>
+        <pin num="16" name="GND_4" type="passive"/>
+        <pin num="17" name="GND_5" type="passive"/>
+        <pin num="18" name="GND_6" type="passive"/>
+        <pin num="19" name="VIN_1" type="passive"/>
+        <pin num="20" name="VIN_2" type="passive"/>
+        <pin num="21" name="VIN_3" type="passive"/>
+        <pin num="22" name="NC_1" type="passive"/>
+        <pin num="23" name="GND_7" type="passive"/>
+        <pin num="24" name="GND_8" type="passive"/>
+        <pin num="25" name="NC_2" type="passive"/>
+        <pin num="26" name="VIN_4" type="passive"/>
+        <pin num="27" name="VIN_5" type="passive"/>
+        <pin num="28" name="VIN_6" type="passive"/>
+        <pin num="29" name="EN/UV" type="passive"/>
+        <pin num="30" name="RT" type="passive"/>
+        <pin num="31" name="CLKOUT" type="passive"/>
+        <pin num="32" name="SYNC/MODE" type="passive"/>
+        <pin num="33" name="PG" type="passive"/>
+        <pin num="34" name="VC" type="passive"/>
+        <pin num="35" name="SS" type="passive"/>
+        <pin num="36" name="FB" type="passive"/>
+        <pin num="37" name="GND_9" type="passive"/>
+        <pin num="38" name="GND_10" type="passive"/>
+        <pin num="39" name="GND_11" type="passive"/>
+        <pin num="40" name="GND_12" type="passive"/>
+        <pin num="41" name="GND_13" type="passive"/>
+        <pin num="42" name="GND_14" type="passive"/>
+        <pin num="43" name="EP_1" type="passive"/>
+        <pin num="44" name="EP_2" type="passive"/>
+        <pin num="45" name="EP_3" type="passive"/>
+        <pin num="46" name="EP_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="PowerFET" part="IRFHM9331TRPBF">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRFHM9331TRPBF</field>
+        <field name="Footprint">IRFHM9331TRPBF:TRANS_IRFHM9331TRPBF</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Infineon Technologies</field>
+        <field name="SNAPEDA_PACKAGE_ID">61476</field>
+        <field name="Package">PowerTDFN-8 Infineon</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">December 16, 2013</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/IRFHM9331TRPBF/Infineon/view-part/?ref=snap</field>
+        <field name="MP">IRFHM9331TRPBF</field>
+        <field name="Description_1">
+                        
+                            IRFHM9331TRPBF P-channel MOSFET Transistor, 11 A, 30 V, 8-Pin PQFN | Infineon IRFHM9331TRPBF
+                        
+</field>
+        <field name="MANUFACTURER">Infineon Technologies</field>
+        <field name="Availability">In Stock</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">1mm</field>
+      </fields>
+      <pins>
+        <pin num="1_2_3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5_6_7_8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RPiConnector" part="PRT-14017">
+      <docs>PRT-14017</docs>
+      <footprints>
+        <fp>CONN_PRT-14017_SPK</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PRT-14017</field>
+        <field name="Footprint">CONN_PRT-14017_SPK</field>
+        <field name="Datasheet">PRT-14017</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspecified"/>
+        <pin num="2" name="2" type="unspecified"/>
+        <pin num="3" name="3" type="unspecified"/>
+        <pin num="4" name="4" type="unspecified"/>
+        <pin num="5" name="5" type="unspecified"/>
+        <pin num="6" name="6" type="unspecified"/>
+        <pin num="7" name="7" type="unspecified"/>
+        <pin num="8" name="8" type="unspecified"/>
+        <pin num="9" name="9" type="unspecified"/>
+        <pin num="10" name="10" type="unspecified"/>
+        <pin num="11" name="11" type="unspecified"/>
+        <pin num="12" name="12" type="unspecified"/>
+        <pin num="13" name="13" type="unspecified"/>
+        <pin num="14" name="14" type="unspecified"/>
+        <pin num="15" name="15" type="unspecified"/>
+        <pin num="16" name="16" type="unspecified"/>
+        <pin num="17" name="17" type="unspecified"/>
+        <pin num="18" name="18" type="unspecified"/>
+        <pin num="19" name="19" type="unspecified"/>
+        <pin num="20" name="20" type="unspecified"/>
+        <pin num="21" name="21" type="unspecified"/>
+        <pin num="22" name="22" type="unspecified"/>
+        <pin num="23" name="23" type="unspecified"/>
+        <pin num="24" name="24" type="unspecified"/>
+        <pin num="25" name="25" type="unspecified"/>
+        <pin num="26" name="26" type="unspecified"/>
+        <pin num="27" name="27" type="unspecified"/>
+        <pin num="28" name="28" type="unspecified"/>
+        <pin num="29" name="29" type="unspecified"/>
+        <pin num="30" name="30" type="unspecified"/>
+        <pin num="31" name="31" type="unspecified"/>
+        <pin num="32" name="32" type="unspecified"/>
+        <pin num="33" name="33" type="unspecified"/>
+        <pin num="34" name="34" type="unspecified"/>
+        <pin num="35" name="35" type="unspecified"/>
+        <pin num="36" name="36" type="unspecified"/>
+        <pin num="37" name="37" type="unspecified"/>
+        <pin num="38" name="38" type="unspecified"/>
+        <pin num="39" name="39" type="unspecified"/>
+        <pin num="40" name="40" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="SMCJ26CA" part="SMCJ26CA">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMCJ26CA</field>
+        <field name="Footprint">SMCJ26CA:DIOM7959X262N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="PARTREV">11/20/15</field>
+        <field name="STANDARD">IPC-7351B</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">2.62mm</field>
+        <field name="MANUFACTURER">Diodes Incorporated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="AO3400A">
+      <description>30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23</description>
+      <docs>http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3400A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf</field>
+        <field name="Description">30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="USB" part="USB4125-GF-A_REVA2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB4125-GF-A_REVA2</field>
+        <field name="Footprint">USB4125-GF-A_REVA2:GCT_USB4125-GF-A_REVA2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Global Connector Technology</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.16 mm</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/USB4125-GF-A/Global+Connector+Technology/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">Rev A2</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/USB4125-GF-A/Global+Connector+Technology/view-part/?ref=snap</field>
+        <field name="MP">USB4125-GF-A</field>
+        <field name="Description_1">
+                        
+                            USB Charge Only Connector Type C Horizontal Receptacle, 3.16mm profile, 6 Pins, Surface mount, Top mount, low cost
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">GCT</field>
+      </fields>
+      <pins>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="power_in"/>
+        <pin num="A12" name="GND" type="power_in"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="power_in"/>
+        <pin num="B12" name="GND" type="power_in"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD" type="passive"/>
+        <pin num="S3" name="SHIELD" type="passive"/>
+        <pin num="S4" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="USB-Diode" part="TPD3E001DRLR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPD3E001DRLR</field>
+        <field name="Footprint">TPD3E001DRLR:SOT50P160X60-5N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IO1" type="bidirectional"/>
+        <pin num="2" name="IO2" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="IO3" type="bidirectional"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="XT60PW-M" part="XT60PW-M">
+      <description>
+Socket, DC supply, male, PIN: 2
+</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XT60PW-M</field>
+        <field name="Footprint">XT60PW-M:AMASS_XT60PW-M</field>
+        <field name="Datasheet"/>
+        <field name="Description">
+Socket, DC supply, male, PIN: 2
+</field>
+        <field name="MF"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">8.4 mm</field>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="Check_prices"/>
+        <field name="STANDARD"/>
+        <field name="PARTREV"/>
+        <field name="SnapEDA_Link"/>
+        <field name="MP"/>
+        <field name="Availability"/>
+        <field name="MANUFACTURER"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Driver_Motor">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Driver_Motor.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="PowerFET">
+      <uri>C:\Users\kayla\Desktop\Capstone\CSTAR-capstone\PCB_Rev1\Main_Board_Rev1/Components/Symbols/IRFHM9331TRPBF.kicad_sym</uri>
+    </library>
+    <library logical="RPiConnector">
+      <uri>C:\Users\kayla\Desktop\Capstone\CSTAR-capstone\PCB_Rev1\Main_Board_Rev1/Components/Symbols/RPiConnector.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Transistor_FET.kicad_sym</uri>
+    </library>
+    <library logical="USB">
+      <uri>C:\Users\kayla\Desktop\Capstone\CSTAR-capstone\PCB_Rev1\Main_Board_Rev1/Components/Symbols/USB4125-GF-A_REVA2.kicad_sym</uri>
+    </library>
+    <library logical="USB-Diode">
+      <uri>C:\Users\kayla\Desktop\Capstone\CSTAR-capstone\PCB_Rev1\Main_Board_Rev1/Components/Symbols/USBC_ESD_Protection.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J10" pin="1" pinfunction="1" pintype="unspecified"/>
+      <node ref="J12" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="J13" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J9" pin="1" pinfunction="1" pintype="unspecified"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="OUTPUT" pintype="output"/>
+    </net>
+    <net code="2" name="/CSTAR-Drive/OUT1_MOTOR_1">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="OUT1" pintype="output"/>
+      <node ref="X1" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="/CSTAR-Drive/OUT1_MOTOR_2">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="OUT3" pintype="output"/>
+      <node ref="X2" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CSTAR-Drive/OUT2_MOTOR_1">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="OUT2" pintype="output"/>
+      <node ref="X1" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/CSTAR-Drive/OUT2_MOTOR_2">
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="OUT4" pintype="output"/>
+      <node ref="X2" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="5VEXT">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="F2" pin="1" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J11" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="J14" pin="A9" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="J14" pin="B9" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="Vss" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="8" name="12VEXT">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F3" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="1" pinfunction="BIAS" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="Vs" pintype="power_in"/>
+    </net>
+    <net code="9" name="24VEXT">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="Q5" pin="5_6_7_8" pintype="passive"/>
+    </net>
+    <net code="10" name="BATT_IN">
+      <node ref="J5" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="Q5" pin="1_2_3" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="11" name="BICK">
+      <node ref="J1" pin="12" pinfunction="12" pintype="unspecified"/>
+      <node ref="J12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J13" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Ch.A_MOTOR_1">
+      <node ref="J1" pin="29" pinfunction="29" pintype="unspecified"/>
+      <node ref="J9" pin="3" pinfunction="3" pintype="unspecified"/>
+    </net>
+    <net code="13" name="Ch.A_MOTOR_2">
+      <node ref="J1" pin="31" pinfunction="31" pintype="unspecified"/>
+      <node ref="J10" pin="3" pinfunction="3" pintype="unspecified"/>
+    </net>
+    <net code="14" name="Ch.B_MOTOR_1">
+      <node ref="J1" pin="24" pinfunction="24" pintype="unspecified"/>
+      <node ref="J9" pin="4" pinfunction="4" pintype="unspecified"/>
+    </net>
+    <net code="15" name="Ch.B_MOTOR_2">
+      <node ref="J1" pin="26" pinfunction="26" pintype="unspecified"/>
+      <node ref="J10" pin="4" pinfunction="4" pintype="unspecified"/>
+    </net>
+    <net code="16" name="EN_DRIVER_1">
+      <node ref="J1" pin="32" pinfunction="32" pintype="unspecified"/>
+      <node ref="U2" pin="6" pinfunction="EnA" pintype="input"/>
+    </net>
+    <net code="17" name="EN_DRIVER_2">
+      <node ref="J1" pin="33" pinfunction="33" pintype="unspecified"/>
+      <node ref="U2" pin="11" pinfunction="EnB" pintype="input"/>
+    </net>
+    <net code="18" name="FSEL_OMNI">
+      <node ref="J1" pin="37" pinfunction="37" pintype="unspecified"/>
+      <node ref="J13" pin="5" pinfunction="5" pintype="passive"/>
+    </net>
+    <net code="19" name="FSEL_UNI">
+      <node ref="J1" pin="36" pinfunction="36" pintype="unspecified"/>
+      <node ref="J12" pin="5" pinfunction="5" pintype="passive"/>
+    </net>
+    <net code="20" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="IC1" pin="13" pinfunction="GND_1" pintype="passive"/>
+      <node ref="IC1" pin="14" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC1" pin="15" pinfunction="GND_3" pintype="passive"/>
+      <node ref="IC1" pin="16" pinfunction="GND_4" pintype="passive"/>
+      <node ref="IC1" pin="17" pinfunction="GND_5" pintype="passive"/>
+      <node ref="IC1" pin="18" pinfunction="GND_6" pintype="passive"/>
+      <node ref="IC1" pin="22" pinfunction="NC_1" pintype="passive"/>
+      <node ref="IC1" pin="23" pinfunction="GND_7" pintype="passive"/>
+      <node ref="IC1" pin="24" pinfunction="GND_8" pintype="passive"/>
+      <node ref="IC1" pin="25" pinfunction="NC_2" pintype="passive"/>
+      <node ref="IC1" pin="37" pinfunction="GND_9" pintype="passive"/>
+      <node ref="IC1" pin="38" pinfunction="GND_10" pintype="passive"/>
+      <node ref="IC1" pin="39" pinfunction="GND_11" pintype="passive"/>
+      <node ref="IC1" pin="40" pinfunction="GND_12" pintype="passive"/>
+      <node ref="IC1" pin="41" pinfunction="GND_13" pintype="passive"/>
+      <node ref="IC1" pin="42" pinfunction="GND_14" pintype="passive"/>
+      <node ref="IC1" pin="43" pinfunction="EP_1" pintype="passive"/>
+      <node ref="IC1" pin="44" pinfunction="EP_2" pintype="passive"/>
+      <node ref="IC1" pin="45" pinfunction="EP_3" pintype="passive"/>
+      <node ref="IC1" pin="46" pinfunction="EP_4" pintype="passive"/>
+      <node ref="J1" pin="14" pinfunction="14" pintype="unspecified"/>
+      <node ref="J1" pin="20" pinfunction="20" pintype="unspecified"/>
+      <node ref="J1" pin="25" pinfunction="25" pintype="unspecified"/>
+      <node ref="J1" pin="30" pinfunction="30" pintype="unspecified"/>
+      <node ref="J1" pin="34" pinfunction="34" pintype="unspecified"/>
+      <node ref="J1" pin="39" pinfunction="39" pintype="unspecified"/>
+      <node ref="J1" pin="6" pinfunction="6" pintype="unspecified"/>
+      <node ref="J1" pin="9" pinfunction="9" pintype="unspecified"/>
+      <node ref="J10" pin="2" pinfunction="2" pintype="unspecified"/>
+      <node ref="J11" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="J11" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="J11" pin="S1" pinfunction="SHIELD1" pintype="passive"/>
+      <node ref="J11" pin="S2" pinfunction="SHIELD2" pintype="passive"/>
+      <node ref="J12" pin="7" pinfunction="7" pintype="passive"/>
+      <node ref="J12" pin="S1" pinfunction="SHIELD1" pintype="passive"/>
+      <node ref="J12" pin="S2" pinfunction="SHIELD2" pintype="passive"/>
+      <node ref="J13" pin="7" pinfunction="7" pintype="passive"/>
+      <node ref="J13" pin="S1" pinfunction="SHIELD1" pintype="passive"/>
+      <node ref="J13" pin="S2" pinfunction="SHIELD2" pintype="passive"/>
+      <node ref="J14" pin="A12" pinfunction="GND" pintype="power_in"/>
+      <node ref="J14" pin="B12" pinfunction="GND" pintype="power_in"/>
+      <node ref="J14" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J14" pin="S2" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J14" pin="S3" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J14" pin="S4" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="J9" pin="2" pinfunction="2" pintype="unspecified"/>
+      <node ref="LED1" pin="1" pintype="unspecified"/>
+      <node ref="LED2" pin="1" pintype="unspecified"/>
+      <node ref="LED3" pin="1" pintype="unspecified"/>
+      <node ref="LED4" pin="1" pintype="unspecified"/>
+      <node ref="PS1" pin="4" pinfunction="COMP" pintype="passive"/>
+      <node ref="PS1" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R84" pin="1" pintype="passive"/>
+      <node ref="R85" pin="1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_out"/>
+      <node ref="U2" pin="1" pinfunction="SENSE_A" pintype="power_in"/>
+      <node ref="U2" pin="15" pinfunction="SENSE_B" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="IO3" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="IN1_DRIVER_1">
+      <node ref="J1" pin="19" pinfunction="19" pintype="unspecified"/>
+      <node ref="U2" pin="5" pinfunction="IN1" pintype="input"/>
+    </net>
+    <net code="22" name="IN1_DRIVER_2">
+      <node ref="J1" pin="22" pinfunction="22" pintype="unspecified"/>
+      <node ref="U2" pin="10" pinfunction="IN3" pintype="input"/>
+    </net>
+    <net code="23" name="IN2_DRIVER_1">
+      <node ref="J1" pin="21" pinfunction="21" pintype="unspecified"/>
+      <node ref="U2" pin="7" pinfunction="IN2" pintype="input"/>
+    </net>
+    <net code="24" name="IN2_DRIVER_2">
+      <node ref="J1" pin="23" pinfunction="23" pintype="unspecified"/>
+      <node ref="U2" pin="12" pinfunction="IN4" pintype="input"/>
+    </net>
+    <net code="25" name="LIDAR_IO">
+      <node ref="J1" pin="15" pinfunction="15" pintype="unspecified"/>
+      <node ref="J11" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="26" name="LRCK">
+      <node ref="J1" pin="35" pinfunction="35" pintype="unspecified"/>
+      <node ref="J12" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="J13" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="27" name="MCLK">
+      <node ref="J1" pin="7" pinfunction="7" pintype="unspecified"/>
+      <node ref="J12" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2" pintype="unspecified"/>
+      <node ref="Q5" pin="4" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="TP-VGSW1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(IC1-EN{slash}UV)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="19" pinfunction="VIN_1" pintype="passive"/>
+      <node ref="IC1" pin="20" pinfunction="VIN_2" pintype="passive"/>
+      <node ref="IC1" pin="21" pinfunction="VIN_3" pintype="passive"/>
+      <node ref="IC1" pin="26" pinfunction="VIN_4" pintype="passive"/>
+      <node ref="IC1" pin="27" pinfunction="VIN_5" pintype="passive"/>
+      <node ref="IC1" pin="28" pinfunction="VIN_6" pintype="passive"/>
+      <node ref="IC1" pin="29" pinfunction="EN/UV" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(IC1-FB)">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="36" pinfunction="FB" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(IC1-INTVCC)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="INTVCC" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(IC1-RT)">
+      <node ref="IC1" pin="30" pinfunction="RT" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(IC1-SW_1)">
+      <node ref="IC1" pin="10" pinfunction="SW_7" pintype="passive"/>
+      <node ref="IC1" pin="11" pinfunction="SW_8" pintype="passive"/>
+      <node ref="IC1" pin="12" pinfunction="SW_9" pintype="passive"/>
+      <node ref="IC1" pin="4" pinfunction="SW_1" pintype="passive"/>
+      <node ref="IC1" pin="5" pinfunction="SW_2" pintype="passive"/>
+      <node ref="IC1" pin="6" pinfunction="SW_3" pintype="passive"/>
+      <node ref="IC1" pin="7" pinfunction="SW_4" pintype="passive"/>
+      <node ref="IC1" pin="8" pinfunction="SW_5" pintype="passive"/>
+      <node ref="IC1" pin="9" pinfunction="SW_6" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(IC1-SYNC{slash}MODE)">
+      <node ref="IC1" pin="32" pinfunction="SYNC/MODE" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(IC1-VC)">
+      <node ref="IC1" pin="34" pinfunction="VC" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(J2-Pin_2)">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(J2-Pin_3)">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(J2-Pin_4)">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1" pinfunction="1" pintype="unspecified"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(J4-Pin_2)">
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(J6-Pin_1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="INPUT" pintype="input"/>
+    </net>
+    <net code="43" name="Net-(J6-Pin_2)">
+      <node ref="F2" pin="2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(J7-Pin_2)">
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="Vout" pintype="input"/>
+    </net>
+    <net code="45" name="Net-(J8-Pin_1)">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="PS1" pin="1" pinfunction="VIN" pintype="input"/>
+      <node ref="PS1" pin="2" pinfunction="EN" pintype="input"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(J8-Pin_2)">
+      <node ref="F3" pin="2" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(J14-CC1)">
+      <node ref="J14" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="R85" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="IO1" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="Net-(J14-CC2)">
+      <node ref="J14" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R84" pin="2" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="Net-(LED1-Pad2)">
+      <node ref="LED1" pin="2" pintype="unspecified"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="50" name="Net-(LED2-Pad2)">
+      <node ref="LED2" pin="2" pintype="unspecified"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(LED3-Pad2)">
+      <node ref="LED3" pin="2" pintype="unspecified"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(LED4-Pad2)">
+      <node ref="LED4" pin="2" pintype="unspecified"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(PS1-BST)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="PS1" pin="6" pinfunction="BST" pintype="input"/>
+    </net>
+    <net code="54" name="Net-(PS1-FB)">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="PS1" pin="3" pinfunction="FB" pintype="input"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="55" name="Net-(PS1-SW)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="PS1" pin="9" pinfunction="SW" pintype="output"/>
+    </net>
+    <net code="56" name="RGB_Blue_Control">
+      <node ref="J1" pin="11" pinfunction="11" pintype="unspecified"/>
+      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="57" name="RGB_Green_Control">
+      <node ref="J1" pin="5" pinfunction="5" pintype="unspecified"/>
+      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="58" name="RGB_Red_Control">
+      <node ref="J1" pin="3" pinfunction="3" pintype="unspecified"/>
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="59" name="RXD_LIDAR">
+      <node ref="J1" pin="10" pinfunction="10" pintype="unspecified"/>
+      <node ref="J11" pin="7" pinfunction="7" pintype="passive"/>
+    </net>
+    <net code="60" name="SDTO_OMNI">
+      <node ref="J1" pin="38" pinfunction="38" pintype="unspecified"/>
+      <node ref="J13" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="61" name="SDTO_UNI">
+      <node ref="J12" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="J13" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="62" name="TXD_LIDAR">
+      <node ref="J1" pin="8" pinfunction="8" pintype="unspecified"/>
+      <node ref="J11" pin="6" pinfunction="6" pintype="passive"/>
+    </net>
+    <net code="63" name="unconnected-(IC1-BST-Pad3)">
+      <node ref="IC1" pin="3" pinfunction="BST" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(IC1-CLKOUT-Pad31)">
+      <node ref="IC1" pin="31" pinfunction="CLKOUT" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(IC1-PG-Pad33)">
+      <node ref="IC1" pin="33" pinfunction="PG" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(IC1-SS-Pad35)">
+      <node ref="IC1" pin="35" pinfunction="SS" pintype="passive+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(J1-Pad1)">
+      <node ref="J1" pin="1" pinfunction="1" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="2" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(J1-Pad4)">
+      <node ref="J1" pin="4" pinfunction="4" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(J1-Pad13)">
+      <node ref="J1" pin="13" pinfunction="13" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(J1-Pad16)">
+      <node ref="J1" pin="16" pinfunction="16" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(J1-Pad17)">
+      <node ref="J1" pin="17" pinfunction="17" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(J1-Pad18)">
+      <node ref="J1" pin="18" pinfunction="18" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(J1-Pad27)">
+      <node ref="J1" pin="27" pinfunction="27" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(J1-Pad28)">
+      <node ref="J1" pin="28" pinfunction="28" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(J1-Pad40)">
+      <node ref="J1" pin="40" pinfunction="40" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(PS1-NC-Pad7)">
+      <node ref="PS1" pin="7" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(PS1-PG-Pad5)">
+      <node ref="PS1" pin="5" pinfunction="PG" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>
