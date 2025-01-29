@@ -2,15 +2,14 @@ import RPi.GPIO as GPIO
 from time import sleep
 from Encoder import Encoder
 
-MAX_DUTY_CYCLE = 25
-
 class Motor:
     def __init__(self, pin1_num: int, pin2_num: int, en_num: int, pin_a: int, pin_b: int):
         self.pin1 = pin1_num
         self.pin2 = pin2_num
         self.enable = en_num
         self.PWMhz = 1000
-        self.duty_cycle = MAX_DUTY_CYCLE
+        self.MAX_DUTY_CYCLE = 25
+        self.duty_cycle = self.MAX_DUTY_CYCLE
         self.encoder = Encoder(pin_a, pin_b)
 
         GPIO.setmode(GPIO.BCM)
@@ -42,14 +41,16 @@ class Motor:
 
     # ensure the increments we decelerate or accelerate by are a whole factor of max duty cycle
     def accelerate(self):
-        set_speed(duty_cycle + 5)
+        self.set_speed(self.duty_cycle + 5)
         sleep(0.25)
-        print("Duty cycle is " + duty_cycle)
+        print("wait")
+        print("Duty cycle is " + str(self.duty_cycle))
 
     def decelerate(self):
-        set_speed(duty_cycle - 5)
+        self.set_speed(self.duty_cycle - 5)
         sleep(0.25)
-        print("Duty cycle is " + duty_cycle)
+        print("wait")
+        print("Duty cycle is " + str(self.duty_cycle))
 
     def get_encoder_position(self):
         return self.encoder.get_position()
