@@ -3,6 +3,7 @@ from time import sleep
 from Encoder import Encoder
 
 class Motor:
+    PWM_HZ = 1000
     MAX_DUTY_CYCLE = 25
     duty_cycle = MAX_DUTY_CYCLE
 
@@ -10,7 +11,6 @@ class Motor:
         self.pin1 = pin1_num
         self.pin2 = pin2_num
         self.enable = en_num
-        self.PWMhz = 1000
         self.encoder = Encoder(pin_a, pin_b)
 
         GPIO.setmode(GPIO.BCM)
@@ -18,7 +18,7 @@ class Motor:
         GPIO.setup(self.pin2, GPIO.OUT)
         GPIO.setup(self.enable, GPIO.OUT)
 
-        self.p = GPIO.PWM(self.enable, self.PWMhz)
+        self.p = GPIO.PWM(self.enable, Motor.PWM_HZ)
         self.p.start(Motor.duty_cycle)
 
 
