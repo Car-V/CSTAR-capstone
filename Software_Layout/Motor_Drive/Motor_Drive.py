@@ -8,9 +8,7 @@ class Motor_Drive:
 
     def bot_idle(self):
         print("we are decelerating")
-        while (self.motorL.duty_cycle > 0 or self.motorR.duty_cycle > 0): # clean this up
-            self.motorL.decelerate()
-            self.motorR.decelerate()
+        self.bot_decelerate()
         self.motorL.idle()
         self.motorR.idle()
         print("we are idle")
@@ -21,9 +19,7 @@ class Motor_Drive:
         self.motorR.forward()
         print("we are going forward")
         print("we are accelerating")
-        while (self.motorL.duty_cycle < self.motorL.MAX_DUTY_CYCLE or self.motorR.duty_cycle < self.motorR.MAX_DUTY_CYCLE):
-            self.motorL.accelerate()
-            self.motorR.accelerate()
+        self.bot_accelerate()
 
     # go idle before going backward
     def bot_backward(self):
@@ -31,9 +27,7 @@ class Motor_Drive:
         self.motorR.backward()
         print("we are going backward")
         print("we are accelerating")
-        while (self.motorL.duty_cycle < self.motorL.MAX_DUTY_CYCLE or self.motorR.duty_cycle < self.motorR.MAX_DUTY_CYCLE):
-            self.motorL.accelerate()
-            self.motorR.accelerate()
+        self.bot_accelerate()
 
     # go idle before making a turn
     def bot_clockwise(self):
@@ -41,9 +35,7 @@ class Motor_Drive:
         self.motorR.backward()
         print("we are turning clockwise")
         print("we are accelerating")
-        while (self.motorL.duty_cycle < self.motorL.MAX_DUTY_CYCLE or self.motorR.duty_cycle < self.motorR.MAX_DUTY_CYCLE):
-            self.motorL.accelerate()
-            self.motorR.accelerate()
+        self.bot_accelerate()
 
     # go idle before making a turn
     def bot_counter_clockwise(self):
@@ -51,9 +43,23 @@ class Motor_Drive:
         self.motorR.forward()
         print("we are turning counter-clockwise")
         print("we are accelerating")
-        while (self.motorL.duty_cycle < self.motorL.MAX_DUTY_CYCLE or self.motorR.duty_cycle < self.motorR.MAX_DUTY_CYCLE):
-            self.motorL.accelerate()
-            self.motorR.accelerate()
+        self.bot_accelerate()
+
+    def bot_accelerate(self):
+        while (Motor.duty_cycle < Motor.MAX_DUTY_CYCLE):
+            print("Motor duty cycle is " + str(Motor.duty_cycle))
+            Motor.accelerate()
+            self.motorL.set_speed()
+            self.motorR.set_speed()
+            sleep(0.25)
+
+    def bot_decelerate(self):
+        while (Motor.duty_cycle > 0):
+            print("Motor duty cycle is " + str(Motor.duty_cycle))
+            Motor.decelerate()
+            self.motorL.set_speed()
+            self.motorR.set_speed()
+            sleep(0.25)
 
     def delete(self):
         self.motorL.delete()

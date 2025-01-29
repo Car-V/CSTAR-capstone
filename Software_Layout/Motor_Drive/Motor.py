@@ -3,13 +3,14 @@ from time import sleep
 from Encoder import Encoder
 
 class Motor:
+    MAX_DUTY_CYCLE = 25
+    duty_cycle = MAX_DUTY_CYCLE
+
     def __init__(self, pin1_num: int, pin2_num: int, en_num: int, pin_a: int, pin_b: int):
         self.pin1 = pin1_num
         self.pin2 = pin2_num
         self.enable = en_num
         self.PWMhz = 1000
-        self.MAX_DUTY_CYCLE = 25
-        self.duty_cycle = self.MAX_DUTY_CYCLE
         self.encoder = Encoder(pin_a, pin_b)
 
         GPIO.setmode(GPIO.BCM)
@@ -18,7 +19,7 @@ class Motor:
         GPIO.setup(self.enable, GPIO.OUT)
 
         self.p = GPIO.PWM(self.enable, self.PWMhz)
-        self.p.start(self.duty_cycle)
+        self.p.start(Motor.duty_cycle)
 
 
     def forward(self):
@@ -35,22 +36,17 @@ class Motor:
         GPIO.output(self.pin1, GPIO.LOW)
         GPIO.output(self.pin2, GPIO.LOW)
 
-    def set_speed(self, duty_cycle: int):
-        self.duty_cycle = duty_cycle
-        self.p.ChangeDutyCycle(self.duty_cycle)
+    def set_speed(self):
+        self.p.ChangeDutyCycle(Motor.duty_cycle)
 
     # ensure the increments we decelerate or accelerate by are a whole factor of max duty cycle
-    def accelerate(self):
-        self.set_speed(self.duty_cycle + 5)
-        sleep(0.25)
-        print("wait")
-        print("Duty cycle is " + str(self.duty_cycle))
+    @staticmethod
+    def accelerate():
+        Motor.duty_cycle = Motor.duty_cycle + 5
 
-    def decelerate(self):
-        self.set_speed(self.duty_cycle - 5)
-        sleep(0.25)
-        print("wait")
-        print("Duty cycle is " + str(self.duty_cycle))
+    @staticmethod
+    def decelerate():
+        Motor.duty_cycle = Motor.duty_cycle - 5
 
     def get_encoder_position(self):
         return self.encoder.get_position()
