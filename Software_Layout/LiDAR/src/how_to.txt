@@ -1,0 +1,7 @@
+To Run:
+1. open 1s terminal at ~/CSTAR-capstone/Software_Layout/LiDAR 
+2. open 2nd terminal at ~/CSTAR-capstone/Software_Layout/LiDAR 
+3. run colcon build in one of the two terminals
+4. run source install/setup.bash in both terminals
+5. in terminal 1 run "ros2 launch rplidar_ros rplidar_a1_launch.py"
+6. in terminal 2 run ros2 run my_lidar_package lidar_reader

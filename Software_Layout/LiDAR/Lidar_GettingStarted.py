@@ -1,42 +1,60 @@
+# import os
+# from math import cos, sin, pi, floor
+# #import pygame
+# from adafruit_rplidar import RPLidar
+# import time
+# # Set Correct Com/USB port  Windows :  COM1,COM3,COM3, ... or Raspberry Pi Linux :  /dev/ttyUSB0, /dev/ttyUSB1, ....
+# lidar = RPLidar(None, '/dev/ttyUSB0',timeout=2.5) # don't need rate?
+
+# # info = lidar.info
+# # print(info)         
+
+# # health = lidar.get_health()
+# # print(health)
+
+# print ("starting spinning .......\n")
+# time.sleep(5)
+# print ("scanning started")
+
+# scan_data = [0]*360
+
+# try:    
+#     for scan in lidar.iter_scans():
+#         for (_, angle, distance) in scan:
+#             scan_data[min([359, floor(angle)])] = distance
+#             if (angle > 350.0 and angle < 359.9 and distance < 400) :
+#                 print ("Frontal")
+#                 print ("\n")
+
+#             if (angle > 90.0 and angle < 91.0 and distance < 400) :
+#                 print ("Left")
+#                 print ("\n")
+                
+#             if (angle > 270.0 and angle < 271.0 and distance < 400) :
+#                 print ("Right")
+#                 print ("\n")
+
+
+# except KeyboardInterrupt:
+#     print('Stopping.')
+
+# except KeyboardInterrupt:
+#     print('Stopping.')
+      
+# lidar.stop()
+# lidar.stop_motor()
+# lidar.disconnect()
 from rplidar import RPLidar
-import time
-# Set Correct Com/USB port  Windows :  COM1,COM3,COM3, ... or Raspberry Pi Linux :  /dev/ttyUSB0, /dev/ttyUSB1, ....
-lidar = RPLidar('/dev/ttyUSB0',256000) # don't need rate?
 
-info = lidar.get_info()
-print(info)
-
-# health = lidar.get_health()
-# print(health)
-
-print ("starting spinning .......\n")
-time.sleep(5)
-print ("scanning started")
-
+lidar = RPLidar('/dev/ttyUSB0', baudrate=115200)
 
 try:
     for scan in lidar.iter_scans():
-        for (_, angle, distance) in scan:
-            #scan_data[min([359, floor(angle)])] = distance
-            if (angle > 350.0 and angle < 359.9 and distance < 400) :
-                print ("Frontal")
-                print ("\n")
+        print(scan)
+        break  # Only take one scan for testing
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    lidar.stop()
+    
 
-            if (angle > 90.0 and angle < 91.0 and distance < 400) :
-                print ("Left")
-                print ("\n")
-                
-            if (angle > 270.0 and angle < 271.0 and distance < 400) :
-                print ("Right")
-                print ("\n")
-
-
-except KeyboardInterrupt:
-    print('Stopping.')
-
-except KeyboardInterrupt:
-    print('Stopping.')
-      
-lidar.stop()
-lidar.stop_motor()
-lidar.disconnect()
