@@ -16,10 +16,10 @@ class AudioManager:
         GPIO.setup(self.sdto, GPIO.IN)      #sdto with tdm signal input
         
 
-    def collect_sample(time_recording):     #collects audio signals from given time
-        FORMAT = pyaudio.paInt32 #format of TDM signal is 24 bits
+    def collect_samples(time_recording):     #collects audio signals from given time
+        FORMAT = pyaudio.paInt24 #format of TDM signal is 24 bits
         CHANNELS = 4    #two ADC channels
-        RATE =10000     #rate must be at least twice as large as highest frequency signal
+        RATE = 10000     #rate must be at least twice as large as highest frequency signal
         CHUNK = 1024    #frames per buffer
 
         p = pyaudio.PyAudio()
