@@ -4,6 +4,7 @@
 
 from Motor import Motor
 from time import sleep
+
 class Motor_Drive:
     def __init__(self):
         self.motorL = Motor(25, 11, 13, 6, 7) # motor 2, in1 in2 enb ch1 ch2
@@ -24,6 +25,12 @@ class Motor_Drive:
         print("we are going forward")
         print("we are accelerating")
         self.bot_accelerate()
+        
+        for _ in range(10):  # Update PID in a loop
+            self.motorL.update_speed()
+            self.motorR.update_speed()
+            sleep(0.1)  # Adjust timing as needed
+
 
     # go idle before going backward
     def bot_backward(self):
@@ -32,6 +39,12 @@ class Motor_Drive:
         print("we are going backward")
         print("we are accelerating")
         self.bot_accelerate()
+        
+        for _ in range(10):
+            self.motorL.update_speed()
+            self.motorR.update_speed()
+            sleep(0.1)
+        
 
     # go idle before making a turn
     def bot_clockwise(self):
@@ -40,6 +53,11 @@ class Motor_Drive:
         print("we are turning clockwise")
         print("we are accelerating")
         self.bot_accelerate()
+        
+        for _ in range(10):
+            self.motorL.update_speed()
+            self.motorR.update_speed()
+            sleep(0.1)
 
     # go idle before making a turn
     def bot_counter_clockwise(self):
@@ -48,6 +66,12 @@ class Motor_Drive:
         print("we are turning counter-clockwise")
         print("we are accelerating")
         self.bot_accelerate()
+        
+        for _ in range(10):
+            self.motorL.update_speed()
+            self.motorR.update_speed()
+            sleep(0.1)
+        
 
     def bot_accelerate(self):
         while (Motor.duty_cycle < Motor.MAX_DUTY_CYCLE):
