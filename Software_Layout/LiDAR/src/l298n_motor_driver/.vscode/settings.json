@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/slam_toolbox/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/dwb_msgs/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav_2d_msgs/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav2_simple_commander/lib/python3.10/site-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav2_msgs/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav2_common/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/my_launch_pkg/lib/python3.10/site-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/cstar_launch/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/slam_toolbox/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/dwb_msgs/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav_2d_msgs/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav2_simple_commander/lib/python3.10/site-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav2_msgs/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/nav2_common/local/lib/python3.10/dist-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/my_launch_pkg/lib/python3.10/site-packages",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/cstar_launch/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
