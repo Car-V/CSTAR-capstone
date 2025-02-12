@@ -1,3 +1,7 @@
+# Motor_Drive_Manager.py - runs predefined movement tests.
+# This file contains the Motor_Drive_Manager class, which is used to manage the Motor_Drive class.
+
+
 from Motor_Drive import Motor_Drive
 from time import sleep
 class Motor_Drive_Manager:

@@ -1,3 +1,7 @@
+# Motor_Drive.py - Manges coordinated motor movement.
+# This file contains the Motor_Drive class, which is used to manage the Motor class.
+
+
 from Motor import Motor
 from time import sleep
 class Motor_Drive:
