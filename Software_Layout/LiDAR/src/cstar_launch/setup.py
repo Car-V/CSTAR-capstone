@@ -16,7 +16,7 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py'))
        ],
        
-    install_requires=['setuptools'],
+    install_requires=['setuptools','nav2_bringup'],
     zip_safe=True,
     maintainer='cstar-capstone',
     maintainer_email='vale.c@northeastern.edu',
