@@ -1,3 +1,7 @@
+# Encoder.py - handles encoder readings.
+# This file contains the Encoder class, which is used to read the position and direction of a rotary encoder.
+
+
 import RPi.GPIO as GPIO
 
 class Encoder:

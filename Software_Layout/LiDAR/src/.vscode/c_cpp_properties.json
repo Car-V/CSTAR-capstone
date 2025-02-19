@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/install/slam_toolbox/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/src/rf2o_laser_odometry/include/**",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/src/rplidar_ros/include/**",
+        "/home/cstar-capstone/CSTAR-capstone/Software_Layout/LiDAR/src/slam_toolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
