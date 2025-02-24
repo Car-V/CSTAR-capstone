@@ -1,10 +1,9 @@
-# Encoder.py - handles encoder readings.
-# This file contains the Encoder class, which is used to read the position and direction of a rotary encoder.
-
-
 import math
 import time
 import RPi.GPIO as GPIO
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32MultiArray
 
 class Encoder:
     WHEEL_DIAMETER = 0.072  
@@ -72,3 +71,39 @@ class Encoder:
 
     def get_odometry(self):
         return self.x, self.y, self.theta
+
+
+class EncoderOdometryNode(Node):
+    def __init__(self):
+        super().__init__('encoder_odometry_node')
+
+        self.left_encoder = Encoder(pin_a=17, pin_b=18)  # NEED TO UPDATE PIN
+        self.right_encoder = Encoder(pin_a=22, pin_b=23)  # NEED TO UPDATE PIN
+
+        self.odometry_publisher = self.create_publisher(Float32MultiArray, 'odometry', 10)
+
+        self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
+
+    def timer_callback(self):
+        self.left_encoder.update_position()
+        self.right_encoder.update_position()
+
+        self.left_encoder.update_odometry(self.left_encoder, self.right_encoder)
+
+        odometry = Float32MultiArray()
+        odometry.data = [self.left_encoder.x, self.left_encoder.y, self.left_encoder.theta]
+        
+        self.odometry_publisher.publish(odometry)
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    encoder_odometry_node = EncoderOdometryNode()
+
+    rclpy.spin(encoder_odometry_node)
+
+    encoder_odometry_node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
