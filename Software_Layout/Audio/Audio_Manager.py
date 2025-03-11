@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 import pyaudio
 import numpy as np
+import matplotlib.pyplot as plt
+import wave
 
 
 class AudioManager:
@@ -17,10 +19,13 @@ class AudioManager:
         
 
     def collect_samples(time_recording):     #collects audio signals from given time
-        FORMAT = pyaudio.paInt24 #format of TDM signal is 24 bits
-        CHANNELS = 4    #two ADC channels
-        RATE = 10000     #rate must be at least twice as large as highest frequency signal
+        print("\nRecording...")
+
+        FORMAT = pyaudio.paUInt8 #format of TDM signal is 24 bits
+        CHANNELS = 2    #two ADC channels
+        RATE = 20000     #rate must be at least twice as large as highest frequency signal
         CHUNK = 1024    #frames per buffer
+        filename = "recordedTest.wav"
 
         p = pyaudio.PyAudio()
 
@@ -32,27 +37,65 @@ class AudioManager:
                         frames_per_buffer=CHUNK)
         
         frames_raw = []     #raw signals without demultiplexing
-        uni_samples = []    #demultiplexed uni samples 
-        omni_samples = []   #demultiplexed omni samples
+        samples = []
 
         for i in range(0, int(RATE/CHUNK * time_recording)):
             data = stream.read(CHUNK)
             frames_raw.append(data)     #append raw data
             samples = np.frombuffer(data, dtype=np.int32)     #reads 32 bit slots
-            uni_samples = samples[::4].astype(np.float32)     #uni signal capture
-            omni_samples = samples[1::4].astype(np.float32)   #omni signal capture
+
 
         stream.stop_stream()
         stream.close()
         p.terminate()
 
-        samples = {uni_samples, omni_samples}
+        waveFile = wave.open(filename, 'wb')
+        waveFile.setnchannels(CHANNELS)
+        waveFile.setsampwidth(p.get_sample_size(FORMAT))
+        waveFile.setframerate(RATE)
+        waveFile.writeframes(b''.join(frames_raw))
+        waveFile.close()
+
 
         return samples
+
+
+def __main__():
+    print("\nStarting...")
+    samples = AudioManager.collect_samples(10)
+
+    # Convert the list to a numpy array for FFT processing
+    samples = np.array(samples)
+
+    # Number of samples to collect
+    num_samples = len(samples)# Adjust based on the resolution you need
+    sampling_rate = 20000  # Samples per second (1 kHz)
+
+    # Perform FFT on the collected data
+    fft_result = np.fft.fft(samples)
+    fft_freq = np.fft.fftfreq(num_samples, 1.0 / sampling_rate)
+
+    # Plot the FFT result (only the positive frequencies)
+    positive_freqs = fft_freq[:num_samples // 2]
+    positive_fft = np.abs(fft_result[:num_samples // 2])
+
+    print("\nPlotting...")
+
+    # Plot the frequency spectrum
+    plt.figure(figsize=(10, 6))
+    plt.plot(positive_freqs, positive_fft)
+    plt.title("FFT of USB-Mic Input Signal")
+    plt.xlabel("Frequency (Hz)")
+    plt.ylabel("Magnitude")
+    plt.grid(True)
+    plt.show()
+
+    # Clean up GPIO setup
+
+    GPIO.cleanup()
+
     
-
-
-        
+__main__()        
         
 
         
