@@ -4,12 +4,24 @@ from time import sleep
 GPIO.setwarnings(False)
 
 # Right Motor
+
+# PIN 11
 in1 = 17
+
+# PIN 13
 in2 = 27
+
+# PIN 7 (GPCLK0)
 en_a = 4
+
+
 # Left Motor
+
+# PIN 29 (GPCLK1)
 in3 = 5
+# PIN 31 (GPCLK2)
 in4 = 6
+# PIN 13 (PWM1)
 en_b = 13
 
 
