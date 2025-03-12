@@ -11,18 +11,33 @@ in1 = 17
 # PIN 13
 in2 = 27
 
+#Switch to pwm gpio 
 # PIN 7 (GPCLK0)
-en_a = 4
+#en_a = 4
+
+# PIN 32 (PWM0)
+en_a = 12 
 
 
 # Left Motor
 
 # PIN 29 (GPCLK1)
-in3 = 5
+# Dont have to be connected to clk; can be any gpio
+# in3 = 5
+
+# PIN 24 
+in3 = 8
+
 # PIN 31 (GPCLK2)
-in4 = 6
-# PIN 13 (PWM1)
-en_b = 13
+# dont have to be connected to clk; can be any gpio
+# in4 = 6
+
+# PIN 26
+in4 = 7
+
+
+# PIN 33 (PWM1)
+en_b = 13 
 
 
 GPIO.setmode(GPIO.BCM)
