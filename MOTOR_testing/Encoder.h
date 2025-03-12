@@ -1,22 +1,28 @@
-#ifndef Encoder_h //required to ensure no cicular imports
-#define Encoder_h
+#ifndef ENCODER_H
+#define ENCODER_H
 
-#include "Arduino.h"
+#include <wiringPi.h>
 #include <queue>
 #include <utility>
+#include <iostream>
+#include <thread>
+#include <atomic>
 
 using IntPair = std::pair<int, int>;
 
 class Encoder {
-  public: 
-    Encoder(int& state, std::queue<IntPair>& EncoderQueue, int& angle); // change parameters based on what is required
-     //define all methods
-    void main();
-    //define all vars
-    int& state;
+public:
+    Encoder(int pinA, int pinB, std::queue<IntPair>& EncoderQueue, int& angle);
+    void start(); // Start reading the encoder
+    void stop();  // Stop reading the encoder
+    
+private:
+    void readEncoder();
+    int pinA, pinB;
     std::queue<IntPair>& EncoderQueue;
     int& angle;
-
+    std::atomic<bool> running;
+    std::thread encoderThread;
 };
 
 #endif
