@@ -1,7 +1,7 @@
 #ifndef ENCODER_H
 #define ENCODER_H
 
-#include <wiringPi.h>
+#include <pigpio.h>
 #include <queue>
 #include <utility>
 #include <iostream>
@@ -13,16 +13,15 @@ using IntPair = std::pair<int, int>;
 class Encoder {
 public:
     Encoder(int pinA, int pinB, std::queue<IntPair>& EncoderQueue, int& angle);
-    void start(); // Start reading the encoder
-    void stop();  // Stop reading the encoder
+    void start();
+    void stop();
     
 private:
-    void readEncoder();
+    static void encoderCallback(int gpio, int level, uint32_t tick, void* userdata);
     int pinA, pinB;
     std::queue<IntPair>& EncoderQueue;
     int& angle;
     std::atomic<bool> running;
-    std::thread encoderThread;
 };
 
 #endif
