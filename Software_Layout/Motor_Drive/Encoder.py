@@ -72,3 +72,38 @@ class Encoder:
 
     def get_odometry(self):
         return self.x, self.y, self.theta
+
+
+def main(args=None):
+    samples =1000
+
+    leftEncoder = Encoder(5, 16)
+    rightEncoder = Encoder(2, 3)
+
+    leftEncoder.reset_position()
+    rightEncoder.reset_position()
+
+    array_positions = [[0,0] for i in range(samples)]
+
+    for i in range(samples):
+
+        print(str(i)+",    ")
+    
+        leftEncoder.update_position()
+        rightEncoder.update_position()
+
+        array_positions[i][0] = leftEncoder.get_position()
+        array_positions[i][1] = rightEncoder.get_position()
+
+        print(str(array_positions[i][0]) + " - " + str(array_positions[i][1]))
+
+        time.sleep(0.005)
+
+    print(array_positions)
+
+
+
+
+
+if __name__ == '__main__':
+    main()
