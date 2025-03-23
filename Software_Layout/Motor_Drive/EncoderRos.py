@@ -3,21 +3,22 @@ import time
 import RPi.GPIO as GPIO
 import rclpy
 from rclpy.node import Node
-# from std_msgs.msg import Float32MultiArray
+#from std_msgs.msg import Float32MultiArray
 # from geometry_msgs.msg import Odometry
 from nav_msgs.msg import Odometry
 from tf2_ros import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped
 from geometry_msgs.msg import Quaternion
-from tf.transforms import quaternion_from_euler
 import tf_transformations
 
-class Encoder:
-    WHEEL_DIAMETER = 0.072  
-    PULSES_PER_REV = 537.7  
-    GEAR_RATIO = 19.2       
-    WHEEL_BASE = 0.25 
+WHEEL_DIAMETER = 0.072  
+PULSES_PER_REV = 537.7  
+GEAR_RATIO = 19.2       
+WHEEL_BASE = 0.25 
+WHEEL_CIRCUMFERENCE = math.pi * WHEEL_DIAMETER
+DISTANCE_PER_PULSE = WHEEL_CIRCUMFERENCE / (PULSES_PER_REV * GEAR_RATIO)
 
+class Encoder:
     def __init__(self, pin_a: int, pin_b: int):
         self.pin_a = pin_a
         self.pin_b = pin_b
@@ -60,22 +61,6 @@ class Encoder:
     def reset_position(self):
         self.position = 0
 
-    def calculate_distance(self):
-        wheel_circumference = math.pi * self.WHEEL_DIAMETER
-        distance_per_pulse = wheel_circumference / (self.PULSES_PER_REV * self.GEAR_RATIO)
-        return self.position * distance_per_pulse
-
-    def update_odometry(self, left_encoder, right_encoder):
-        left_distance = left_encoder.calculate_distance()
-        right_distance = right_encoder.calculate_distance()
-        
-        distance = (right_distance + left_distance) / 2.0
-        delta_theta = (right_distance - left_distance) / self.WHEEL_BASE
-        
-        self.theta += delta_theta
-        self.x += distance * math.cos(self.theta)
-        self.y += distance * math.sin(self.theta)
-
     def get_odometry(self):
         return self.x, self.y, self.theta
 
@@ -87,12 +72,29 @@ class EncoderOdometryNode(Node):
         self.left_encoder = Encoder(pin_a=17, pin_b=18)  # NEED TO UPDATE PIN
         self.right_encoder = Encoder(pin_a=22, pin_b=23)  # NEED TO UPDATE PIN
 
-        #self.odometry_publisher = self.create_publisher(Float32MultiArray, 'odometry', 10)
+        self.odometry_publisher = self.create_publisher(Odometry(), 'odom', 10)
+        #self.odometry_publisher = self.ceate_publisher(Odometry, '/odom', 10)
         
-        self.odometry_publisher = self.ceate_publisher(Odometry, '/odom', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
         
         self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
+
+    def calculate_distance(self, encoder: Encoder):
+        return encoder.position * DISTANCE_PER_PULSE
+
+    def update_odometry(self, left_encoder: Encoder, right_encoder: Encoder):
+        left_distance = self.calculate_distance(left_encoder)
+        right_distance = self.calculate_distance(right_encoder)
+        
+        distance = (right_distance + left_distance) / 2.0
+        delta_theta = (right_distance - left_distance) / WHEEL_BASE
+        
+        left_encoder.theta += delta_theta
+        left_encoder.x += distance * math.cos(left_encoder.theta)
+        left_encoder.y += distance * math.sin(left_encoder.theta)
+        right_encoder.theta += delta_theta
+        right_encoder.x += distance * math.cos(right_encoder.theta)
+        right_encoder.y += distance * math.sin(right_encoder.theta)
 
     def timer_callback(self):
         
@@ -103,12 +105,12 @@ class EncoderOdometryNode(Node):
         # Do we wat to save previous Odom values?  
         # Might need it to get velocity?
         
-        left_distance = self.left_encoder.calculate_distance()
+        # left_distance = self.calculate_distance(self.left_encoder)
         # right_distance = self.right_encoder.calculate_distance()
         
         #self.left_encoder.update_odometry(self.left_encoder, self.right_encoder)
         
-        self.left_encoder.update_odometry(left_distance, right_distance)
+        self.update_odometry(self.left_encoder, self.right_encoder)
         
         # quaterion = tf_transformations.quaternion_from_euler(0,0, self.left_encoder.theta)
 
@@ -117,16 +119,16 @@ class EncoderOdometryNode(Node):
         
         x = self.left_encoder.x
         y = self.left_encoder.y
-        theta = self.left_encoder.theta
+        theta = self.left_encoder.theta # where is theta used
         
-        current_time = self.get_clock().now.to_msg()
+        current_time = self.get_clock().now().to_msg()
         # Quaternion needed 
         
         # Potential Broadcast (odom -> baselink)
         
         # this is tf_message 
         
-        transform = TransformedStamped()
+        transform = TransformStamped()
         transform.header.frame_id = 'odom'
         transform.child_frame_id = 'base_link'
         
@@ -137,23 +139,19 @@ class EncoderOdometryNode(Node):
         transform.transform.translation.y = y
         transform.transform.translation.z = 0.0
         
+        
         # ORIENTATION 
-
-        # rotation = quaternion_from_euler(0.0,0.0,0.0)
-        # transform.transform.rotation = rotation
-
-        transform.transform.rotation.x = 0.0 # rotation[0]
-        transform.transform.rotation.y = 0.0 # rotation[1]
-        transform.transform.rotation.z = 0.0 # rotation[2]
-        transform.transform.rotation.w = 0.0 # rotation[3]
+        transform.transform.rotation.x = 0.0 # q[0]
+        transform.transform.rotation.y = 0.0 # q[1]
+        transform.transform.rotation.z = 0.0 # q[2]
+        transform.transform.rotation.w = 0.0 # q[3]
         
         # ^ Quaternion info so it would then be 
         
         self.tf_broadcaster.sendTransform(transform)
         
         # PUBLISH ODOMETRY OVER ROS
-    
-
+        
         odom = Odometry()
         odom.header.stamp = current_time
         odom.header.frame_id = 'odom'
@@ -167,10 +165,6 @@ class EncoderOdometryNode(Node):
         # Quaternion
         # in the future when we calculate rotation we can have orientation = Quaternion(x,y,z,w)
         # then we can just do odom.pose.pose = orientation
-
-        # orientation = quaternion_from_euler(0.0,0.0,0.0)
-        # transform.transform.rotation = orientation
-
         odom.pose.pose.orientation.x = 0.0
         odom.pose.pose.orientation.y = 0.0
         odom.pose.pose.orientation.z = 0.0
