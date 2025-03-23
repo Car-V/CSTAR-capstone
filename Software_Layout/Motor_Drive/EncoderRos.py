@@ -3,7 +3,12 @@ import time
 import RPi.GPIO as GPIO
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32MultiArray
+# from std_msgs.msg import Float32MultiArray
+from geometry_msgs.msg import Odometry
+from nav_msgs.msg import Odometry
+from tf2_ros import TransformBroadcaster
+from geometry_msgs.msg import TransformStamped
+from geometry_msgs.msg import Quaternion
 
 class Encoder:
     WHEEL_DIAMETER = 0.072  
@@ -80,22 +85,85 @@ class EncoderOdometryNode(Node):
         self.left_encoder = Encoder(pin_a=17, pin_b=18)  # NEED TO UPDATE PIN
         self.right_encoder = Encoder(pin_a=22, pin_b=23)  # NEED TO UPDATE PIN
 
-        self.odometry_publisher = self.create_publisher(Float32MultiArray, 'odometry', 10)
-        # self.odometry_publisher = self.ceate_publisher(Odometry, '/odom', 10)
-        # self.tf_broadcaster = TransformBroadcaster(self)
+        #self.odometry_publisher = self.create_publisher(Float32MultiArray, 'odometry', 10)
+        
+        self.odometry_publisher = self.ceate_publisher(Odometry, '/odom', 10)
+        self.tf_broadcaster = TransformBroadcaster(self)
         
         self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
 
     def timer_callback(self):
+        
+        
         self.left_encoder.update_position()
         self.right_encoder.update_position()
 
-        self.left_encoder.update_odometry(self.left_encoder, self.right_encoder)
-
-        odometry = Float32MultiArray()
-        odometry.data = [self.left_encoder.x, self.left_encoder.y, self.left_encoder.theta]
+        # Do we wat to save previous Odom values?  
+        # Might need it to get velocity?
         
-        self.odometry_publisher.publish(odometry)
+        left_distance = self.left_encoder.calculate_distance()
+        
+        self.left_encoder.update_odometry(self.left_encoder, self.right_encoder)
+xx
+
+        # odometry = Float32MultiArray()
+        # odometry.data = [self.left_encoder.x, self.left_encoder.y, self.left_encoder.theta]
+        
+        x = self.left_encoder.x
+        y = self.left_encoder.y
+        theta = self.left_encoder.theta
+        
+        current_time = self.get_clock().now.to_msg()
+        # Quaternion needed 
+        
+        # Potential Broadcast (odom -> baselink)
+        
+        # this is tf_message 
+        
+        transform = TransformedStamped()
+        transform.header.frame_id = 'odom'
+        transform.child_frame_id = 'base_link'
+        
+        # this is broadcasting a new tf 
+        
+        transform.header.stamp = current_time
+        transform.transform.translation.x = x
+        transform.transform.translation.y = y
+        transform.transform.translation.z = 0.0
+        
+        # ORIENTATION 
+        transform.transform.rotation.x = 0.0
+        transform.transform.rotation.y = 0.0
+        transform.transform.rotation.z = 0.0
+        transform.transform.rotation.w = 0.0
+        
+        self.tf_broadcaster.sendTransform(transform)
+        
+        # PUBLISH ODOMETRY OVER ROS
+        
+        odom = Odometry()
+        odom.header.stamp = current_time
+        odom.header.frame_id = 'odom'
+        odom.child_frame_id = 'base_link'
+        odom.header.stamp = current_time
+        odom.pose.pose.position.x = x
+        odom.pose.pose.position.y = y
+        odom.pose.pose.position.z = 0.0
+                
+        # ORIENTATION
+        # in the future when we calculate rotation we can have orientation = Quaternion(x,y,z,w)
+        # then we can just do odom.pose.pose = orientation
+        odom.pose.pose.orientation.x = 0.0
+        odom.pose.pose.orientation.y = 0.0
+        odom.pose.pose.orientation.z = 0.0
+        odom.pose.pose.orientation.w = 0.0
+        
+        self.odometry_publisher.publish(odom)
+    
+        # self.odometry_publisher.publish(odometry)
+        
+        
+        
 
 def main(args=None):
     rclpy.init(args=args)
