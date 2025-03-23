@@ -81,7 +81,9 @@ class EncoderOdometryNode(Node):
         self.right_encoder = Encoder(pin_a=22, pin_b=23)  # NEED TO UPDATE PIN
 
         self.odometry_publisher = self.create_publisher(Float32MultiArray, 'odometry', 10)
-
+        # self.odometry_publisher = self.ceate_publisher(Odometry, '/odom', 10)
+        # self.tf_broadcaster = TransformBroadcaster(self)
+        
         self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
 
     def timer_callback(self):
