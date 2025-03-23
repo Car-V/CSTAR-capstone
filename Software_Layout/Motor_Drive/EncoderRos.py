@@ -142,11 +142,10 @@ class EncoderOdometryNode(Node):
         # rotation = quaternion_from_euler(0.0,0.0,0.0)
         # transform.transform.rotation = rotation
 
-
-        transform.transform.rotation.x = 0.0 # q[0]
-        transform.transform.rotation.y = 0.0 # q[1]
-        transform.transform.rotation.z = 0.0 # q[2]
-        transform.transform.rotation.w = 0.0 # q[3]
+        transform.transform.rotation.x = 0.0 # rotation[0]
+        transform.transform.rotation.y = 0.0 # rotation[1]
+        transform.transform.rotation.z = 0.0 # rotation[2]
+        transform.transform.rotation.w = 0.0 # rotation[3]
         
         # ^ Quaternion info so it would then be 
         
