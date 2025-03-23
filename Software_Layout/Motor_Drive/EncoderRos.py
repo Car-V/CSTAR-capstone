@@ -9,6 +9,7 @@ from nav_msgs.msg import Odometry
 from tf2_ros import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped
 from geometry_msgs.msg import Quaternion
+from tf.transforms import quaternion_from_euler
 import tf_transformations
 
 class Encoder:
@@ -136,19 +137,24 @@ class EncoderOdometryNode(Node):
         transform.transform.translation.y = y
         transform.transform.translation.z = 0.0
         
-        
         # ORIENTATION 
+
+        # rotation = quaternion_from_euler(0.0,0.0,0.0)
+        # transform.transform.rotation = rotation
+
+
         transform.transform.rotation.x = 0.0 # q[0]
         transform.transform.rotation.y = 0.0 # q[1]
         transform.transform.rotation.z = 0.0 # q[2]
-        transform.transform.rotation.w = 0.0    #q[3]
+        transform.transform.rotation.w = 0.0 # q[3]
         
         # ^ Quaternion info so it would then be 
         
         self.tf_broadcaster.sendTransform(transform)
         
         # PUBLISH ODOMETRY OVER ROS
-        
+    
+
         odom = Odometry()
         odom.header.stamp = current_time
         odom.header.frame_id = 'odom'
@@ -162,6 +168,10 @@ class EncoderOdometryNode(Node):
         # Quaternion
         # in the future when we calculate rotation we can have orientation = Quaternion(x,y,z,w)
         # then we can just do odom.pose.pose = orientation
+
+        # orientation = quaternion_from_euler(0.0,0.0,0.0)
+        # transform.transform.rotation = orientation
+
         odom.pose.pose.orientation.x = 0.0
         odom.pose.pose.orientation.y = 0.0
         odom.pose.pose.orientation.z = 0.0
