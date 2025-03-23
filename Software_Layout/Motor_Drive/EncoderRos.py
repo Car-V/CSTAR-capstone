@@ -4,11 +4,12 @@ import RPi.GPIO as GPIO
 import rclpy
 from rclpy.node import Node
 # from std_msgs.msg import Float32MultiArray
-from geometry_msgs.msg import Odometry
+# from geometry_msgs.msg import Odometry
 from nav_msgs.msg import Odometry
 from tf2_ros import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped
 from geometry_msgs.msg import Quaternion
+import tf_transformations
 
 class Encoder:
     WHEEL_DIAMETER = 0.072  
@@ -102,9 +103,13 @@ class EncoderOdometryNode(Node):
         # Might need it to get velocity?
         
         left_distance = self.left_encoder.calculate_distance()
+        # right_distance = self.right_encoder.calculate_distance()
         
-        self.left_encoder.update_odometry(self.left_encoder, self.right_encoder)
-xx
+        #self.left_encoder.update_odometry(self.left_encoder, self.right_encoder)
+        
+        self.left_encoder.update_odometry(left_distance, right_distance)
+        
+        # quaterion = tf_transformations.quaternion_from_euler(0,0, self.left_encoder.theta)
 
         # odometry = Float32MultiArray()
         # odometry.data = [self.left_encoder.x, self.left_encoder.y, self.left_encoder.theta]
@@ -131,11 +136,14 @@ xx
         transform.transform.translation.y = y
         transform.transform.translation.z = 0.0
         
+        
         # ORIENTATION 
-        transform.transform.rotation.x = 0.0
-        transform.transform.rotation.y = 0.0
-        transform.transform.rotation.z = 0.0
-        transform.transform.rotation.w = 0.0
+        transform.transform.rotation.x = 0.0 # q[0]
+        transform.transform.rotation.y = 0.0 # q[1]
+        transform.transform.rotation.z = 0.0 # q[2]
+        transform.transform.rotation.w = 0.0    #q[3]
+        
+        # ^ Quaternion info so it would then be 
         
         self.tf_broadcaster.sendTransform(transform)
         
@@ -151,6 +159,7 @@ xx
         odom.pose.pose.position.z = 0.0
                 
         # ORIENTATION
+        # Quaternion
         # in the future when we calculate rotation we can have orientation = Quaternion(x,y,z,w)
         # then we can just do odom.pose.pose = orientation
         odom.pose.pose.orientation.x = 0.0
@@ -167,12 +176,18 @@ xx
 
 def main(args=None):
     rclpy.init(args=args)
-
+    
     encoder_odometry_node = EncoderOdometryNode()
-
-    rclpy.spin(encoder_odometry_node)
+    
+    try:
+        rclpy.spin(encoder_odometry_node)
+    
+    except KeyboardInterrupt:
+        pass
+    
 
     encoder_odometry_node.destroy_node()
+    GPIO.cleanup()
     rclpy.shutdown()
 
 if __name__ == '__main__':
