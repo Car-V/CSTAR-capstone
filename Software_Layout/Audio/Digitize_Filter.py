@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy import butter, lfilter
-import math
+from scipy.signal import butter, lfilter
 
 class DigitizeFilter:
     def __init__(self):
@@ -32,8 +31,8 @@ class DigitizeFilter:
     #   -sampling rate
     #   -order (default 5)
     # returns filtered signal
-    def bandpass_butterworth_filter(data, lowcut, highcut, fs, order=5):
-        b,a = DigitizeFilter.bandpass_butterworth(lowcut, highcut, fs, order=order)     #create filter from specs
+    def bandpass_butterworth_filter(self, data, lowcut, highcut, fs, order=5):
+        b,a = DigitizeFilter.bandpass_butterworth(lowcut, highcut, fs, order)     #create filter from specs
         y = lfilter(b, a, data)     #apply filter to signal
         return y
     
