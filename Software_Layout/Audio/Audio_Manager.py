@@ -7,7 +7,7 @@ from Digitize_Filter import DigitizeFilter
 
 
 class AudioManager:
-    def __init__(self, packetNo, start_pos, mid_pos, end_pos, threshhold, delam_range_start = 1200, delam_range_end = 2000, rate = 48000):
+    def __init__(self, packetNo, start_pos, mid_pos, end_pos, threshhold, delam_range_start = 1000, delam_range_end = 3000, rate = 48000):
         self.rate = rate        #sets sampling rate of collected audio
         self.packetNo = packetNo          #sets packet number for tracking
         self.start_pos = start_pos      #start position for audio recording
@@ -35,7 +35,7 @@ class AudioManager:
         return samples
     
     def apply_filters(self, samples):
-        samples_filtered = self.digi_filter.bandpass_butterworth_filter(samples, self.delam_range_start, self.delam_range_end, self.rate, 5)
+        samples_filtered = self.digi_filter.bandpass_butterworth_filter(samples, 1000, 7000, self.rate, 5)
         return samples_filtered
     
     """this part doesn't make sense, leaving in for reference purposes"""
@@ -77,10 +77,8 @@ class AudioManager:
         
         return [single_normalized_fft, freq]
         
-    def check_against_threshhold(self, fft):
-        sum_mag = 0  
-        freq = fftfreq(len(fft), 1/self.rate)          #generate frequencies for FFT
-
+    def check_against_threshhold(self, fft, freq):
+        sum_mag = 0
         low_index = self.delam_range_start
         high_index = 0
 
@@ -97,6 +95,7 @@ class AudioManager:
         for i in range(low_index, high_index + 1):  # Include high_index
             sum_mag += fft[i]  # Sum the FFT magnitudes
 
+        print(sum_mag)
         # Compute the average magnitude
         avg_mag = sum_mag / (high_index - low_index)
 
@@ -152,8 +151,8 @@ def __main__():
         i[1] = cur_pos
         cur_pos += second_half_increments
 """
-    audioGroup.convert_to_fft(samples)
-    audioGroup.check_against_threshhold(samples)
+    [samples, freq] = audioGroup.convert_to_fft(samples)
+    audioGroup.check_against_threshhold(samples, freq)
 
     # Convert the list to a numpy array for FFT processing
     #samples = np.array(samples)
