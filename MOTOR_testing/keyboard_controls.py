@@ -59,7 +59,7 @@ GPIO.setup(en_b,GPIO.OUT)
 
 # Adjust these values to fine-tune straight movement
 LEFT_MOTOR_SPEED = 30 # Slightly slower, adjust down if still veering right
-RIGHT_MOTOR_SPEED = 45  # Reference speed
+RIGHT_MOTOR_SPEED = 40  # Reference speed
 
 q = GPIO.PWM(en_a, 100)  # Right motor PWM
 p = GPIO.PWM(en_b, 100)  # Left motor PWM
