@@ -3,11 +3,14 @@ import time
 import RPi.GPIO as GPIO
 import rclpy
 from rclpy.node import Node
+# from std_msgs.msg import Float32MultiArray
+# from geometry_msgs.msg import Odometry
 from nav_msgs.msg import Odometry
 from tf2_ros import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped, Quaternion
 # from geometry_msgs.msg import PoseWithCovariance
-# from geometry_msgs.msg import TwistWithCovariance
+# from geometry_msgs.msg import TwistWithCovarian
+# import tf_transformations
 
 WHEEL_DIAMETER = 0.072  
 PULSES_PER_REV = 537.7  
@@ -15,10 +18,10 @@ GEAR_RATIO = 19.2
 WHEEL_BASE = 0.25 
 WHEEL_CIRCUMFERENCE = pi * WHEEL_DIAMETER
 DISTANCE_PER_PULSE = WHEEL_CIRCUMFERENCE / (PULSES_PER_REV * GEAR_RATIO)
-LEFT_A = 17 # update
-LEFT_B = 18
-RIGHT_A = 22
-RIGHT_B = 23
+LEFT_A = 5 # update
+LEFT_B = 16
+RIGHT_A = 2
+RIGHT_B = 3
 
 # class Encoder:
 #     def __init__(self, pin_a: int, pin_b: int):
@@ -85,9 +88,9 @@ class EncoderOdometryNode(Node):
         self.last_right_ticks = 0
 
         # to run without GPIO, uncomment
-        # self.vx = 0.1
-        # self.vy = -0.1
-        # self.vth = 0.1
+        #self.vx = 0.1
+        #self.vy = -0.1
+        #self.vth = 0.1
 
         self.current_time = self.get_clock().now()
         self.last_time = self.get_clock().now()
@@ -103,10 +106,10 @@ class EncoderOdometryNode(Node):
 
         self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
 
-    def increment_left_ticks(self):
+    def increment_left_ticks(self, channel):
         self.left_ticks += 1
     
-    def increment_right_ticks(self):
+    def increment_right_ticks(self, channel):
         self.right_ticks += 1
 
     def calculate_velocities(self):
@@ -137,9 +140,9 @@ class EncoderOdometryNode(Node):
         delta_y = vx * sin(self.th) * dt
         delta_th = vth * dt
         # to run without GPIO, switch with
-        # delta_x = (self.vx * cos(self.th) - self.vy * sin(self.th)) * dt
-        # delta_y = (self.vx * sin(self.th) + self.vy * cos(self.th)) * dt
-        # delta_th = self.vth * dt
+        #delta_x = (self.vx * cos(self.th) - self.vy * sin(self.th)) * dt
+        #delta_y = (self.vx * sin(self.th) + self.vy * cos(self.th)) * dt
+        #delta_th = self.vth * dt
 
         self.x += delta_x
         self.y += delta_y
@@ -180,9 +183,9 @@ class EncoderOdometryNode(Node):
         odom.twist.twist.linear.x = vx
         odom.twist.twist.angular.z = vth
         # to run without GPIO, switch
-        # odom.twist.twist.linear.x = self.vx
-        # odom.twist.twist.linear.y = self.vy
-        # odom.twist.twist.angular.z = self.vth
+        #odom.twist.twist.linear.x = self.vx
+        #odom.twist.twist.linear.y = self.vy
+        #odom.twist.twist.angular.z = self.vth
         
         # publish message
         self.odom_pub.publish(odom)
