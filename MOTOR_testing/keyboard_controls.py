@@ -1,3 +1,5 @@
+# Purpose: Enables manual control of two DC motors using keyboard inputs (forward, backward, left, right, and stop).
+
 import RPi.GPIO as GPIO
 from time import sleep
 
@@ -49,10 +51,23 @@ GPIO.setup(in3,GPIO.OUT)
 GPIO.setup(in4,GPIO.OUT)
 GPIO.setup(en_b,GPIO.OUT)
 
-q=GPIO.PWM(en_a,100)
-p=GPIO.PWM(en_b,100)
-p.start(75)
-q.start(75)
+#q=GPIO.PWM(en_a,100)
+#p=GPIO.PWM(en_b,100)
+#p.start(75)
+#q.start(75)
+
+
+# Adjust these values to fine-tune straight movement
+LEFT_MOTOR_SPEED = 30 # Slightly slower, adjust down if still veering right
+RIGHT_MOTOR_SPEED = 40  # Reference speed
+
+q = GPIO.PWM(en_a, 100)  # Right motor PWM
+p = GPIO.PWM(en_b, 100)  # Left motor PWM
+
+p.start(LEFT_MOTOR_SPEED)
+q.start(RIGHT_MOTOR_SPEED)
+
+
 
 GPIO.output(in1,GPIO.LOW)
 GPIO.output(in2,GPIO.LOW)
