@@ -31,6 +31,8 @@ class Encoder:
         curr_b = GPIO.input(self.pin_b)
         print("Prev State: ", prev_a, prev_b)
         print("Curr State: ", curr_a, curr_b)
+        time.sleep(0.001)  # 1ms delay
+
         if (prev_a, prev_b) == (0, 0) and (curr_a, curr_b) == (1, 0):
             self.direction = 1  # Clockwise (00 -> 10)
         elif (prev_a, prev_b) == (1, 0) and (curr_a, curr_b) == (1, 1):
