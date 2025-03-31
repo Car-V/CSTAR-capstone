@@ -44,13 +44,13 @@ GPIO.output(in3, GPIO.LOW)
 left_encoder = Encoder(pin_a=5, pin_b=16)   # Left encoder pins
 right_encoder = Encoder(pin_a=2, pin_b=3)    # Right encoder pins
 
-def print_odometry():
-    while True:
-        left_encoder.get_rotation_direction()
-        time.sleep(0.1)  
+# def print_odometry():
+#     while True:
+#         left_encoder.get_rotation_direction()
+#         time.sleep(0.1)  
 
-odometry_thread = threading.Thread(target=print_odometry, daemon=True)
-odometry_thread.start()
+# odometry_thread = threading.Thread(target=print_odometry, daemon=True)
+# odometry_thread.start()
 
 # Motor Control Functions
 def move_forward():
