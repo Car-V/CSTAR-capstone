@@ -32,7 +32,6 @@ class Encoder:
         # Read the state of the encoder channel A
         current_a_state = GPIO.input(self.pin_a)
         current_b_state = GPIO.input(self.pin_b)
-        print(current_a_state)
         # Check if the A channel changed
         if current_a_state != self.last_a_state:
             # If the A channel leads the B channel, it's a clockwise rotation
@@ -54,10 +53,12 @@ class Encoder:
     def reset_position(self):
         self.position = 0
 
+    
     def calculate_distance(self):
         wheel_circumference = math.pi * self.WHEEL_DIAMETER
         distance_per_pulse = wheel_circumference / (self.PULSES_PER_REV * self.GEAR_RATIO)
         return self.position * distance_per_pulse
+
 
     def update_odometry(self, left_encoder, right_encoder):
         left_distance = left_encoder.calculate_distance()
@@ -65,6 +66,8 @@ class Encoder:
         
         distance = (right_distance + left_distance) / 2.0
         delta_theta = (right_distance - left_distance) / self.WHEEL_BASE
+        
+        print(distance)
         
         self.theta += delta_theta
         self.x += distance * math.cos(self.theta)
