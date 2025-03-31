@@ -1,7 +1,8 @@
 import math
 import time
 import RPi.GPIO as GPIO
-
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
 class Encoder:
     wheel_circumference = 0.072  
     ppr = 537.7  
@@ -17,6 +18,10 @@ class Encoder:
         self.direction = 0  # 1 for clockwise, -1 for counterclockwise
         
         self.pulse_count = 0
+
+        self.plot_x = []
+        self.plot_y = []
+
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.pin_a, GPIO.IN)
         GPIO.setup(self.pin_b, GPIO.IN)
@@ -57,12 +62,19 @@ class Encoder:
         rotations = self.pulse_count / (self.ppr * self.gear_ratio)        
         self.distance = rotations * self.wheel_circumference
         
+        self.plot_x.append(self.distance)
+        self.plot_y.append(0)
+
         # Update last states for next callback
         self.last_a_state = curr_a
         self.last_b_state = curr_b
 
         print("Direction: ", self.direction)
         print("Distance: ", self.distance)
+
+    def plot(self):
+        plt.plot(self.plot_x, self.plot_y)
+        ani = FuncAnimation(plt.gcf(), animate, interval = 1000)
 
     def get_distance(self):
         return self.distance
