@@ -28,7 +28,7 @@ class Encoder:
         prev_a = self.last_a_state
         prev_b = self.last_b_state
         curr_a = GPIO.input(self.pin_a)
-        curr_b = GPIO.input(self.pin_a)
+        curr_b = GPIO.input(self.pin_b)
         print(prev_a, prev_b)
         print(curr_a, curr_b)
         if (prev_a, prev_b) == (0, 0) and (curr_a, curr_b) == (1, 0):
