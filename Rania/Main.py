@@ -46,11 +46,7 @@ right_encoder = Encoder(pin_a=2, pin_b=3)    # Right encoder pins
 
 def print_odometry():
     while True:
-        left_encoder.update_position()
-        right_encoder.update_position()
-        left_encoder.update_odometry(left_encoder, right_encoder)
-        x, y, theta = left_encoder.get_odometry()
-        print(f"Position: x = {x:.2f} m, y = {y:.2f} m, theta = {math.degrees(theta):.2f}°")
+        left_encoder.get_rotation_direction()
         time.sleep(0.1)  
 
 odometry_thread = threading.Thread(target=print_odometry, daemon=True)
