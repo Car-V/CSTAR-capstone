@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 class Encoder:
-    wheel_circumference = 0.072  
+    wheel_circumference = 0.072 * math.pi 
     ppr = 537.7  
     gear_ratio = 19.2       
     # WHEEL_BASE = 0.25 
@@ -65,7 +65,6 @@ class Encoder:
 
         print("Direction: ", self.direction)
         print("Distance: ", self.distance)
-
 
     def get_distance(self):
         return self.distance
