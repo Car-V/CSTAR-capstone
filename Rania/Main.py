@@ -40,7 +40,7 @@ GPIO.output(in2, GPIO.LOW)
 GPIO.output(in4, GPIO.LOW)
 GPIO.output(in3, GPIO.LOW)
 
-# Encoder Initialization (Adjust pins)
+# Encoder Initialization
 left_encoder = Encoder(pin_a=16, pin_b=5)   # Left encoder pins
 right_encoder = Encoder(pin_a=2, pin_b=3)    # Right encoder pins
 
@@ -90,7 +90,7 @@ def stop_motors():
 
 # Main Loop to Listen for Keyboard Input
 try:
-    print("Use W/A/S/D to moveand CTRL-C to exit.")
+    print("Use W/A/S/D to move, C to stop, and CTRL-C to exit.")
     while True:
         # Get user input
         user_input = input().lower()
