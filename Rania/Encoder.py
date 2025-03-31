@@ -55,7 +55,7 @@ class Encoder:
             self.direction = -1  # Counterclockwise (10 -> 00)
 
         self.pulse_count += self.direction
-        
+        print(self.pulse_count)
         rotations = self.pulse_count / (self.ppr * self.gear_ratio)        
         self.distance = rotations * self.wheel_circumference
         
