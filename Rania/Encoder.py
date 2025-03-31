@@ -32,7 +32,7 @@ class Encoder:
         # Read the state of the encoder channel A
         current_a_state = GPIO.input(self.pin_a)
         current_b_state = GPIO.input(self.pin_b)
-        print(current_a_state)
+        print(current_a_state, current_b_state)
         # Check if the A channel changed
         if current_a_state != self.last_a_state:
             # If the A channel leads the B channel, it's a clockwise rotation
