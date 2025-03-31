@@ -53,8 +53,10 @@ class Encoder:
             self.direction = -1  # Counterclockwise (11 -> 10)
         elif (self.last_a_state, self.last_b_state) == (1, 0) and (curr_a, curr_b) == (0, 0):
             self.direction = -1  # Counterclockwise (10 -> 00)
+        print(self.pulse_count)
         self.pulse_count = self.pulse_count + self.direction
-        rotations = (self.pulse_count / self.ppr) * self.gear_ratio       
+        print(self.pulse_count)
+        rotations = self.pulse_count / (self.ppr * self.gear_ratio)        
         self.distance = rotations * self.wheel_circumference
         
         # Update last states for next callback
