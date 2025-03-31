@@ -56,7 +56,7 @@ class Encoder:
     
     def calculate_distance(self):
         wheel_circumference = math.pi * self.WHEEL_DIAMETER
-        distance_per_pulse = wheel_circumference / (self.PULSES_PER_REV * self.GEAR_RATIO)
+        distance_per_pulse = (wheel_circumference / self.PULSES_PER_REV) * self.GEAR_RATIO
         return self.position * distance_per_pulse
 
 
