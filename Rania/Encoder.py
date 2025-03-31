@@ -19,9 +19,6 @@ class Encoder:
         
         self.pulse_count = 0
 
-        self.plot_x = []
-        self.plot_y = []
-
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.pin_a, GPIO.IN)
         GPIO.setup(self.pin_b, GPIO.IN)
@@ -62,9 +59,6 @@ class Encoder:
         rotations = self.pulse_count / (self.ppr * self.gear_ratio)        
         self.distance = rotations * self.wheel_circumference
         
-        self.plot_x.append(self.distance)
-        self.plot_y.append(0)
-
         # Update last states for next callback
         self.last_a_state = curr_a
         self.last_b_state = curr_b
@@ -72,9 +66,6 @@ class Encoder:
         print("Direction: ", self.direction)
         print("Distance: ", self.distance)
 
-    def plot(self):
-        plt.plot(self.plot_x, self.plot_y)
-        ani = FuncAnimation(plt.gcf(), animate, interval = 1000)
 
     def get_distance(self):
         return self.distance
