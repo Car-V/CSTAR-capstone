@@ -31,7 +31,7 @@ GPIO.setup(en_b, GPIO.OUT)
 # PWM Setup
 q = GPIO.PWM(en_a, 100)  # Right motor PWM
 p = GPIO.PWM(en_b, 100)  # Left motor PWM
-p.start(10)
+p.start(15)
 q.start(10)
 
 # Stop motors initially
