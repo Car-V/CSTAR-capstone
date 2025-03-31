@@ -7,7 +7,7 @@ from Digitize_Filter import DigitizeFilter
 
 
 class AudioManager:
-    def __init__(self, packetNo, start_pos, mid_pos, end_pos, threshhold, delam_range_start = 1000, delam_range_end = 3000, rate = 48000):
+    def __init__(self, packetNo, start_pos, mid_pos, end_pos, threshhold, delam_range_start = 1200, delam_range_end = 2500, rate = 48000):
         self.rate = rate        #sets sampling rate of collected audio
         self.packetNo = packetNo          #sets packet number for tracking
         self.start_pos = start_pos      #start position for audio recording
@@ -35,7 +35,7 @@ class AudioManager:
         return samples
     
     def apply_filters(self, samples):
-        samples_filtered = self.digi_filter.bandpass_butterworth_filter(samples, 1000, 7000, self.rate, 5)
+        samples_filtered = self.digi_filter.bandpass_butterworth_filter(samples, 1000, 2000, self.rate, 5)
         return samples_filtered
     
     """this part doesn't make sense, leaving in for reference purposes"""
@@ -93,7 +93,7 @@ class AudioManager:
         print(high_index)
         # Loop through the specified FFT range
         for i in range(low_index, high_index + 1):  # Include high_index
-            sum_mag += fft[i]  # Sum the FFT magnitudes
+            sum_mag += (fft[i][0] + fft[i][1])/2  # Sum the FFT magnitudes average
 
         print(sum_mag)
         # Compute the average magnitude
@@ -128,7 +128,7 @@ class AudioManager:
 def __main__():
     audioGroup = AudioManager(1, 0, 5, 10, 0.0025)
 
-    samples = audioGroup.convert_from_wav("DELAM_floor_3_single_6_alewife.wav")  #convert wav to sample array
+    samples = audioGroup.convert_from_wav("gain-delam.mp3")  #convert wav to sample array
     samples = np.array(samples)
     samples = audioGroup.apply_filters(samples)
    # audioGroup.concat_with_position(samples)
