@@ -56,12 +56,13 @@ class Encoder:
         
         rotations = self.pulse_count / (self.ppr * self.gear_ratio)        
         self.distance = rotations * self.wheel_circumference
+        
         # Update last states for next callback
         self.last_a_state = curr_a
         self.last_b_state = curr_b
 
         print("Direction: ", self.direction)
-        print("Direction: ", self.direction)
+        print("Distance: ", self.distance)
 
     def get_distance(self):
         return self.distance
