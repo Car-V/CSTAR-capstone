@@ -29,8 +29,8 @@ class Encoder:
         prev_b = self.last_b_state
         curr_a = GPIO.input(self.pin_a)
         curr_b = GPIO.input(self.pin_b)
-        print(prev_a, prev_b)
-        print(curr_a, curr_b)
+        print("Prev State: ", prev_a, prev_b)
+        print("Curr State: ", curr_a, curr_b)
         if (prev_a, prev_b) == (0, 0) and (curr_a, curr_b) == (1, 0):
             self.direction = 1  # Clockwise (00 -> 10)
         elif (prev_a, prev_b) == (1, 0) and (curr_a, curr_b) == (1, 1):
@@ -51,7 +51,7 @@ class Encoder:
         self.last_a_state = curr_a
         self.last_b_state = curr_b
 
-        print(self.direction)
+        print("Direction: ", self.direction)
         return self.direction
 
     #     self.x = 0.0
