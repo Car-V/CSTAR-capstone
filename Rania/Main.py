@@ -50,7 +50,7 @@ def print_odometry():
         right_encoder.update_position()
         left_encoder.update_odometry(left_encoder, right_encoder)
         x, y, theta = left_encoder.get_odometry()
-        print(f"Position: x = {x:.2f} m, y = {y:.2f} m, theta = {math.degrees(theta):.2f}°")
+        # print(f"Position: x = {x:.2f} m, y = {y:.2f} m, theta = {math.degrees(theta):.2f}°")
         time.sleep(0.1)  
 
 odometry_thread = threading.Thread(target=print_odometry, daemon=True)
