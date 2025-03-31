@@ -41,7 +41,7 @@ GPIO.output(in4, GPIO.LOW)
 GPIO.output(in3, GPIO.LOW)
 
 # Encoder Initialization (Adjust pins)
-#left_encoder = Encoder(pin_a=16, pin_b=5)   # Left encoder pins
+left_encoder = Encoder(pin_a=16, pin_b=5)   # Left encoder pins
 right_encoder = Encoder(pin_a=2, pin_b=3)    # Right encoder pins
 
 # def print_odometry():
