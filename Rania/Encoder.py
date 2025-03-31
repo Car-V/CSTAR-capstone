@@ -66,9 +66,7 @@ class Encoder:
         
         distance = (right_distance + left_distance) / 2.0
         delta_theta = (right_distance - left_distance) / self.WHEEL_BASE
-        
-        print(distance)
-        
+                
         self.theta += delta_theta
         self.x += distance * math.cos(self.theta)
         self.y += distance * math.sin(self.theta)
