@@ -48,14 +48,14 @@ class AudioManager:
         freq = fftfreq(n, 1/self.rate)          #generate frequencies for FFT
         normalized_fft = abs(fft_result/n)       #normalize magnitude
         single_normalized_fft = 2* (normalized_fft[0:int((n/2)+1)])     #make data single-sided and double amplitude
-        '''
+        
         #plotting for visual test
         plt.plot(freq[0:int((n/2)+1)], single_normalized_fft, 'b')
         plt.title("Recorded FFT")
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Magnitude")
         plt.xlim([0, self.rate/2])    
-        plt.show()'''
+        plt.show()
         
         return [single_normalized_fft, freq]
         
@@ -99,7 +99,7 @@ class AudioManager:
         avg_mag = sum_mag / (high_index - low_index)
 
              
-        return fft[low_index:high_index+1]
+        return avg_mag
     
     
         
