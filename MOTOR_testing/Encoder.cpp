@@ -1,3 +1,7 @@
+// Purpose: Handles quadrature encoder signals, commonly used for measuring rotational position and speed.
+// Functionality: The code initializes the GPIO pins for the encoder, sets up interrupt callbacks for 
+// signal changes, and processes the encoder signals to update the angle and state of the encoder.
+
 #include "Encoder.h"
 #include <pigpio.h>
 #include <iostream>

@@ -1,6 +1,7 @@
 /* ========================================
  * Neha & Rania's Motor Test Code
  * Dual Motor Control on the L298N Motor Driver
+ * Purpose: Datasheet for the L298 dual full-bridge driver used for controlling DC motors and stepper motors.
  * ========================================
  */
 
