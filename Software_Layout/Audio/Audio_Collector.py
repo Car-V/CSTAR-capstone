@@ -7,7 +7,7 @@ class Audio_Collector:
         self.rate = rate
         self.filename = file
 
-    def collect_samples(time_recording):     #collects audio signals from given time
+    def collect_samples(self, time_recording):     #collects audio signals from given time
         print("\nRecording...")
 
         FORMAT = pyaudio.paInt32 #32-bit input
@@ -46,4 +46,4 @@ class Audio_Collector:
         waveFile.close()
 
 
-        return samples
+        return [samples, self.rate]

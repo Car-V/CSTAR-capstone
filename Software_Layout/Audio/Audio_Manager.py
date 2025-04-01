@@ -3,20 +3,22 @@ import matplotlib.pyplot as plt
 #from scipy.io import wavfile
 import soundfile as sf
 from numpy.fft import fft, fftfreq
+from scipy.signal import stft
 from Digitize_Filter import DigitizeFilter
 
 
 class AudioManager:
-    def __init__(self, packetNo, start_pos, mid_pos, end_pos, threshhold, delam_range_start = 1200, delam_range_end = 2500, rate = 48000):
+    def __init__(self, packetNo, start_pos, end_pos, delam_range_start = 1000, delam_range_end = 5000, rate = 48000):
         self.rate = rate        #sets sampling rate of collected audio
         self.packetNo = packetNo          #sets packet number for tracking
         self.start_pos = start_pos      #start position for audio recording
-        self.mid_pos = mid_pos      #middle position for audio recording
         self.end_pos = end_pos      #end position for audio recording
-        self.threshhold = threshhold    #sets threshhold magnitude for delam detection
         self.delam_range_start = delam_range_start      #sets start of range being evaluated for delamination
         self.delam_range_end = delam_range_end          #sets end of range being evaluated for delamination
         self.digi_filter = DigitizeFilter()
+
+    def return_dist(self):
+        return self.end_pos - self.start_pos
 
     def convert_from_wav(self, file):
 
@@ -35,30 +37,10 @@ class AudioManager:
         return samples
     
     def apply_filters(self, samples):
-        samples_filtered = self.digi_filter.bandpass_butterworth_filter(samples, 1000, 2000, self.rate, 5)
+        samples_filtered = self.digi_filter.bandpass_butterworth_filter(samples, self.delam_range_start, self.delam_range_end, self.rate, 5)
         return samples_filtered
     
-    """this part doesn't make sense, leaving in for reference purposes"""
-    """
-    def concat_with_position(self, samples):
 
-        # calculates increments of positional data for each audio frequency
-        start_to_mid = self.mid_pos - self.start_pos 
-        first_half_increments = start_to_mid / (len(samples)/2.0)
-        mid_to_end = self.end_pos - self.mid_pos
-        second_half_increments = mid_to_end / (len(samples)/2.0)
-
-        half_samples = int(len(samples)/2)# Adjust based on the resolution you need
-        cur_pos = self.start_pos
-
-        #increment through samples and set the second column to positional data 
-        for i in samples[0:half_samples]: 
-            i[1] = cur_pos
-            cur_pos += first_half_increments
-
-        for i in samples[half_samples-1:]:
-            i[1] = cur_pos
-            cur_pos += second_half_increments """
 
     def convert_to_fft(self, samples):
         n = len(samples)        #number of samples
@@ -77,7 +59,23 @@ class AudioManager:
         
         return [single_normalized_fft, freq]
         
-    def check_against_threshhold(self, fft, freq):
+
+    def stft_plot(self, samples):
+
+        if len(samples.shape)>1:
+            samples = np.mean(samples, axis=1)
+
+        f, t, Zxx = stft(samples, self.rate, nperseg=1024)
+
+        plt.figure(figsize=(10, 6))
+        plt.pcolormesh(t, f, np.abs(Zxx), shading='gouraud')
+        plt.title('Short-Time Fourier Transform (STFT)')
+        plt.ylabel('Frequency [Hz]')
+        plt.xlabel('Time [sec]')
+        plt.colorbar(label='Magnitude')
+        plt.show()
+
+    def return_average_mag(self, fft, freq):
         sum_mag = 0
         low_index = self.delam_range_start
         high_index = 0
@@ -89,25 +87,19 @@ class AudioManager:
             if (freq[i] > self.delam_range_start and freq[i] <= self.delam_range_end and freq[i+1] >=self.delam_range_end):
                 high_index = i
                 
-        print(low_index)
-        print(high_index)
         # Loop through the specified FFT range
         for i in range(low_index, high_index + 1):  # Include high_index
-            sum_mag += (fft[i][0] + fft[i][1])/2  # Sum the FFT magnitudes average
+            if (type(fft[i]) == list):
+                sum_mag += (fft[i][0] + fft[i][1])/2  # Sum the FFT magnitudes average
+            else:
+                sum_mag += fft[i]
+        
 
-        print(sum_mag)
         # Compute the average magnitude
         avg_mag = sum_mag / (high_index - low_index)
 
-        # Check if it exceeds the threshold
-        delam = avg_mag > 0.001
-
-        # Display results
-        print(f"Delam: {delam}")
-        print(f"Magnitude: {avg_mag}")
-
-                  
-        return [delam, avg_mag]
+             
+        return avg_mag
     
     
         
@@ -128,29 +120,10 @@ class AudioManager:
 def __main__():
     audioGroup = AudioManager(1, 0, 5, 10, 0.0025)
 
-    samples = audioGroup.convert_from_wav("gain-delam.mp3")  #convert wav to sample array
+    samples = audioGroup.convert_from_wav("DELAM_floor_4_single_5_alewife.wav")  #convert wav to sample array
     samples = np.array(samples)
     samples = audioGroup.apply_filters(samples)
-   # audioGroup.concat_with_position(samples)
 
-    """ calculate positional data and increments needed to match sample size
-    start_to_mid = audioGroup.mid_pos - audioGroup.start_pos 
-    first_half_increments = start_to_mid / (len(samples)/2.0)
-    mid_to_end = audioGroup.end_pos - audioGroup.mid_pos
-    second_half_increments = mid_to_end / (len(samples)/2.0)
-
-    half_samples = int(len(samples)/2)# Adjust based on the resolution you need
-    cur_pos = audioGroup.start_pos """
-
-    """ increment through samples and set the second column to positional data
-    for i in samples[0:half_samples]: 
-        i[1] = cur_pos
-        cur_pos += first_half_increments
-
-    for i in samples[half_samples-1:]:
-        i[1] = cur_pos
-        cur_pos += second_half_increments
-"""
     [samples, freq] = audioGroup.convert_to_fft(samples)
     audioGroup.check_against_threshhold(samples, freq)
 
@@ -168,7 +141,7 @@ def __main__():
     
     
     
-__main__()        
+#__main__()        
         
 
         
