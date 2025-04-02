@@ -115,16 +115,12 @@ try:
 
         if user_input == 'w':
             move_forward()
-            record_audio(5)
         elif user_input == 's':
             move_backward()
-            record_audio(5)
         elif user_input == 'd':
             turn_right()
-            record_audio(5)
         elif user_input == 'a':
             turn_left()
-            record_audio(5)
         elif user_input == 'c':
             stop_motors()
 
