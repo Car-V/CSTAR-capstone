@@ -47,3 +47,9 @@ class Audio_Collector:
 
 
         return [samples, self.rate]
+    
+    def __main__():
+        user_input = input().lower()
+        collector = Audio_Collector.collect_samples(user_input)
+
+    __main__()
