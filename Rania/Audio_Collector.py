@@ -3,7 +3,7 @@ import numpy as np
 import wave
 
 class Audio_Collector:
-    def __init__(self, rate = 48000, file = "recording.wav"):
+    def __init__(self, rate = 48000, file = "alewife_recording.wav"):
         self.rate = rate
         self.filename = file
 
@@ -47,3 +47,9 @@ class Audio_Collector:
 
 
         return [samples, self.rate]
+    
+    def __main__():
+        user_input = input().lower()
+        collector = Audio_Collector.collect_samples(user_input)
+
+    

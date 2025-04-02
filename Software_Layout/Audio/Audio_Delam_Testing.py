@@ -18,10 +18,9 @@ class Audio_Delam_Testing():
         self.y_mid_positions = []
     
 
-    def new_sample(self, fft, freq):
+    def new_sample(self, avg):
 
-        self.collected_averages.append(fft)
-        self.freq.append(freq)
+        self.collected_averages.append(avg)
         #self.x_mid_positions.append(pos_x)
         #self.y_mid_positions.append(pos_y)
 
@@ -55,13 +54,14 @@ class Audio_Delam_Testing():
         plt.colorbar(label='Magnitude')
         plt.show()
 
-        def send_to_csv(self):
-            # Open a file for writing
-            with open('fft_outputs.csv', mode='w', newline='') as file:
-                writer = csv.writer(file)
+    def send_to_csv(self):
+        # Open a file for writing
+         with open('fft_outputs.csv', mode='w', newline='') as file:
+            writer = csv.writer(file)
                 
-                # Write the rows to the CSV file
-                writer.writerows(self.collected_averages)
+            # Write the rows to the CSV file
+            writer.writerows(self.collected_averages)
+
 
 
     
