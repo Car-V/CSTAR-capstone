@@ -52,7 +52,7 @@ audioCollector = Audio_Collector()
 audioTester = Audio_Delam_Testing()
 
 
-# Start audio recording in a separate thread
+'''# Start audio recording in a separate thread
 def record_audio(duration=5):
     def collect_and_send():
         fft, freq = audioCollector.collect_samples(duration)  # Collect audio data
@@ -60,7 +60,7 @@ def record_audio(duration=5):
 
     audio_thread = threading.Thread(target=collect_and_send, daemon=True)
     audio_thread.start()
-
+'''
 
 # def print_odometry():
 #     while True:
