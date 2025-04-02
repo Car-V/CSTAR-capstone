@@ -1,6 +1,9 @@
 # Main.py - Motor control with encoder-based odometry
 import RPi.GPIO as GPIO
 from Encoder import Encoder
+from Audio_Collector import Audio_Collector
+from Audio_Manager import AudioManager
+from Audio_Delam_Testing import Audio_Delam_Testing
 # from PID import PID
 from time import sleep
 import threading
@@ -44,6 +47,20 @@ GPIO.output(in3, GPIO.LOW)
 # Encoder Initialization
 left_encoder = Encoder(pin_a=16, pin_b=5)   # Left encoder pins
 #right_encoder = Encoder(pin_a=2, pin_b=3)    # Right encoder pins
+
+audioCollector = Audio_Collector()
+audioTester = Audio_Delam_Testing()
+
+
+# Start audio recording in a separate thread
+def record_audio(duration=5):
+    def collect_and_send():
+        fft, freq = audioCollector.collect_samples(duration)  # Collect audio data
+        audioTester.new_sample(fft, freq)  # Send FFT data to Audio_Delam_Testing
+
+    audio_thread = threading.Thread(target=collect_and_send, daemon=True)
+    audio_thread.start()
+
 
 # def print_odometry():
 #     while True:
@@ -98,12 +115,16 @@ try:
 
         if user_input == 'w':
             move_forward()
+            record_audio(5)
         elif user_input == 's':
             move_backward()
+            record_audio(5)
         elif user_input == 'd':
             turn_right()
+            record_audio(5)
         elif user_input == 'a':
             turn_left()
+            record_audio(5)
         elif user_input == 'c':
             stop_motors()
 

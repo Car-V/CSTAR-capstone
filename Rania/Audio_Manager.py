@@ -99,7 +99,7 @@ class AudioManager:
         avg_mag = sum_mag / (high_index - low_index)
 
              
-        return avg_mag
+        return fft[low_index:high_index+1]
     
     
         
