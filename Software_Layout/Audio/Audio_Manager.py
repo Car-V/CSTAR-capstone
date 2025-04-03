@@ -17,9 +17,6 @@ class AudioManager:
         self.delam_range_end = delam_range_end          #sets end of range being evaluated for delamination
         self.digi_filter = DigitizeFilter()
 
-    def return_dist(self):
-        return self.end_pos - self.start_pos
-
     def convert_from_wav(self, file):
 
         filepath = 'C:\\Users\\kayla\\Documents\\MATLAB\\' #need to make this relative, just for now
@@ -48,14 +45,14 @@ class AudioManager:
         freq = fftfreq(n, 1/self.rate)          #generate frequencies for FFT
         normalized_fft = abs(fft_result/n)       #normalize magnitude
         single_normalized_fft = 2* (normalized_fft[0:int((n/2)+1)])     #make data single-sided and double amplitude
-        '''
+        
         #plotting for visual test
         plt.plot(freq[0:int((n/2)+1)], single_normalized_fft, 'b')
         plt.title("Recorded FFT")
         plt.xlabel("Frequency (Hz)")
         plt.ylabel("Magnitude")
         plt.xlim([0, self.rate/2])    
-        plt.show()'''
+        plt.show()
         
         return [single_normalized_fft, freq]
         
@@ -65,7 +62,11 @@ class AudioManager:
         if len(samples.shape)>1:
             samples = np.mean(samples, axis=1)
 
-        f, t, Zxx = stft(samples, self.rate, nperseg=1024)
+        print(f"Samples shape: {samples.shape}")
+        print(f"Samples min/max: {np.min(samples)}, {np.max(samples)}")
+
+
+        f, t, Zxx = stft(samples, self.rate, nperseg=512)
 
         plt.figure(figsize=(10, 6))
         plt.pcolormesh(t, f, np.abs(Zxx), shading='gouraud')
@@ -75,7 +76,7 @@ class AudioManager:
         plt.colorbar(label='Magnitude')
         plt.show()
 
-    def return_average_mag(self, fft, freq):
+    def return_mag(self, fft, freq):
         sum_mag = 0
         low_index = self.delam_range_start
         high_index = 0
@@ -95,11 +96,8 @@ class AudioManager:
                 sum_mag += fft[i]
         
 
-        # Compute the average magnitude
-        avg_mag = sum_mag / (high_index - low_index)
-
              
-        return avg_mag
+        return sum_mag
     
     
         
@@ -118,14 +116,17 @@ class AudioManager:
 
 
 def __main__():
-    audioGroup = AudioManager(1, 0, 5, 10, 0.0025)
+    audioGroup = AudioManager(1, 0, 10)
 
-    samples = audioGroup.convert_from_wav("DELAM_floor_4_single_5_alewife.wav")  #convert wav to sample array
+    samples = audioGroup.convert_from_wav("LAM_floor_4_single_1_alewife.wav")  #convert wav to sample array
     samples = np.array(samples)
-    samples = audioGroup.apply_filters(samples)
+    #samples = audioGroup.apply_filters(samples)
 
-    [samples, freq] = audioGroup.convert_to_fft(samples)
-    audioGroup.check_against_threshhold(samples, freq)
+    [samples_fft, freq] = audioGroup.convert_to_fft(samples)
+
+    audioGroup.stft_plot(samples)
+
+    print(audioGroup.return_mag(samples_fft, freq))
 
     # Convert the list to a numpy array for FFT processing
     #samples = np.array(samples)
@@ -141,7 +142,7 @@ def __main__():
     
     
     
-#__main__()        
+__main__()        
         
 
         

@@ -98,6 +98,8 @@ class AudioManager:
         # Compute the average magnitude
         avg_mag = sum_mag / (high_index - low_index)
 
+
+
              
         return fft[low_index:high_index+1]
     
@@ -112,37 +114,6 @@ class AudioManager:
 
         
 
-
-        
-
-
-
-def __main__():
-    audioGroup = AudioManager(1, 0, 5, 10, 0.0025)
-
-    samples = audioGroup.convert_from_wav("DELAM_floor_4_single_5_alewife.wav")  #convert wav to sample array
-    samples = np.array(samples)
-    samples = audioGroup.apply_filters(samples)
-
-    [samples, freq] = audioGroup.convert_to_fft(samples)
-    audioGroup.check_against_threshhold(samples, freq)
-
-    # Convert the list to a numpy array for FFT processing
-    #samples = np.array(samples)
-
-    # Number of samples to collect
-    num_samples = len(samples)# Adjust based on the resolution you need
-    sampling_rate = 48000  # Samples per second (1 kHz)
-
-    
-
-
-
-    
-    
-    
-#__main__()        
-        
 
         
 
