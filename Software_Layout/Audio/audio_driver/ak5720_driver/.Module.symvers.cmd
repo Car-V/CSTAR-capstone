@@ -1,0 +1,1 @@
+cmd_/home/cstar-capstone/ak5720_driver/Module.symvers := sed 's/\.ko$$/\.o/' /home/cstar-capstone/ak5720_driver/modules.order | scripts/mod/modpost -m -a  -o /home/cstar-capstone/ak5720_driver/Module.symvers -e -i Module.symvers   -T -

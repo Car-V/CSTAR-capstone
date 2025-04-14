@@ -1,0 +1,1 @@
+cmd_/home/cstar-capstone/ak5720_driver/ak5720.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/cstar-capstone/ak5720_driver/ak5720.ko /home/cstar-capstone/ak5720_driver/ak5720.o /home/cstar-capstone/ak5720_driver/ak5720.mod.o;  true

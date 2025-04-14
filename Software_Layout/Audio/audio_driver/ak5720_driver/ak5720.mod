@@ -1,0 +1,2 @@
+/home/cstar-capstone/ak5720_driver/ak5720.o
+

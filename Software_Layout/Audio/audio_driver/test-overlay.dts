@@ -1,0 +1,10 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+  
+    testnode {
+        compatible = "my,testnode";
+        testproperty = "overlay-test";
+    };
+};
